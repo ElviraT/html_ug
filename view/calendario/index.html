@@ -1,0 +1,46 @@
+<div class="col-12 mt-3">
+  <div class="col-2">
+    <select
+      class="selectpicker"
+      data-live-search="true"
+      placeholder="Filtrar por Owner"
+    >
+      <option value="1">Floyd Miles</option>
+      <option value="2">Floyd Miles</option>
+      <option value="3">Floyd Miles</option>
+    </select>
+  </div>
+</div>
+<div class="mt-3" id="calendar"></div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+  var eventsURL = "view/calendario/eventos.json";
+  $(document).ready(function () {
+    $("#calendar").fullCalendar({
+      defaultDate: new Date(),
+      buttonIcons: true,
+      weekNumbers: false,
+      weekends: false,
+      eventLimit: 3,
+      events: {
+        url: eventsURL,
+      },
+      eventRender: function (event, eventElement) {
+        if (event.imageurl) {
+          $(eventElement).find(".fc-time").append(event.icon);
+          eventElement
+            .find("div.fc-content")
+            .prepend(
+              "<img src='" +
+                event.imageurl +
+                "' class='rounded-circle' width='20' height='20'>"
+            );
+        }
+      },
+    });
+  });
+</script>

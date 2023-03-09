@@ -1,0 +1,356 @@
+<div class="col-12 p-4">
+  <div class="row mb-3">
+    <div class="col-md-12 col-lg-10 mt-1">
+      <strong>Agregar un nuevo evento</strong><br />
+      <span>Información general de evento</span>
+    </div>
+    <div class="col-md-12 col-lg-2 mt-1">
+      <button type="button" class="btn btn-danger">Eliminar</button>
+      <button type="button" class="btn btn-secondary">Guardar</button>
+    </div>
+  </div>
+  <!-- card 1 -->
+  <div class="card p-3">
+    <strong>Definición</strong>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-3">
+          <label>No. de OC / Requisición</label>
+          <input type="text" name="numeroOc" class="form-control" />
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3 input-daterange">
+          <label>Fecha y hora del evento</label>
+          <div class="input-group">
+            <input
+              type="text"
+              id="fhevento"
+              class="form-control text-left mr-2"
+            />
+            <span class="fa fa-calendar form-control-icon" id="fa-2"></span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
+          <label>Código de documento de referencia</label>
+          <input type="text" name="codigo" class="form-control" />
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
+          <label>Descripción</label>
+          <textarea
+            name="descripcion"
+            id="descripcion"
+            cols="3"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
+          <label>Responsable</label>
+          <select
+            class="selectpicker"
+            data-live-search="true"
+            placeholder="Selecciona al responsable"
+          >
+            <option value="1">Floyd Miles</option>
+            <option value="2">Floyd Miles</option>
+            <option value="3">Floyd Miles</option>
+          </select>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-12 col-lg-10 mt-1">
+            <strong>Asistentes</strong><br />
+            <span>Administra los asistentes del evento</span>
+          </div>
+          <div class="col-md-12 col-lg-2 mt-3 pull-right">
+            <button type="button" class="btn btn-outline-dark btn-sm">
+              <i class="fa fa-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+        <div class="col-12 table-responsive">
+          <table id="tabla-asistente" class="table table-sm" width="100%">
+            <thead style="background-color: rgb(219, 242, 250)">
+              <tr>
+                <th>Nombre</th>
+                <th>Compañia</th>
+                <th>Puesto</th>
+                <th>Email</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Darrel</td>
+                <td>Electron S.A</td>
+                <td>Asistentes de Calidad</td>
+                <td>michael.mito@example.com</td>
+                <td>
+                  <a href="#"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a href="#"><i class="fa fa-trash-o icon-red"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Savannah Niguyen</td>
+                <td>Johnson & Johnson</td>
+                <td>Ventas</td>
+                <td>jackson.graham@example.com</td>
+                <td>
+                  <a href="#"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a href="#"><i class="fa fa-trash-o icon-red"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Bessie Cooper</td>
+                <td>Starbucks</td>
+                <td>Gerente de calidad</td>
+                <td>alma.lawson@example.com</td>
+                <td>
+                  <a href="#"><i class="fa fa-pencil"></i></a>&nbsp;
+                  <a href="#"><i class="fa fa-trash-o icon-red"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin card 1 -->
+  <!-- card 2 -->
+  <div class="card p-3 mt-4">
+    <div class="col-12 p-3">
+      <div class="row">
+        <strong>Fotografías</strong>
+        <div class="card col-md-12 col-lg-6 p-3 mt-3">
+          <strong>Evidencia Fotográfica</strong>
+          <small>Consulta las Fotografías del evento</small>
+          <hr />
+          <!-- inicio lista de evidencias -->
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="col-2 mt-2">
+                <i class="fa fa-download icon-blue"></i>
+              </div>
+              <div class="col-8">
+                <strong>Prueba de presión</strong><br />
+                <small>prueba_presion.pdf</small>
+              </div>
+              <div class="col-2">
+                <a href="#" class="btn btn-light btn-sm plus"
+                  ><i class="fa fa-times"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="col-2 mt-2">
+                <i class="fa fa-download icon-blue"></i>
+              </div>
+              <div class="col-8">
+                <strong>Prueba de presión</strong><br />
+                <small>prueba_presion.pdf</small>
+              </div>
+              <div class="col-2">
+                <a href="#" class="btn btn-light btn-sm plus"
+                  ><i class="fa fa-times"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="col-2 mt-2">
+                <i class="fa fa-download icon-blue"></i>
+              </div>
+              <div class="col-8">
+                <strong>Prueba de presión</strong><br />
+                <small>prueba_presion.pdf</small>
+              </div>
+              <div class="col-2">
+                <a href="#" class="btn btn-light btn-sm plus"
+                  ><i class="fa fa-times"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- fin lista de evidencias -->
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <div class="row">
+            <div class="col-12">
+              <label>Descripción</label>
+              <input
+                type="text"
+                class="form-control"
+                name="descripcion"
+                placeholder="Ingresa la descripción"
+              />
+            </div>
+            <div class="col-6 mt-3">
+              <input
+                id="file-1"
+                name="input-b1"
+                type="file"
+                class="file"
+                data-browse-on-zone-click="true"
+              />
+            </div>
+            <div class="col-12 text-end">
+              <button type="button" class="btn btn-secondary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin card 2 -->
+  <!-- card 3 -->
+  <div class="card p-3 mt-4">
+    <div class="col-12">
+      <div class="row">
+        <strong>No conformidad</strong>
+        <div class="col-6 mt-3">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Buscar" />
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-6 text-end">
+          <button class="btn btn-outline-dark" type="button">
+            <i class="fa fa-plus"></i> Agregar
+          </button>
+        </div>
+        <div class="col-12">
+          <div class="col-12 mt-3 div-success">
+            <div class="card mt-3 p-2">
+              <div class="row">
+                <div class="col-md-4 col-lg-1 mt-1" align="center">
+                  <img
+                    src="../../public/image/user.png"
+                    class="rounded-circle"
+                    width="40%"
+                  />
+                </div>
+                <div class="col-md-6 col-lg-9">
+                  <div class="col-12">
+                    <strong>Trámites sin estaño.</strong>&nbsp;<small
+                      >Resolvió Uzziel Garcia</small
+                    >
+                  </div>
+                  <div class="col-12">
+                    <span style="color: green">Solventado</span
+                    >&nbsp;&nbsp;<span>Estado</span>&nbsp;&nbsp;<span
+                      class="badge bg-success"
+                      >Concluido</span
+                    >
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2 mt-2">
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="#"
+                        ><small>Origen</small><br /><i
+                          class="fa fa-file-text-o"
+                        ></i
+                      ></a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#"
+                        ><small>Evidencia</small><br /><i
+                          class="fa fa-file-text-o"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 div-warning">
+            <div class="card mt-3 p-2">
+              <div class="row">
+                <div class="col-md-4 col-lg-1 mt-1" align="center">
+                  <img
+                    src="../../public/image/user.png"
+                    class="rounded-circle"
+                    width="40%"
+                  />
+                </div>
+                <div class="col-md-6 col-lg-9">
+                  <div class="col-12">
+                    <strong>Trámites sin estaño.</strong>&nbsp;<small
+                      >Resolvió Uzziel Garcia</small
+                    >
+                  </div>
+                  <div class="col-12">
+                    <span style="color: orange">No Solventado</span
+                    >&nbsp;&nbsp;<span>Estado</span>&nbsp;&nbsp;<span
+                      class="badge bg-warning"
+                      >Pendiente</span
+                    >
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2 mt-2">
+                  <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                      <a href="#"
+                        ><small>Origen</small><br /><i
+                          class="fa fa-file-text-o"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin card 3 -->
+</div>
+<script>
+  $(document).ready(function () {
+    $(".input-daterange").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+      disableTouchKeyboard: true,
+    });
+  });
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+  $(document).ready(function () {
+    $("#tabla-asistente").DataTable({
+      dom: "tp",
+      language: {
+        url: "../../public/js/es-ES.json",
+      },
+    });
+  });
+
+  $("#file-1").fileinput({
+    initialPreview:
+      "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/631px-FullMoon2010.jpg",
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    overwriteInitial: false,
+    initialPreviewAsData: true,
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>

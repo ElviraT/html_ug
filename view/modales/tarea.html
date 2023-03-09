@@ -1,0 +1,117 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="tareaModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar tarea</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 text-end">
+            <button type="button" class="btn btn-success">
+              <i class="fa fa-check"></i> Marcar como completada
+            </button>
+          </div>
+          <div class="col-12 mb-3">
+            <label>Descripción breve</label>
+            <input
+              type="text"
+              class="form-control"
+              name="descripcion"
+              placeholder="Ingresa la descripción"
+            />
+          </div>
+          <div class="col-12">
+            <label>Instrucciones</label>
+            <textarea
+              name="instrucciones"
+              class="form-control"
+              id="instrucciones"
+              rows="3"
+              placeholder="Ingrese las instrucciones"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <label>Responsable</label>
+            <select
+              class="selectpicker"
+              data-live-search="true"
+              placeholder="Selecciona al responsable"
+            >
+              <option value="1">Floyd Miles</option>
+              <option value="2">Floyd Miles</option>
+              <option value="3">Floyd Miles</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-control-placeholder" id="end-p"
+              >Fecha de entrega</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                id="entrega"
+                class="form-control text-left mr-2"
+              />
+              <span class="fa fa-calendar form-control-icon" id="fa-2"></span>
+            </div>
+          </div>
+          <div class="col-12 mt-2">
+            <div class="row">
+              <div class="col-6 text-left">
+                <label class="text-start">Archivos adjuntos</label>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa fa-plus">Agregar</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-2">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fa fa-file-text-o"> Maquetación final.pdf</i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+  $(document).ready(function () {
+    $("#entrega").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+    });
+  });
+</script>

@@ -1,0 +1,355 @@
+<div class="col-md-6 col-lg-12 mt-4">
+  <div class="row">
+    <div class="col-2">
+      <select
+        class="selectpicker"
+        data-live-search="true"
+        placeholder="Filtrar por periodo"
+      >
+        <option value="1">October 31 - November 30</option>
+        <option value="2">November 31 - December 30</option>
+        <option value="3">January 31 - February 28</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <select
+        class="selectpicker"
+        data-live-search="true"
+        placeholder="Filtrar por Owner"
+      >
+        <option value="1">Floyd Miles</option>
+        <option value="2">Floyd Miles</option>
+        <option value="3">Floyd Miles</option>
+      </select>
+    </div>
+    <div class="col-5 text-end">
+      <strong
+        ><i class="fa fa-calendar-check-o"><span>Mis tareas</span></i></strong
+      >
+      <span class="header"><i class="fa fa-clock-o">Pendientes</i></span>
+    </div>
+    <div class="col-3">
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar" />
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="accordion mt-3" id="accordionExample">
+  <div class="accordion-item table-responsive">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="false"
+        aria-controls="collapseOne"
+      >
+        Tareas del proyecto:&nbsp;<strong>Taritaxi</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body">
+        <div class="table-responsive">
+          <table id="table-tarea" class="table table-sm" width="100%">
+            <thead>
+              <tr>
+                <th>Tareas</th>
+
+                <th>Estatus</th>
+
+                <th>Periodo</th>
+
+                <th>Owner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="60%">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-10">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tarea1"
+                            checked
+                          />
+                          <label class="form-check-label" for="tarea1">
+                            Verificar proceso de pago Taritaxi
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <a
+                          href="#"
+                          class="btn btn-light btn-sm plus text-end"
+                          data-bs-toggle="modal"
+                          data-bs-target="#example"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td width="10%">
+                  <span class="badge bg-success rounder"
+                    >Entregado&nbsp;<i class="fa fa-check"></i
+                  ></span>
+                </td>
+                <td width="20%">October 31 - November 31</td>
+                <td width="20%">
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="15%"
+                  />&nbsp;Floyd Miles
+                </td>
+              </tr>
+              <tr>
+                <td width="60%">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-10">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tarea2"
+                          />
+                          <label class="form-check-label" for="tarea2">
+                            Creación de tarjetas
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <a
+                          href="#"
+                          class="btn btn-light btn-sm plus text-end"
+                          data-bs-toggle="modal"
+                          data-bs-target="#example"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td width="10%">
+                  <span class="badge bg-warning rounder"
+                    >proceso&nbsp;<i class="fa fa-clock-o"></i
+                  ></span>
+                </td>
+                <td width="20%">October 31 - November 31</td>
+                <td width="20%">
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="15%"
+                  />&nbsp;Floyd Miles
+                </td>
+              </tr>
+              <tr>
+                <td width="60%">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-10">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="tarea3"
+                            checked
+                          />
+                          <label class="form-check-label" for="tarea3">
+                            Convenio de plataforma de pago
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <a
+                          href="#"
+                          class="btn btn-light btn-sm plus text-end"
+                          data-bs-toggle="modal"
+                          data-bs-target="#example"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td width="10%">
+                  <span class="badge bg-success rounder"
+                    >Entregado&nbsp;<i class="fa fa-check"></i
+                  ></span>
+                </td>
+                <td width="20%">October 31 - November 31</td>
+                <td width="20%">
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="15%"
+                  />&nbsp;Floyd Miles
+                </td>
+              </tr>
+              <tr>
+                <td width="60%">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="tarea4"
+                    />
+                    <label class="form-check-label" for="tarea4">
+                      Verificación de convenio
+                    </label>
+                  </div>
+                </td>
+                <td width="10%">
+                  <span class="badge bg-warning rounder"
+                    >Proceso&nbsp;<i class="fa fa-clock-o"></i
+                  ></span>
+                </td>
+                <td width="20%">October 31 - November 31</td>
+                <td width="20%">
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="15%"
+                  />&nbsp;Floyd Miles
+                </td>
+              </tr>
+              <tr>
+                <td width="60%">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-10">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckIndeterminate"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckIndeterminate"
+                          >
+                            Verificar proceso de pago Taritaxi
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <a
+                          href="#"
+                          class="btn btn-light btn-sm plus text-end"
+                          data-bs-toggle="modal"
+                          data-bs-target="#example"
+                        >
+                          <i class="fa fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td width="10%">
+                  <span class="badge bg-danger rounder"
+                    >Estancado&nbsp;<i class="fa fa-exclamation-triangle"></i
+                  ></span>
+                </td>
+                <td width="20%">October 31 - November 31</td>
+                <td width="20%">
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="15%"
+                  />&nbsp;Floyd Miles
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        Tareas del proyecto:&nbsp;<strong>Plan de trabajo</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body"></div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+        aria-expanded="false"
+        aria-controls="collapseThree"
+      >
+        Tareas del proyecto:&nbsp;<strong>SGC</strong>
+      </button>
+    </h2>
+    <div
+      id="collapseThree"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingThree"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body"></div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $("#table-tarea").DataTable({
+      dom: "",
+      bSort: false,
+      language: {
+        url: "public/js/es-ES.json",
+      },
+    });
+  });
+</script>
