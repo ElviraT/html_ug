@@ -1,0 +1,69 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="documento-ppiModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Agregar documento
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <input
+              id="file-4"
+              name="input-b1"
+              type="file"
+              class="file mt-3"
+              data-browse-on-zone-click="true"
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <label>Descripción</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              rows="3"
+              class="form-control"
+              placeholder="Ingresa la descripción"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $("#file-4").fileinput({
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    overwriteInitial: false,
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>

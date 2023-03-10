@@ -1,0 +1,255 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="noConformidadModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Detalles de no conformidad
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body p-4">
+        <!-- card Identificación -->
+        <div class="card p-3">
+          <div class="row">
+            <strong>Identificación</strong>
+            <div class="col-12 mt-3">
+              <div class="row">
+                <div class="col-md-12 col-lg-6">
+                  <div class="col-12 mb-3 input-daterange">
+                    <label>Fecha de Identificación</label>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        id="fidend"
+                        class="form-control text-left mr-2"
+                      />
+                      <span
+                        class="fa fa-calendar form-control-icon"
+                        id="fa-2"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label>Descripción</label>
+                    <textarea
+                      name="descripcion"
+                      id="descripcion"
+                      rows="4"
+                      class="form-control"
+                      placeholder="Ingresa la descripción breve"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <input
+                    id="file-3"
+                    name="input-b2"
+                    type="file"
+                    class="file"
+                    data-browse-on-zone-click="true"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin card 1 -->
+        <!-- card seguimiento -->
+        <div class="card p-3 mt-3">
+          <div class="row mt-2">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-9">
+                  <strong
+                    >Seguimiento y evidencia que solventa la NO
+                    conformidad</strong
+                  >
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-outline-dark">
+                    <i class="fa fa-plus"></i> Agregar
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="col-12 mt-3 div-success">
+                <div class="card mt-3 p-2">
+                  <div class="row">
+                    <div class="col-md-4 col-lg-1 mt-1" align="center">
+                      <img
+                        src="../../public/image/user.png"
+                        class="rounded-circle"
+                        width="80%"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-10">
+                      <div class="col-12">
+                        <strong>Responsable: Ricardo Rodriguez .</strong
+                        >&nbsp;Avance
+                        <span class="badge bg-success">100%</span>&nbsp;<i
+                          class="fa fa-calendar"
+                        ></i
+                        >&nbsp;July 14, 2015
+                      </div>
+                      <div class="col-12">
+                        <span>Generar el documento relacionado</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-lg-1 mt-2">
+                      <i class="fa fa-file-text-o"></i>
+                      <i class="fa fa-trash-o icon-red"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 div-danger">
+                <div class="card mt-3 p-2">
+                  <div class="row">
+                    <div class="col-md-4 col-lg-1 mt-1" align="center">
+                      <img
+                        src="../../public/image/user.png"
+                        class="rounded-circle"
+                        width="80%"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-10">
+                      <div class="col-12">
+                        <strong>Responsable: Ricardo Rodriguez .</strong
+                        >&nbsp;Avance
+                        <span class="badge bg-danger">20%</span>&nbsp;<i
+                          class="fa fa-calendar"
+                        ></i
+                        >&nbsp;July 14, 2015
+                      </div>
+                      <div class="col-12">
+                        <span
+                          >Solicitud de compras para el material pendiente</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-lg-1 mt-2">
+                      <i class="fa fa-file-text-o"></i>
+                      <i class="fa fa-trash-o icon-red"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 div-warning">
+                <div class="card mt-3 p-2">
+                  <div class="row">
+                    <div class="col-md-4 col-lg-1 mt-1" align="center">
+                      <img
+                        src="../../public/image/user.png"
+                        class="rounded-circle"
+                        width="80%"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-10">
+                      <div class="col-12">
+                        <strong>Responsable: Ricardo Rodriguez .</strong
+                        >&nbsp;Avance
+                        <span class="badge bg-warning">50%</span>&nbsp;<i
+                          class="fa fa-calendar"
+                        ></i
+                        >&nbsp;July 14, 2015
+                      </div>
+                      <div class="col-12">
+                        Loren ipsun dolor sit anet, consectetur adipisci elit,
+                        sed eiusnod tenpor incidunt ut.
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-lg-1 mt-2">
+                      <i class="fa fa-file-text-o"></i>
+                      <i class="fa fa-trash-o icon-red"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="row">
+                <strong>Estatus</strong><br />
+                <div class="col-12 mt-2">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Identificado</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >Resuelto</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin card 2 -->
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+  $(document).ready(function () {
+    $(".input-daterange").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+      disableTouchKeyboard: true,
+    });
+  });
+  $("#file-3").fileinput({
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>

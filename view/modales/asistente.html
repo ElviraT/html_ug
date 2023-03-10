@@ -1,0 +1,81 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="asistenteModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Agregar Asistente
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <label>Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nombre"
+              placeholder="Ingresa el nombre"
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <label>Correo Electrónico</label>
+            <input
+              type="text"
+              class="form-control"
+              name="correo"
+              placeholder="Ingresa el correo"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Compañia</label>
+            <input
+              type="text"
+              class="form-control"
+              name="compania"
+              placeholder="Ingresa la compañia"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Puesto</label>
+            <input
+              type="text"
+              class="form-control"
+              name="puesto"
+              placeholder="Ingresa el puesto"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+</script>
