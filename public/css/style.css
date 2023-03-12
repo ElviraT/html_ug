@@ -42,6 +42,11 @@ small {
 .table {
   font-size: 13px !important;
 }
+
+td {
+  height: 30px !important;
+  padding: 5px !important;
+}
 .div-success {
   border-left: 13px solid green;
   border-radius: 15px;
@@ -67,4 +72,28 @@ small {
 }
 .icon-blue {
   color: blue;
+}
+.icon-green {
+  color: green;
+}
+.icon-warning {
+  color: orange;
+}
+.acordion-success {
+  border-left: 10px solid green;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+.acordion-danger {
+  border-left: 10px solid red;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+.acordion-warning {
+  border-left: 10px solid orange;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+.i-acordion {
+  color: #b4b2b2;
 }

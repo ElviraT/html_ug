@@ -1,0 +1,115 @@
+<!-- segunda modal -->
+<div
+  class="modal fade"
+  id="seguimientoModal"
+  aria-hidden="true"
+  aria-labelledby="seguimientoModalLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="seguimientoModalLabel">
+          Agregar seguimiento
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-target="#noConformidadModal"
+          data-bs-toggle="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-12 p-4">
+          <div class="row">
+            <div class="col-6 mb-3 input-daterange">
+              <label>Fecha</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="fseguimiento"
+                  class="form-control mr-2"
+                  placeholder="dd/mm/yyyy"
+                />
+                <span class="fa fa-calendar form-control-icon" id="fa-2"></span>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <label>Avance</label>
+              <input
+                type="text"
+                name="avance"
+                class="form-control"
+                placeholder="Ingrese el porcentaje"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <label>Responsable</label>
+              <input
+                type="text"
+                name="responsable"
+                class="form-control"
+                placeholder="Ingrese el nombre"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <label>Acción realizada</label>
+              <textarea
+                name="accion"
+                id="accion"
+                rows="3"
+                placeholder="Ingrese la descripción"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="col-12 mb-3">
+              <label>Evidencia</label>
+              <input
+                id="file-evidencia"
+                name="input-b2"
+                type="file"
+                class="file"
+                data-browse-on-zone-click="true"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-target="#noConformidadModal"
+          data-bs-toggle="modal"
+        >
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-target="#noConformidadModal"
+          data-bs-toggle="modal"
+        >
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin modal 2 -->
+<script>
+  $("#seguimientoModal").on("hidden.bs.modal", function () {
+    // Load up a new modal...
+    $("#noConformidadModal").modal("show");
+  });
+  $("#file-evidencia").fileinput({
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>

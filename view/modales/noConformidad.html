@@ -3,13 +3,13 @@
   class="modal fade"
   id="noConformidadModal"
   tabindex="-1"
-  aria-labelledby="exampleModalLabel"
+  aria-labelledby="noConformidadModalLabel"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">
+        <h1 class="modal-title fs-5" id="noConformidadModalLabel">
           Detalles de no conformidad
         </h1>
         <button
@@ -78,7 +78,11 @@
                   >
                 </div>
                 <div class="col-3">
-                  <button class="btn btn-outline-dark">
+                  <button
+                    class="btn btn-outline-dark"
+                    data-bs-target="#seguimientoModal"
+                    data-bs-toggle="modal"
+                  >
                     <i class="fa fa-plus"></i> Agregar
                   </button>
                 </div>
@@ -228,6 +232,7 @@
     </div>
   </div>
 </div>
+
 <script>
   $(document).ready(function () {
     $(function () {
@@ -236,7 +241,7 @@
   });
   $(document).ready(function () {
     $(".input-daterange").datepicker({
-      format: "dd-mm-yyyy",
+      format: "dd/mm/yyyy",
       autoclose: true,
       calendarWeeks: true,
       clearBtn: true,

@@ -1,0 +1,425 @@
+<div class="col-md-6 col-lg-12 mt-4">
+  <div class="row">
+    <div class="col-8">
+      <a href="#" onclick="openFullscreen();" id="expande">
+        <i class="fa fa-arrows-alt" aria-hidden="true"> Expandir Todo</i>
+      </a>
+      <a href="#" onclick="closeFullscreen();" id="contrae" hidden>
+        <i class="fa fa-arrows" aria-hidden="true"> Contraer Todo</i>
+      </a>
+    </div>
+    <div class="col-3 text-end">
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar" />
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-1">
+      <button type="button" class="btn btn-outline-dark">Imprimir</button>
+    </div>
+  </div>
+</div>
+<div class="accordion mt-3" id="accordionCosto">
+  <div class="accordion-item mb-3">
+    <div
+      class="accordion-header acordion-success p-2"
+      id="CostoOne"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseCostoOne"
+      aria-expanded="true"
+      aria-controls="collapseCostoOne"
+    >
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 mt-2">
+            <center><i class="fa fa-list-alt i-acordion"></i></center>
+          </div>
+          <div class="col-10 text-star">
+            <strong>Gestión de calidad.</strong>
+            <small>Disponible</small>&nbsp;<span class="badge bg-danger"
+              >-$31,120.00</span
+            ><br />
+            <i class="fa fa-money i-acordion"
+              >&nbsp;Presupuesto: <strong>$150,000.00</strong></i
+            >
+            <i class="fa fa-text-file-o i-acordion"
+              >&nbsp;Ejercido: <strong>$181,220.00</strong></i
+            >
+            <i class="fa fa-clock-o icon-green">&nbsp;Entregado</i>
+          </div>
+          <div class="col-1 text-end">
+            <a
+              href="#"
+              class="btn btn-light btn-sm plus text-end"
+              data-bs-toggle="modal"
+              data-bs-target="#example"
+            >
+              <i class="fa fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="collapseCostoOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="CostoOne"
+      data-bs-parent="#accordionCosto"
+    >
+      <div class="accordion-body table-responsive">
+        <table class="table table-sm" width="100%" id="tabla-costo">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Clasificación</th>
+              <th>Descripción</th>
+              <th>Importe</th>
+              <th>Acumulado</th>
+              <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mar 02, 2019</td>
+              <td>
+                <span
+                  style="
+                    background-color: magenta;
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Finanzas&nbsp;<i class="fa fa-bar-chart-o"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 17,900.00</td>
+              <td>$ 17,900.00</td>
+              <td><span class="badge bg-success">$ 132,100.00</span></td>
+            </tr>
+            <tr>
+              <td>Jul 11, 2015</td>
+              <td>
+                <span
+                  style="
+                    background-color: rgb(163, 163, 245);
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Servicios&nbsp;<i class="fa fa-wrench"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 8,720.00</td>
+              <td>$ 26,720.00</td>
+              <td><span class="badge bg-warning">$ 123,380.00</span></td>
+            </tr>
+            <tr>
+              <td>Sep 19, 2010</td>
+              <td>
+                <span
+                  style="
+                    background-color: rgb(145, 241, 225);
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Equipos&nbsp;&nbsp;<i class="fa fa-crosshairs"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 154,500.00</td>
+              <td>$ 181,220.00</td>
+              <td><span class="badge bg-danger">-$ 31,120.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-3">
+    <div
+      class="accordion-header acordion-warning p-2"
+      id="CostoTwo"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseCostoTwo"
+      aria-expanded="true"
+      aria-controls="collapseCostoTwo"
+    >
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 mt-2">
+            <center><i class="fa fa-list-alt i-acordion"></i></center>
+          </div>
+          <div class="col-10 text-star">
+            <strong>Taritaxi.</strong>
+            <small>Disponible</small>&nbsp;<span class="badge bg-success"
+              >$135,000.00</span
+            ><br />
+            <i class="fa fa-money i-acordion"
+              >&nbsp;Presupuesto: <strong>$150,000.00</strong></i
+            >
+            <i class="fa fa-text-file-o i-acordion"
+              >&nbsp;Ejercido: <strong>$15,000.00</strong></i
+            >
+            <i class="fa fa-clock-o icon-warning">&nbsp;En Proceso</i>
+          </div>
+          <div class="col-1 text-end">
+            <a
+              href="#"
+              class="btn btn-light btn-sm plus text-end"
+              data-bs-toggle="modal"
+              data-bs-target="#example"
+            >
+              <i class="fa fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="collapseCostoTwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="CostoTwo"
+      data-bs-parent="#accordionCosto"
+    >
+      <div class="accordion-body table-responsive">
+        <table class="table table-sm" width="100%" id="tabla-costo">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Clasificación</th>
+              <th>Descripción</th>
+              <th>Importe</th>
+              <th>Acumulado</th>
+              <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mar 02, 2019</td>
+              <td>
+                <span
+                  style="
+                    background-color: magenta;
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Finanzas&nbsp;<i class="fa fa-bar-chart-o"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 17,900.00</td>
+              <td>$ 17,900.00</td>
+              <td><span class="badge bg-success">$ 132,100.00</span></td>
+            </tr>
+            <tr>
+              <td>Jul 11, 2015</td>
+              <td>
+                <span
+                  style="
+                    background-color: rgb(163, 163, 245);
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Servicios&nbsp;<i class="fa fa-wrench"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 8,720.00</td>
+              <td>$ 26,720.00</td>
+              <td><span class="badge bg-warning">$ 123,380.00</span></td>
+            </tr>
+            <tr>
+              <td>Sep 19, 2010</td>
+              <td>
+                <span
+                  style="
+                    background-color: rgb(145, 241, 225);
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Equipos&nbsp;&nbsp;<i class="fa fa-crosshairs"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 154,500.00</td>
+              <td>$ 181,220.00</td>
+              <td><span class="badge bg-danger">-$ 31,120.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-3">
+    <div
+      class="accordion-header acordion-danger p-2"
+      id="CostoThree"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseCostoThree"
+      aria-expanded="true"
+      aria-controls="collapseCostoThree"
+    >
+      <div class="col-12">
+        <div class="row">
+          <div class="col-1 mt-2">
+            <center><i class="fa fa-list-alt i-acordion"></i></center>
+          </div>
+          <div class="col-10 text-star">
+            <strong>CFE CET1.</strong>
+            <small>Disponible</small>&nbsp;<span class="badge bg-warning"
+              >$5,000.00</span
+            ><br />
+            <i class="fa fa-money i-acordion"
+              >&nbsp;Presupuesto: <strong>$150,000.00</strong></i
+            >
+            <i class="fa fa-text-file-o i-acordion"
+              >&nbsp;Ejercido: <strong>$145,000.00</strong></i
+            >
+            <i class="fa fa-exclamation-triangle icon-red">&nbsp;Estancado</i>
+          </div>
+          <div class="col-1 text-end">
+            <a
+              href="#"
+              class="btn btn-light btn-sm plus text-end"
+              data-bs-toggle="modal"
+              data-bs-target="#example"
+            >
+              <i class="fa fa-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="collapseCostoThree"
+      class="accordion-collapse collapse"
+      aria-labelledby="CostoThree"
+      data-bs-parent="#accordionCosto"
+    >
+      <div class="accordion-body table-responsive">
+        <table class="table table-sm" width="100%" id="tabla-costo">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Clasificación</th>
+              <th>Descripción</th>
+              <th>Importe</th>
+              <th>Acumulado</th>
+              <th>Saldo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mar 02, 2019</td>
+              <td>
+                <span
+                  style="
+                    background-color: magenta;
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Finanzas&nbsp;<i class="fa fa-bar-chart-o"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 17,900.00</td>
+              <td>$ 17,900.00</td>
+              <td><span class="badge bg-success">$ 132,100.00</span></td>
+            </tr>
+            <tr>
+              <td>Jul 11, 2015</td>
+              <td>
+                <span
+                  style="
+                    background-color: rgb(163, 163, 245);
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Servicios&nbsp;<i class="fa fa-wrench"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 8,720.00</td>
+              <td>$ 26,720.00</td>
+              <td><span class="badge bg-warning">$ 123,380.00</span></td>
+            </tr>
+            <tr>
+              <td>Sep 19, 2010</td>
+              <td>
+                <span
+                  style="
+                    background-color: rgb(145, 241, 225);
+                    padding: 5px;
+                    color: white;
+                    border-radius: 7px;
+                  "
+                  >Equipos&nbsp;&nbsp;<i class="fa fa-crosshairs"></i
+                ></span>
+              </td>
+              <td>Pago de nómina</td>
+              <td>$ 154,500.00</td>
+              <td>$ 181,220.00</td>
+              <td><span class="badge bg-danger">-$ 31,120.00</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var elem = document.documentElement;
+  function openFullscreen() {
+    $("#expande").attr("hidden", true);
+    $("#contrae").attr("hidden", false);
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      /* IE11 */
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function closeFullscreen() {
+    $("#expande").attr("hidden", false);
+    $("#contrae").attr("hidden", true);
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      /* IE11 */
+      document.msExitFullscreen();
+    }
+  }
+  $(document).ready(function () {
+    $("#tabla-costo").DataTable({
+      dom: "",
+      bSort: false,
+      language: {
+        url: "public/js/es-ES.json",
+      },
+    });
+  });
+</script>

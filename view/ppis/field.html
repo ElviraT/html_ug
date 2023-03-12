@@ -248,15 +248,14 @@
           </form>
         </div>
         <div class="col-6 text-end">
-          <button
+          <a
             class="btn btn-outline-dark"
-            type="button"
-            id="btn-modal"
             data-bs-toggle="modal"
-            data-bs-target="#noConformidadModal"
+            href="#noConformidadModal"
+            role="button"
           >
             <i class="fa fa-plus"></i> Agregar
-          </button>
+          </a>
         </div>
         <div class="col-12">
           <div class="col-12 mt-3 div-success">
@@ -285,7 +284,7 @@
                 </div>
                 <div class="col-md-2 col-lg-2 mt-2">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                       <a
                         type="button"
                         id="btn-modal"
@@ -296,7 +295,7 @@
                         ></i
                       ></a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
                       <a
                         type="button"
                         id="btn-modal"
@@ -305,6 +304,15 @@
                         ><small>Evidencia</small><br /><i
                           class="fa fa-file-text-o"
                         ></i
+                      ></a>
+                    </div>
+                    <div class="col-4 mt-4">
+                      <a
+                        type="button"
+                        id="btn-modal"
+                        data-bs-toggle="modal"
+                        data-bs-target="#eliminarModal"
+                        ><i class="fa fa-trash-o icon-red"></i
                       ></a>
                     </div>
                   </div>
@@ -338,8 +346,8 @@
                 </div>
                 <div class="col-md-2 col-lg-2 mt-2">
                   <div class="row">
-                    <div class="col-6"></div>
-                    <div class="col-6">
+                    <div class="col-4"></div>
+                    <div class="col-4">
                       <a
                         type="button"
                         id="btn-modal"
@@ -348,6 +356,15 @@
                         ><small>Origen</small><br /><i
                           class="fa fa-file-text-o"
                         ></i
+                      ></a>
+                    </div>
+                    <div class="col-4 mt-4">
+                      <a
+                        type="button"
+                        id="btn-modal"
+                        data-bs-toggle="modal"
+                        data-bs-target="#eliminarModal"
+                        ><i class="fa fa-trash-o icon-red"></i
                       ></a>
                     </div>
                   </div>
@@ -651,16 +668,7 @@
     });
   });
   $(document).ready(function () {
-    $("#tabla-asistente").DataTable({
-      dom: "tp",
-      language: {
-        url: "../../public/js/es-ES.json",
-      },
-    });
-  });
-
-  $(document).ready(function () {
-    $("#tabla-alcance").DataTable({
+    $("#tabla-asistente, #tabla-alcance").DataTable({
       dom: "tp",
       language: {
         url: "../../public/js/es-ES.json",
