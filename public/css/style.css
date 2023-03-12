@@ -97,3 +97,10 @@ td {
 .i-acordion {
   color: #b4b2b2;
 }
+
+.rfq {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 7px;
+  padding: 5px;
+}

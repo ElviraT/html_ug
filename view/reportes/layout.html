@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sistema de Calidad</title>
+
+    <!-- Fonts -->
+    <link href="../../public/css/css2.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="../../public/css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="../../public/css/font-awesome.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../public/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../public/css/bootstrap-datepicker.css" />
+    <link
+      rel="stylesheet"
+      href="../../public/css/twitter-bootstrap/bootstrap-responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../public/css/twitter-bootstrap/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../public/css/dataTables.bootstrap5.min.css"
+    />
+
+    <link rel="stylesheet" href="../../public/css/fileinput.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+  </head>
+  <body class="body-evento">
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm bg-white navbar-white">
+        <div class="container-fluid">
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img src="../../public/image/logoOp.jpeg" alt=""
+          /></a>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto d-flex flex-row">
+              <li
+                class="nav-item dropdown text-wrap"
+                style="border-right: 1px solid #9b9a9a"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  ><small>Usuario</small> <br />
+                  <small>ACEMEP S.A DE C.V</small></a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">My profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mr-2 mt-2">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-bell" style="font-size: 17px"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <!-- Migas de pan -->
+      <div class="col-12 p-2 mt-3 migas">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <a href="/" style="text-decoration: none"
+              ><i class="fa fa-arrow-left"></i>&nbsp; Regresar</a
+            >
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li><p>Usted esta aquí:&nbsp;</p></li>
+                <li class="breadcrumb-item">Sistema de gestion</li>
+                <li class="breadcrumb-item">Proyectos</li>
+                <li class="breadcrumb-item" id="ruta"></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- migas de pan -->
+    </div>
+    <div class="col-12 mt-3">
+      <a
+        href="#gasto"
+        class="btn btn-outline-dark"
+        onclick="return getRuta('Resumen de gasto')"
+        id="gasto"
+        >Resumen de gasto</a
+      >
+      <a
+        href="#detallerfq"
+        class="btn btn-outline-dark"
+        onclick="return getRuta('Detalles del RFQ')"
+        id="rfq"
+        >Detalles de RFQ</a
+      >
+      <a
+        href="#producto-servicio"
+        class="btn btn-outline-dark"
+        onclick="return getRuta('Agregar Productos o Servicios')"
+        id="p-s"
+        >Producto-Servicio</a
+      >
+      <a
+        href="#orden"
+        class="btn btn-outline-dark"
+        onclick="return getRuta('Generar Orden de Compra')"
+        id="orden"
+        >Generar Orden de Compra</a
+      >
+      <a
+        href="#cotizacion"
+        class="btn btn-outline-dark"
+        onclick="return getRuta('Cotizaciones')"
+        id="cotiza"
+        >Cotizaciones</a
+      >
+    </div>
+    <div id="r1" class="mt-3" hidden>
+      <div data-include="../../reportes/gastos"></div>
+    </div>
+    <div id="r2" class="mt-3" hidden>
+      <div data-include="#"></div>
+    </div>
+    <div id="r3" class="mt-3" hidden>
+      <div data-include="#"></div>
+    </div>
+    <div id="r4" class="mt-3" hidden>
+      <div data-include="../../reportes/detalle_rfq"></div>
+    </div>
+    <div id="r5" class="mt-3" hidden>
+      <div data-include="../../reportes/producto-servicio"></div>
+    </div>
+  </body>
+  <script src="../../public/js/jquery-3.6.3.js"></script>
+  <script src="../../public/js/bootstrap.bundle.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../../public/js/bootstrap-select.min.js"></script>
+
+  <script src="../../public/js/bootstrap-datepicker.js"></script>
+
+  <script src="../../public/js/jquery.dataTables.min.js"></script>
+  <script src="../../public/js/dataTables.bootstrap5.min.js"></script>
+  <script src="../../public/js/fileinput.min.js"></script>
+  <script>
+    $(function () {
+      var includes = $("[data-include]");
+      $.each(includes, function () {
+        var file = "view/" + $(this).data("include") + ".html";
+        $(this).load(file);
+      });
+    });
+    function getRuta(ruta) {
+      $("#ruta").html(ruta);
+    }
+
+    $("#gasto").click(function () {
+      $("#r1").prop("hidden", false);
+      $("#r2, #r3, #r4, #r5").prop("hidden", true);
+    });
+    $("#orden").click(function () {
+      $("#r2").prop("hidden", false);
+      $("#r1, #r3, #r4, #r5").prop("hidden", true);
+    });
+    $("#cotiza").click(function () {
+      $("#r3").prop("hidden", false);
+      $("#r1, #r2, #r4, #r5").prop("hidden", true);
+    });
+    $("#rfq").click(function () {
+      $("#r4").prop("hidden", false);
+      $("#r1, #r2, #r3, #r5").prop("hidden", true);
+    });
+    $("#p-s").click(function () {
+      $("#r5").prop("hidden", false);
+      $("#r1, #r2, #r3, #r4").prop("hidden", true);
+    });
+  </script>
+  <!-- modales -->
+  <div data-include="../../modales/costo"></div>
+  <div data-include="../../modales/clasificacion"></div>
+  <!-- fin modales -->
+</html>

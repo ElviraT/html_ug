@@ -1,0 +1,201 @@
+<!-- filtros -->
+<div class="col-12 p-3">
+  <div class="row">
+    <div class="col-md-6 col-lg-2">
+      <label>Marca</label>
+      <select
+        class="selectpicker"
+        data-live-search="true"
+        placeholder="Selecciona la marca"
+      >
+        <option value="1">test 1</option>
+        <option value="2">test 2</option>
+        <option value="3">test 3</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-lg-2">
+      <label>Clasificador</label>
+      <select
+        class="selectpicker"
+        data-live-search="true"
+        placeholder="Selecciona el clasificador"
+      >
+        <option value="1">test 1</option>
+        <option value="2">test 2</option>
+        <option value="3">test 3</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-lg-2">
+      <label>Subclasificador</label>
+      <select
+        class="selectpicker"
+        data-live-search="true"
+        placeholder="Selecciona el subclasificador"
+      >
+        <option value="1">test 1</option>
+        <option value="2">test 2</option>
+        <option value="3">test 3</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-lg-2">
+      <label>Entrega</label>
+      <select
+        class="selectpicker"
+        data-live-search="true"
+        placeholder="Selecciona la entrega"
+      >
+        <option value="1">test 1</option>
+        <option value="2">test 2</option>
+        <option value="3">test 3</option>
+      </select>
+    </div>
+    <div class="col-md-6 col-lg-4 mt-4 pull-right">
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Buscar" />
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- fin filtros -->
+<!-- tabla -->
+<div class="col-12 p-3">
+  <div class="row">
+    <div class="card p-2">
+      <div class="col-12 p-2 text-end">
+        <button type="button" class="btn btn-secondary">Agregar</button>
+        <button type="button" class="btn btn-outline-dark">Exportar</button>
+      </div>
+      <div class="table-responsive">
+        <table id="tabla-ps" class="table table-sm" width="100%">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Order code</th>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Descripción</th>
+              <th>Garantía (meses)</th>
+              <th>T. Entregas (semanas)</th>
+              <th>Entrega</th>
+              <th>Clasificador</th>
+              <th>Subclasificador</th>
+              <th>Precio</th>
+              <th>Moneda</th>
+              <th>Cotizaciones similares</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fa fa-pencil"></i></td>
+              <td>G-50-04151312</td>
+              <td>GE</td>
+              <td>G500</td>
+              <td>SCADA G500</td>
+              <td>12</td>
+              <td>18</td>
+              <td>EXW</td>
+              <td>Suministro Nacional</td>
+              <td>Hardware</td>
+              <td>4134</td>
+              <td>USD</td>
+              <td><span class="badge bg-primary">5</span></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-pencil"></i></td>
+              <td>G-50-04151312</td>
+              <td>GE</td>
+              <td>G500</td>
+              <td>SCADA G500</td>
+              <td>12</td>
+              <td>18</td>
+              <td>Aduana MEX</td>
+              <td>Suministro Internacional</td>
+              <td>Licencias</td>
+              <td>1,000.67</td>
+              <td>MX</td>
+              <td><span class="badge bg-primary">4</span></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-pencil"></i></td>
+              <td>G-50-04151312</td>
+              <td>GE</td>
+              <td>G500</td>
+              <td>SCADA G500</td>
+              <td>12</td>
+              <td>18</td>
+              <td>Oficina MEX</td>
+              <td>Servicio</td>
+              <td>Fletes Internacionales</td>
+              <td>88.66</td>
+              <td>EUR</td>
+              <td><span class="badge bg-secondary">0</span></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-pencil"></i></td>
+              <td>G-50-04151312</td>
+              <td>GE</td>
+              <td>G500</td>
+              <td>SCADA G500</td>
+              <td>12</td>
+              <td>18</td>
+              <td>Oficina proveedor</td>
+              <td>Costo financiero</td>
+              <td>Gastos adanuales</td>
+              <td>13500.99</td>
+              <td>MX</td>
+              <td><span class="badge bg-primary">1</span></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-pencil"></i></td>
+              <td>G-50-04151312</td>
+              <td>GE</td>
+              <td>G500</td>
+              <td>SCADA G500</td>
+              <td>12</td>
+              <td>18</td>
+              <td>EXW</td>
+              <td>Suministro Nacional</td>
+              <td>Gabinetes</td>
+              <td>2041.34</td>
+              <td>MX</td>
+              <td><span class="badge bg-primary">2</span></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-pencil"></i></td>
+              <td>G-50-04151312</td>
+              <td>GE</td>
+              <td>G500</td>
+              <td>SCADA G500</td>
+              <td>12</td>
+              <td>18</td>
+              <td>EXW</td>
+              <td>Suministro Nacional</td>
+              <td>Equipos principales</td>
+              <td>536.25</td>
+              <td>USD</td>
+              <td><span class="badge bg-primary">3</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin tabla -->
+<script>
+  $(document).ready(function () {
+    $("#tabla-ps").DataTable({
+      dom: "rtp",
+      language: {
+        url: "../../public/js/es-ES.json",
+      },
+    });
+  });
+</script>

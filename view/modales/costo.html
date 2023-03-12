@@ -1,0 +1,159 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="costoModal"
+  tabindex="-1"
+  aria-labelledby="costoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="costoModalLabel">Agregar gasto</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <label>Proyecto</label>
+            <select
+              class="selectpicker"
+              data-live-search="true"
+              placeholder="Selecciona"
+            >
+              <option value="1">Taritaxi</option>
+              <option value="2">Gestión de calidad</option>
+              <option value="3">CFE</option>
+            </select>
+          </div>
+          <div class="col-6 mb-3 input-daterange">
+            <label>Fecha</label>
+            <div class="input-group">
+              <input type="text" id="start" class="form-control text-left" />
+              <span class="fa fa-calendar form-control-icon" id="fa-1"></span>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="row">
+              <div class="col-10">
+                <label>Clasificación</label>
+                <select
+                  class="selectpicker"
+                  data-live-search="true"
+                  placeholder="Selecciona"
+                >
+                  <option
+                    value="1"
+                    style="background-color: rgb(145, 241, 225)"
+                    data-icon="fa fa-crosshairs"
+                  >
+                    Equipos
+                  </option>
+                  <option
+                    value="2"
+                    style="background-color: rgb(163, 163, 245)"
+                    data-icon="fa fa-wrench"
+                  >
+                    Servicios
+                  </option>
+                  <option
+                    value="3"
+                    style="background-color: magenta"
+                    data-icon="fa fa-bar-chart-o"
+                  >
+                    Finanzas
+                  </option>
+                </select>
+              </div>
+              <div class="col-2 mt-4 text-star">
+                <a
+                  href="#"
+                  class="btn btn-light btn-sm plus"
+                  data-bs-toggle="modal"
+                  data-bs-target="#clasificacionModal"
+                >
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Importe</label>
+            <input type="text" class="form-control" name="importe" />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Moneda</label>
+            <select
+              class="selectpicker"
+              data-live-search="true"
+              placeholder="Selecciona"
+            >
+              <option value="1">$ USD</option>
+              <option value="2">$ Pesos</option>
+            </select>
+          </div>
+          <div class="col-12 mb-3">
+            <label>Descripción del gasto ¿Para qué fue?</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              rows="3"
+              class="form-control"
+              placeholder="Ingresa la descripción"
+            ></textarea>
+          </div>
+          <div class="col-12 mb-3">
+            <label>Comprobante (opcional)</label>
+            <input
+              id="file-comprobante"
+              name="input-b2"
+              type="file"
+              class="file"
+              data-browse-on-zone-click="true"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-bs-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+  $(document).ready(function () {
+    $(".input-daterange").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+      disableTouchKeyboard: true,
+    });
+  });
+  $("#file-comprobante").fileinput({
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>
