@@ -1,52 +1,96 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm bg-white navbar-white">
-  <div class="container-fluid">
-    <!-- Toggler -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#collapsibleNavbar"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#"
-      ><img src="public/image/logoOp.jpeg" alt=""
-    /></a>
-
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ms-auto d-flex flex-row">
-        <li
-          class="nav-item dropdown text-wrap"
-          style="border-right: 1px solid #9b9a9a"
-        >
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            ><small>Usuario</small> <br />
-            <small>ACEMEP S.A DE C.V</small></a
-          >
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">My profile</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown mr-2 mt-2">
-          <a
-            class="nav-link"
-            href="#"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fa fa-bell" style="font-size: 17px"></i>
-          </a>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container-fluid justify-content-between">
+    <!-- Left elements -->
+    <div class="d-flex my-2 my-sm-0">
+      <!-- Toggler -->
+      <button
+        data-mdb-toggle="sidenav"
+        data-mdb-target="#sidenav-1"
+        class="btn shadow-0 p-0 ms-2 me-3 d-block d-xl-none"
+        aria-controls="#sidenav-1"
+        aria-haspopup="true"
+      >
+        <i class="fa fa-bars fa-lg"></i>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <img
+          src="public/image/logoOp.jpeg"
+          height="30"
+          alt=""
+          loading="lazy"
+          style="margin-top: 2px"
+        />
+      </a>
     </div>
+    <!-- Left elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <li
+        class="nav-item dropdown me-3 me-lg-1"
+        style="border-right: 1px solid hsl(0, 1%, 76%)"
+      >
+        <a
+          class="nav-link dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Usuario <br />
+          QA ACEMEP S.A DE C.V
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li><a class="dropdown-item" href="#">Some news</a></li>
+          <li><a class="dropdown-item" href="#">Another news</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown mt-3 me-3 me-lg-1">
+        <a
+          class="nav-link"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="bx bxs-bell"></i>
+        </a>
+      </li>
+    </ul>
+    <!-- Right elements -->
   </div>
 </nav>
 <!-- Navbar -->
+<div class="container-fluid justify-content-between breadcrumb">
+  <!-- Migas de pan -->
+  <div class="col-md-12 p-2 migas">
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <a href="#" style="text-decoration: none" class="ml-5"
+          ><i class="bx bx-arrow-back mt-2"></i>&nbsp; Regresar</a
+        >
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class=""><a href="#">Usted esta aquí:&nbsp;</a></li>
+            <li class="breadcrumb-item"><a href="#">Sistema de gestión</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Proyectos
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

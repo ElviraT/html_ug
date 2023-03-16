@@ -1,270 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de calidad</title>
 
-    <title>Sistema de Calidad</title>
-
+    <link
+      rel="stylesheet"
+      href="public/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
     <!-- Fonts -->
     <link href="public/css/css2.css" rel="stylesheet" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="public/css/bootstrap.css" />
-    <link rel="stylesheet" href="public/css/font-awesome.css" />
-
-    <!-- Latest compiled and minified CSS -->
+    <!-- iconos -->
+    <link href="public/css/boxicons.min.css" rel="stylesheet" />
+    <!-- select -->
     <link rel="stylesheet" href="public/css/bootstrap-select.min.css" />
+    <!-- Styles personalizado -->
+    <link rel="stylesheet" type="text/css" href="public/css/style2.css" />
     <link rel="stylesheet" href="public/css/bootstrap-datepicker.css" />
-    <link
-      rel="stylesheet"
-      href="public/css/twitter-bootstrap/bootstrap-responsive.css"
-    />
-    <link
-      rel="stylesheet"
-      href="public/css/twitter-bootstrap/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="public/css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="public/css/fileinput.min.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/fullcalendar.css" />
-    <!-- estilos -->
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
   </head>
-  <body class="p-3">
-    <div class="container-fluid">
-      <div data-include="header"></div>
-      <!-- Migas de pan -->
-      <div class="col-12 p-2 mb-3 migas">
-        <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <a href="#" style="text-decoration: none"
-              ><i class="fa fa-arrow-left"></i>&nbsp; Regresar</a
-            >
-          </div>
-          <div class="col-md-12 col-lg-6">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li><p>Usted esta aquí:&nbsp;</p></li>
-                <li class="breadcrumb-item">Sistema de gestion</li>
-                <li class="breadcrumb-item">Proyectos</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
+  <body>
+    <div class="content">
+      <div data-include="encabezado/header"></div>
+      <br />
+      <div data-include="encabezado/migas"></div>
+      <div class="container-fluid">
+        <div data-include="encabezado/filtros"></div>
+        <div data-include="encabezado/info"></div>
+        <div data-include="files/botonera"></div>
+        <!-- tablas -->
+        <div id="pro"><div data-include="projects/index"></div></div>
+        <!-- <div id="tar" hidden><div data-include="tareas/index"></div></div>
+        <div id="cal" hidden><div data-include="calendario/index"></div></div>
+        <div id="com" hidden><div data-include="compras/index"></div></div>
+        <div id="ppi" hidden><div data-include="ppis/index"></div></div>
+        <div id="cos" hidden><div data-include="costo/index"></div></div>
+        <div id="doc" hidden><div data-include="documentos/index"></div></div> -->
       </div>
     </div>
-    <!-- migas de pan -->
-    <!-- Filtros - Encabezado -->
-    <div class="card border-0">
-      <div class="row">
-        <div class="col-sm-12 col-lg-6">
-          <div class="row">
-            <div class="col-5">
-              <select
-                class="selectpicker"
-                data-live-search="true"
-                placeholder="Filtrar por proyecto"
-              >
-                <option value="1">Todos</option>
-                <option value="2">Plan de trabajo</option>
-                <option value="3">Taritaxi</option>
-              </select>
-            </div>
-            <div class="col-5">
-              <select
-                class="selectpicker"
-                data-live-search="true"
-                placeholder="Filtrar por estatus"
-                multiple="multiple"
-              >
-                <option
-                  data-tokens="1"
-                  style="background: green; color: #fff"
-                  data-icon="fa fa-check"
-                >
-                  Entregado
-                </option>
-                <option
-                  data-tokens="2"
-                  style="background: orange; color: #fff"
-                  data-icon="fa fa-clock-o"
-                >
-                  En Proceso
-                </option>
-                <option
-                  data-tokens="3"
-                  style="background: red; color: #fff"
-                  data-icon="fa fa-exclamation-triangle"
-                >
-                  Estancado
-                </option>
-              </select>
-            </div>
-            <div class="col-2 mt-1">
-              <a
-                href="#"
-                class="btn btn-light btn-sm plus"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <i class="fa fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card mt-3 p-2">
-      <div class="row">
-        <div class="col-md-1 col-lg-1">
-          <div class="row">
-            <div class="col">
-              <img src="public/image/logo.png" width="70%" />
-            </div>
-          </div>
-        </div>
-        <div class="col-md-11 col-lg-6">
-          <div class="row">
-            <div class="col-12 mb-2">
-              <span class="otro"><strong>SET 01</strong></span
-              >&nbsp;&nbsp;
-              <span class="header">Estado: </span>
-              <span class="badge bg-success rounder"> Activo</span>
-            </div>
-            <div class="col-12">
-              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-              <span class="header">PECOMM4244323445</span>&nbsp;
-              <i class="fa fa-building-o" aria-hidden="true"></i>
-              <span class="header">Cliente: </span>
-              <span class="badge bg-info rounder"> Cobra</span>&nbsp;
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <span class="header">01 Sep, 2022 - </span
-              ><span class="header"><strong>28 Abr, 2023</strong></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-3">
-          <div class="row">
-            <div class="col-12 mb-2">
-              <img
-                src="public/image/user.png"
-                class="rounded-circle float-end"
-                alt="..."
-                width="7%"
-              />
-              <img
-                src="public/image/user.png"
-                class="rounded-circle float-end"
-                alt="..."
-                width="7%"
-              />
-              <img
-                src="public/image/user.png"
-                class="rounded-circle float-end"
-                alt="..."
-                width="7%"
-              />
-              <img
-                src="public/image/user.png"
-                class="rounded-circle float-end"
-                alt="..."
-                width="7%"
-              />
-            </div>
-            <div class="col-12">
-              <div
-                class="progress"
-                role="progressbar"
-                aria-label="Example with label"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                <div class="progress-bar" style="width: 50%">50%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-2">
-          <div class="row">
-            <div class="col-12 mt-2">
-              <button class="btn btn-success">
-                <i class="fa fa-calendar-minus-o"></i>
-                Días restantes 256
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fin de encabezado -->
-    <!-- Botonera -->
-    <div class="content mt-3">
-      <button type="button" class="btn btn-primary" id="proyecto">
-        <i class="fa fa-folder-o"></i> Proyectos
-      </button>
-      <button type="button" class="btn btn-secondary" id="tarea">
-        <i class="fa fa-calendar-check-o"></i> Tareas
-      </button>
-      <button type="button" class="btn btn-secondary" id="calendario">
-        <i class="fa fa-calendar"></i> Calendario
-      </button>
-      <button type="button" class="btn btn-secondary" id="compras">
-        <i class="fa fa-shopping-cart"></i> Compras
-      </button>
-      <button type="button" class="btn btn-secondary" id="ppis">
-        <i class="fa fa-bars"></i> PPIs
-      </button>
-      <button type="button" class="btn btn-secondary" id="costo">
-        <i class="fa fa-database"></i> Costos
-      </button>
-      <button type="button" class="btn btn-secondary" id="documento">
-        <i class="fa fa-file"></i> Documentos
-      </button>
-      <div class="pull-right">
-        <button
-          type="button"
-          id="btn-modal"
-          class="btn btn-secondary"
-          data-bs-toggle="modal"
-          data-bs-target="#proyectoModal"
-        >
-          Agregar
-        </button>
-        <a
-          href="view/ppis/add.html"
-          class="btn btn-secondary"
-          id="btn-ppi"
-          hidden
-          >Agregar</a
-        >
-      </div>
-    </div>
-    <!-- Fin de botonera -->
-
-    <div id="pro" class="mt-3"><div data-include="projects/index"></div></div>
-    <div id="tar" hidden><div data-include="tareas/index"></div></div>
-    <div id="cal" hidden><div data-include="calendario/index"></div></div>
-    <div id="com" hidden><div data-include="compras/index"></div></div>
-    <div id="ppi" hidden><div data-include="ppis/index"></div></div>
-    <div id="cos" hidden><div data-include="costo/index"></div></div>
-    <div id="doc" hidden><div data-include="documentos/index"></div></div>
   </body>
   <script src="public/js/jquery-3.6.3.js"></script>
-  <!-- <script src="public/js/bootstrap.min.js"></script> -->
-  <script src="public/js/bootstrap.bundle.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="public/js/bootstrap-select.min.js"></script>
-
+  <script src="public/js2/popper.min.js" crossorigin="anonymous"></script>
+  <script src="public/js2/bootstrap.min.js" crossorigin="anonymous"></script>
+  <!-- select -->
+  <script src="public/js2/bootstrap-select.min.js"></script>
   <script src="public/js/bootstrap-datepicker.js"></script>
-
-  <script src="public/js/jquery.dataTables.min.js"></script>
-  <script src="public/js/dataTables.bootstrap5.min.js"></script>
-  <script src="public/js/fileinput.min.js"></script>
-  <!-- calendario -->
-  <script type="text/javascript" src="public/js/moment.min.js"></script>
-  <script type="text/javascript" src="public/js/fullcalendar.min.js"></script>
-  <script type="text/javascript" src="public/js/locale/es.js"></script>
   <script>
     $(function () {
       var includes = $("[data-include]");
@@ -273,98 +55,17 @@
         $(this).load(file);
       });
     });
+    // tablas
     $("#proyecto").click(function () {
       $("#pro").prop("hidden", false);
-      $("#btn-modal").prop("hidden", false);
-      $("#btn-ppi").prop("hidden", true);
-      $("#btn-modal").attr("data-bs-target", "#proyectoModal");
-      $("#proyecto").removeClass("btn-secondary").addClass("btn-primary");
-      $("#tarea, #calendario, #compras, #ppis, #costo, #documento")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
+      $("#proyecto").addClass("activo");
+      $("#tarea, #calendario, #compras, #ppis, #costo, #documento").removeClass(
+        "activo"
+      );
       $("#tar, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
-    });
-
-    $("#tarea").click(function () {
-      $("#tar").prop("hidden", false);
-      $("#btn-modal").prop("hidden", false);
-      $("#btn-ppi").prop("hidden", true);
-      $("#btn-modal").attr("data-bs-target", "#tareaModal");
-      $("#tarea").removeClass("btn-secondary").addClass("btn-primary");
-      $("#proyecto, #calendario, #compras, #ppis, #costo, #documento")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
-      $("#pro, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
-    });
-
-    $("#calendario").click(function () {
-      $("#cal").prop("hidden", false);
-      $("#btn-ppi").prop("hidden", true);
-      $("#btn-modal").prop("hidden", true);
-      $("#calendario").removeClass("btn-secondary").addClass("btn-primary");
-      $("#proyecto, #tarea, #compras, #ppis, #costo, #documento")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
-      $("#pro, #tar, #com, #ppi, #cos, #doc").prop("hidden", true);
-    });
-
-    $("#compras").click(function () {
-      $("#com").prop("hidden", false);
-      $("#btn-modal").prop("hidden", true);
-      $("#btn-ppi").prop("hidden", true);
-      $("#compras").removeClass("btn-secondary").addClass("btn-primary");
-      $("#proyecto, #calendario, #tarea, #ppis, #costo, #documento")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
-      $("#pro, #tar, #cal, #ppi, #cos, #doc").prop("hidden", true);
-    });
-
-    $("#ppis").click(function () {
-      $("#ppi").prop("hidden", false);
-      $("#btn-modal").prop("hidden", true);
-      $("#btn-ppi").prop("hidden", false);
-      $("#btn-modal").attr("data-bs-target", "#ppisModal");
-      $("#ppis").removeClass("btn-secondary").addClass("btn-primary");
-      $("#proyecto, #calendario, #compras, #tarea, #costo, #documento")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
-      $("#pro, #tar, #com, #cal, #cos, #doc").prop("hidden", true);
-    });
-
-    $("#costo").click(function () {
-      $("#cos").prop("hidden", false);
-      $("#btn-modal").prop("hidden", true);
-      $("#btn-ppi").prop("hidden", true);
-      $("#costo").removeClass("btn-secondary").addClass("btn-primary");
-      $("#proyecto, #calendario, #compras, #ppis, #tarea, #documento")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
-      $("#pro, #tar, #com, #cal, #ppi, #doc").prop("hidden", true);
-    });
-
-    $("#documento").click(function () {
-      $("#doc").prop("hidden", false);
-      $("#btn-ppi").prop("hidden", true);
-      $("#btn-modal").prop("hidden", false);
-      $("#btn-modal").attr("data-bs-target", "#documentosModal");
-      $("#documento").removeClass("btn-secondary").addClass("btn-primary");
-      $("#proyecto, #calendario, #compras, #ppis, #costo, #tarea")
-        .removeClass("btn-primary")
-        .addClass("btn-secondary");
-      $("#pro, #tar, #com, #cal, #ppi, #cos").prop("hidden", true);
-    });
-    $(document).ready(function () {
-      $(function () {
-        $(".selectpicker").selectpicker();
-      });
     });
   </script>
   <!-- modales -->
-  <div data-include="modales/proyecto"></div>
-  <div data-include="modales/tarea"></div>
   <div data-include="modales/status"></div>
-  <div data-include="modales/documento"></div>
-  <div data-include="modales/costo"></div>
-  <div data-include="modales/clasificacion"></div>
-  <!-- fin modales -->
+  <div data-include="modales/proyecto"></div>
 </html>

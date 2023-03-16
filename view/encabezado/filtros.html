@@ -1,0 +1,68 @@
+<div class="col-lg-12 mt-4">
+  <!-- Filtros - Encabezado -->
+  <div class="card border-0">
+    <div class="row">
+      <div class="col-md-4 col-lg-2">
+        <select
+          class="form-control selectpicker"
+          data-live-search="true"
+          data-live-search-placeholder="Buscar Proyecto"
+          title="Filtrar por Proyecto"
+        >
+          <option value="1">Todos</option>
+          <option value="2">Plan de trabajo</option>
+          <option value="3">Taritaxi</option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2">
+        <select
+          class="form-control selectpicker"
+          data-live-search="true"
+          multiple="multiple"
+          data-live-search-placeholder="Buscar Estatus"
+          title="Filtrar por estatus"
+        >
+          <option
+            data-tokens="1"
+            data-content="<input type='checkbox'>&nbsp;
+                <span class='badge badge-success'>Entregado&nbsp;
+                <i class='bx bx-check-circle icon-white'></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href='#' data-bs-toggle='modal' data-bs-target='#exampleModal'>
+                <i class='bx bx-edit'></i></a>"
+            style="color: #fff"
+          >
+            Entregado
+          </option>
+          <option
+            data-tokens="2"
+            data-content="<input type='checkbox'>&nbsp;
+                <span class='badge badge-warning'>En Proceso&nbsp;
+                <i class='bx bx-time-five icon-white'></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href='#' data-bs-toggle='modal' data-bs-target='#exampleModal'>
+                <i class='bx bx-edit'></i></a>"
+            style="color: #ffffff"
+          >
+            En Proceso
+          </option>
+          <option
+            data-tokens="3"
+            data-content="<input type='checkbox'>&nbsp;
+                <span class='badge badge-danger'>Estancado&nbsp;
+                <i class='bx bx-error icon-white'></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href='#' data-bs-toggle='modal' data-bs-target='#exampleModal'>
+                <i class='bx bx-edit'></i></a>"
+            style="color: #fff"
+          >
+            Estancado
+          </option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2 mt-1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal">
+          <i class="bx bx-plus-circle iconos"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Fin de filtros -->
+</div>

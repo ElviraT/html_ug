@@ -3,11 +3,11 @@
   color: #b4b2b2;
 }
 .otro {
-  color: #303030;
+  color: #6e717e;
   font-size: 16px;
 }
 a {
-  color: #b4b2b2;
+  color: #6e717e;
 }
 .img-circle {
   border-radius: 50%;
@@ -17,7 +17,7 @@ a {
 }
 .plus {
   border-radius: 50%;
-  color: grey;
+  color: #6e717e;
   border: solid 1px grey;
 }
 small {
@@ -25,16 +25,23 @@ small {
 }
 .navbar {
   height: 50px !important;
+  position: absolute !important;
+  background: #ffffff !important;
 }
 .breadcrumb {
-  font-size: 12px;
-  color: grey;
-  justify-content: right;
+  font-size: 14px;
+  background: #f7f7fe !important;
+  position: absolute !important;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
 }
 .migas {
-  height: 50px;
-  background-color: rgb(203, 230, 248, 0.2);
-  margin-top: 10px;
+  height: 60px;
+  background-color: rgba(182, 194, 202, 0.2);
+  margin-top: 35px;
+  font-size: 18px;
 }
 .bg-registro {
   background-color: blueviolet;
@@ -103,4 +110,14 @@ td {
   color: white;
   border-radius: 7px;
   padding: 5px;
+}
+
+.icon-edit {
+  color: #999 !important;
+}
+.btn-evento {
+  background-color: #28a745;
+  color: #fff;
+  height: 60px;
+  border-radius: 15px;
 }
