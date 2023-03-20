@@ -1,20 +1,20 @@
 <!-- Modal -->
 <div
-  class="modal fade mt-2"
+  class="modal fade"
   id="proyectoModal"
   tabindex="-1"
   aria-labelledby="exampleModalLabel"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
+    <div class="modal-content p-4">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">
           <i class="bx bx-plus ico-add"></i>
           Agregar proyecto
         </h1>
       </div>
-      <div class="modal-body p-4">
+      <div class="modal-body">
         <div class="row">
           <div class="col-12 mb-2">
             <div class="form-check form-check-inline">
@@ -53,7 +53,7 @@
           </div>
           <div class="col-12">
             <div class="row">
-              <div class="col-10 mb-3">
+              <div class="col-9 mb-3">
                 <label>Número de contrato/orden de compra</label>
                 <input
                   type="text"
@@ -62,18 +62,23 @@
                   placeholder="Ingresa el número"
                 />
               </div>
-              <div class="col-2 mt-4">
-                <a href="#"><i class="fa fa-file"></i></a>
-                <a href="#"><i class="fa fa-file-pdf-o icon-red"></i></a>
+              <div class="col-3 mt-4">
+                <div class="row">
+                  <a href="#"><i class="bx bx-file-blank icon-modal"></i></a
+                  >&nbsp;
+                  <a href="#"
+                    ><i class="bx bxs-file-pdf icon-red icon-modal"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-12 mb-3">
             <label>Cliente</label><br />
             <select
-              class="selectpicker"
+              class="form-control selectpicker"
               data-live-search="true"
-              placeholder="Seleccione el cliente"
+              title="Seleccione el cliente"
             >
               <option value="1">Carlos Rodrigues</option>
               <option value="2">Jesús Gomez</option>
@@ -83,9 +88,9 @@
           <div class="col-6 mb-3">
             <label>Color</label>
             <select
-              class="selectpicker"
+              class="form-control selectpicker"
               data-live-search="true"
-              placeholder="Seleccione el Color"
+              title="Seleccione el Color"
             >
               <option value="1" style="background-color: pink">Rosa</option>
               <option value="2" style="background-color: red">Rojo</option>
@@ -95,17 +100,17 @@
           <div class="col-6 mb-3">
             <label>Ícono</label>
             <select
-              class="selectpicker"
+              class="form-control selectpicker"
               data-live-search="true"
-              placeholder="Seleccione el ícono"
+              title="Seleccione el ícono"
             >
               <option value="1" data-icon="fa fa-car">Carro</option>
               <option value="2" data-icon="fa fa-bell-o">Campana</option>
               <option value="3" data-icon="fa fa-flag">Bandera</option>
             </select>
           </div>
-          <label>Periodo</label>
           <div class="col-12 mb-3">
+            <label>Periodo</label>
             <div class="input-group input-daterange">
               <div class="col-6">
                 <label class="form-control-placeholder" id="start-p" for="start"
@@ -118,7 +123,7 @@
                     class="form-control text-left"
                   />
                   <span
-                    class="fa fa-calendar form-control-icon"
+                    class="bx bx-calendar form-control-icon"
                     id="fa-1"
                   ></span>
                 </div>
@@ -128,13 +133,9 @@
                   >Fecha fin</label
                 >
                 <div class="input-group">
-                  <input
-                    type="text"
-                    id="end"
-                    class="form-control text-left mr-2"
-                  />
+                  <input type="text" id="end" class="form-control text-left" />
                   <span
-                    class="fa fa-calendar form-control-icon"
+                    class="bx bx-calendar form-control-icon"
                     id="fa-2"
                   ></span>
                 </div>
@@ -151,13 +152,19 @@
             />
           </div>
           <div class="col-6 mt-4">
-            <select class="selectpicker mt-1" data-live-search="true">
+            <select
+              class="form-control selectpicker mt-1"
+              data-live-search="true"
+              title="Seleccione moneda"
+            >
               <option value="1">USD</option>
               <option value="2">Euro</option>
               <option value="3">Peso</option>
             </select>
           </div>
-          <strong>Instrucciones de entrega</strong><br />
+          <div class="col-12 mb-2">
+            <strong>Instrucciones de entrega</strong>
+          </div>
           <div class="col-6 mb-3">
             <label>Dirección</label>
             <input
@@ -179,9 +186,9 @@
           <div class="col-6 mb-3">
             <label>Estado</label>
             <select
-              class="selectpicker"
+              class="form-control selectpicker"
               data-live-search="true"
-              placeholder="Seleccione el Estado"
+              title="Seleccione el Estado"
             >
               <option value="1">Mexico</option>
               <option value="2">Aguascalientes</option>
@@ -191,9 +198,9 @@
           <div class="col-6 mb-3">
             <label>País</label>
             <select
-              class="selectpicker"
+              class="form-control selectpicker"
               data-live-search="true"
-              placeholder="Seleccione el País"
+              title="Seleccione el País"
             >
               <option value="1">Mexico</option>
               <option value="2">Estados Unidos</option>
@@ -209,8 +216,10 @@
               placeholder="Ingresa el código postal"
             />
           </div>
-          <strong>Estatus</strong><br />
-          <div class="col-12 mb-2">
+          <div class="col-12">
+            <strong>Estatus</strong>
+          </div>
+          <div class="col-12 mb-3 mt-2">
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input mt-1"
@@ -220,8 +229,8 @@
                 value="option1"
               />
               <label class="form-check-label" for="inlineRadio1">
-                <span class="badge bg-success rounder"
-                  >Entregado&nbsp;<i class="fa fa-check"></i
+                <span class="badge bg-success"
+                  >Entregado&nbsp;<i class="bx bx-check-circle icon-white"></i
                 ></span>
               </label>
             </div>
@@ -234,8 +243,8 @@
                 value="option2"
               />
               <label class="form-check-label" for="inlineRadio2">
-                <span class="badge bg-warning rounder"
-                  >En proceso&nbsp;<i class="fa fa-clock-o"></i
+                <span class="badge bg-warning"
+                  >En proceso&nbsp;<i class="bx bx-error icon-white"></i
                 ></span>
               </label>
             </div>
@@ -248,14 +257,16 @@
                 value="option3"
               />
               <label class="form-check-label" for="inlineRadio3">
-                <span class="badge bg-danger rounder"
-                  >Estancado&nbsp;<i class="fa fa-exclamation-triangle"></i
+                <span class="badge bg-danger"
+                  >Estancado&nbsp;<i class="bx bx-error icon-white"></i
                 ></span>
               </label>
             </div>
           </div>
-          <strong>Seguridad</strong><br />
-          <div class="col-12 mb-2">
+          <div class="col-12">
+            <strong>Seguridad</strong>
+          </div>
+          <div class="col-12 mb-3 mt-2">
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input mt-1"
@@ -302,8 +313,8 @@
     $(".input-daterange").datepicker({
       format: "dd-mm-yyyy",
       autoclose: true,
-      calendarWeeks: true,
-      clearBtn: true,
+      calendarWeeks: false,
+      clearBtn: false,
       disableTouchKeyboard: true,
     });
   });

@@ -1,48 +1,431 @@
-<div class="col-md-6 col-lg-12 mt-4">
+<!-- ENCABEZADO -->
+<div class="col-12 mt-4 justify-content-between">
   <div class="row">
-    <div class="col-2">
+    <div class="col-md-3 col-lg-2">
       <select
-        class="selectpicker"
+        class="form-control selectpicker"
         data-live-search="true"
-        placeholder="Filtrar por periodo"
+        title="Filtrar por periodo"
       >
         <option value="1">October 31 - November 30</option>
         <option value="2">November 31 - December 30</option>
         <option value="3">January 31 - February 28</option>
       </select>
     </div>
-    <div class="col-2">
+    <div class="col-md-3 col-lg-2">
       <select
-        class="selectpicker"
+        class="form-control selectpicker"
         data-live-search="true"
-        placeholder="Filtrar por Owner"
+        title="Filtrar por Owner"
       >
         <option value="1">Floyd Miles</option>
         <option value="2">Floyd Miles</option>
         <option value="3">Floyd Miles</option>
       </select>
     </div>
-    <div class="col-5 text-end">
+    <div class="col-md-6 col-lg-4 mt-2" align="right">
       <strong
-        ><i class="fa fa-calendar-check-o"><span>Mis tareas</span></i></strong
+        ><i class="bx bx-calendar-check"><span>Mis tareas</span></i></strong
       >
-      <span class="header"><i class="fa fa-clock-o">Pendientes</i></span>
+      <span><i class="bx bx-time">Pendientes</i></span>
     </div>
-    <div class="col-3">
+    <div class="col-md-6 col-lg-3 mt-1">
       <form>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Buscar" />
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
+        <div class="input-wrapper">
+          <input
+            type="search"
+            class="input form-control search"
+            placeholder="Buscar"
+          />
+          <i class="bx bx-search input-icon"></i>
         </div>
       </form>
     </div>
+    <div class="col-md-6 col-lg-1">
+      <button class="btn btn-agregar mt-1" data-toggle="modal" data-target="#">
+        Agregar
+      </button>
+    </div>
   </div>
 </div>
-<div class="accordion mt-3" id="accordionExample">
+<!-- TAREAS -->
+<div class="col-12 mt-3">
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header task-card" id="headingOne">
+        <h5 class="mb-0 d-inline">
+          <button
+            class="task-header"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <i class="bx bx-chevron-down"></i
+            ><span class="task-title"
+              >Tareas del proyecto:&nbsp;<strong>Taritaxi</strong></span
+            >
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapseOne"
+        class="collapse show"
+        aria-labelledby="headingOne"
+        data-parent="#accordion"
+      >
+        <div
+          class="card-body table-task"
+          style="overflow-x: scroll"
+          id="child1"
+        >
+          <div class="card">
+            <div class="card-header outer">
+              <a
+                href="#"
+                class="child"
+                data-toggle="collapse"
+                data-target="#collapseOneA"
+                ><div
+                  class="justify-content-between"
+                  style="width: 100% !important"
+                >
+                  <div class="col-12 scroll">
+                    <div class="col-md-7 col-lg-7">
+                      <th>Tarea</th>
+                    </div>
+                    <div class="col-lg-1 ml-3">
+                      <th>Estatus</th>
+                    </div>
+                    <div class="col-lg-2 ml-1">
+                      <th>Periodo</th>
+                    </div>
+                    <div class="col-lg-2 ml-2">
+                      <th>Owner</th>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div
+              class="card-body collapse outer"
+              data-parent="#child1"
+              id="collapseOneA"
+            >
+              <div class="justify-content-between scroll">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <div class="col-md-10">
+                      <div class="myTest custom-control custom-checkbox">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input"
+                          id="customCheck1"
+                          checked
+                        />
+                        <label
+                          class="custom-control-label mt-1"
+                          for="customCheck1"
+                          >Verificar proceso de pago Taritaxi</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-2" align="right">
+                      <a
+                        href="#"
+                        class="btn text-end"
+                        data-bs-toggle="modal"
+                        data-bs-target="#example"
+                      >
+                        <i class="bx bx-plus-circle iconos"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-1">
+                    <span class="badge bg-success mb-1"
+                      >Entregado&nbsp;<i
+                        class="bx bx-check-circle icon-white"
+                      ></i
+                    ></span>
+                  </div>
+                  <div class="col-lg-2">
+                    <span>October 31 - November 31</span>
+                  </div>
+                  <div class="col-lg-2">
+                    <img
+                      src="public/image/user.png"
+                      class="rounded-circle"
+                      alt="..."
+                      width="20%"
+                    />&nbsp;Floyd Miles
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOneB"
+                >Child B</a
+              >
+            </div>
+            <div
+              class="card-body collapse"
+              data-parent="#child1"
+              id="collapseOneB"
+            >
+              Another flipp runch wolf moon tempor, sunt aliqua put a bird.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header task-card" id="headingTwo">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <i class="bx bx-chevron-down"></i
+            ><span class="task-title">
+              Tareas del proyecto:&nbsp;<strong>Plan de trabajo</strong></span
+            >
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapseTwo"
+        class="collapse"
+        aria-labelledby="headingTwo"
+        data-parent="#accordion"
+      >
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+          single-origin coffee nulla assumenda shoreditch et. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+          you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header task-card" id="headingThree">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            data-toggle="collapse"
+            data-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            <i class="bx bx-chevron-down"></i
+            ><span class="task-title">
+              Tareas del proyecto:&nbsp;<strong>SGC</strong></span
+            >
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapseThree"
+        class="collapse"
+        aria-labelledby="headingThree"
+        data-parent="#accordion"
+      >
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+          single-origin coffee nulla assumenda shoreditch et. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+          you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="col-12 mt-3">
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header task-card" id="headingOne">
+        <h5 class="mb-0">
+          <button
+            class="task-header"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <i class="bx bx-chevron-down"></i
+            ><span class="task-title"
+              >Tareas del proyecto:&nbsp;<strong>Taritaxi</strong></span
+            >
+          </button>
+        </h5>
+      </div>
+
+      <div
+        id="collapseOne"
+        class="collapse show p-0"
+        aria-labelledby="headingOne"
+        data-parent="#accordion"
+      >
+        <div class="card-body table-task">
+          <table width="100%">
+            <thead
+              data-toggle="collapse"
+              data-target="#tareas"
+              aria-expanded="true"
+              aria-controls="tareas"
+            >
+              <tr>
+                <th>Tarea</th>
+                <th>Estatus</th>
+                <th>Periodo</th>
+                <th>Owner</th>
+              </tr>
+            </thead>
+            <tbody
+              id="tareas"
+              class="collapse show p-0"
+              aria-labelledby="tareaOne"
+              data-parent="#accordion"
+            >
+              <div class="card-header" id="tareaOne">
+                <tr>
+                  <td width="60%">
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-10">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="tarea1"
+                              checked
+                            />
+                            <label class="form-check-label" for="tarea1">
+                              Verificar proceso de pago Taritaxi
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <a
+                            href="#"
+                            class="btn text-end"
+                            data-bs-toggle="modal"
+                            data-bs-target="#example"
+                          >
+                            <i class="bx bx-plus-circle iconos"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="10%">
+                    <span class="badge bg-success"
+                      >Entregado&nbsp;<i
+                        class="bx bx-check-circle icon-white"
+                      ></i
+                    ></span>
+                  </td>
+                  <td width="20%">October 31 - November 31</td>
+                  <td width="20%">
+                    <img
+                      src="public/image/user.png"
+                      class="rounded-circle"
+                      alt="..."
+                      width="15%"
+                    />&nbsp;Floyd Miles
+                  </td>
+                </tr>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Tareas del proyecto:&nbsp;<strong>Plan de trabajo</strong>
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapseTwo"
+        class="collapse"
+        aria-labelledby="headingTwo"
+        data-parent="#accordion"
+      >
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+          single-origin coffee nulla assumenda shoreditch et. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+          you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button
+            class="btn btn-link collapsed"
+            data-toggle="collapse"
+            data-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Tareas del proyecto:&nbsp;<strong>SGC</strong>
+          </button>
+        </h5>
+      </div>
+      <div
+        id="collapseThree"
+        class="collapse"
+        aria-labelledby="headingThree"
+        data-parent="#accordion"
+      >
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+          single-origin coffee nulla assumenda shoreditch et. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+          you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="accordion mt-3" id="accordionExample">
   <div class="accordion-item table-responsive">
     <h2 class="accordion-header" id="headingOne">
       <button
@@ -341,15 +724,9 @@
       <div class="accordion-body"></div>
     </div>
   </div>
-</div>
+</div> -->
 <script>
-  $(document).ready(function () {
-    $("#table-tarea").DataTable({
-      dom: "",
-      bSort: false,
-      language: {
-        url: "public/js/es-ES.json",
-      },
-    });
+  $(".outer").on("scroll", function () {
+    $(".outer").scrollLeft($(this).scrollLeft());
   });
 </script>

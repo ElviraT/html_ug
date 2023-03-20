@@ -21,3 +21,21 @@
     <i class="bx bx-file icon-white"></i> Documentos
   </button>
 </div>
+<script>
+  $("#proyecto").click(function () {
+    $("#pro").prop("hidden", false);
+    $("#proyecto").addClass("activo");
+    $("#tarea, #calendario, #compras, #ppis, #costo, #documento").removeClass(
+      "activo"
+    );
+    $("#tar, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
+  });
+  $("#tarea").click(function () {
+    $("#tar").prop("hidden", false);
+    $("#tarea").addClass("activo");
+    $(
+      "#proyecto, #calendario, #compras, #ppis, #costo, #documento"
+    ).removeClass("activo");
+    $("#pro, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
+  });
+</script>

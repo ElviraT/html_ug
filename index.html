@@ -17,9 +17,10 @@
     <link href="public/css/boxicons.min.css" rel="stylesheet" />
     <!-- select -->
     <link rel="stylesheet" href="public/css/bootstrap-select.min.css" />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="public/css/bootstrap-datepicker.css" />
     <!-- Styles personalizado -->
     <link rel="stylesheet" type="text/css" href="public/css/style2.css" />
-    <link rel="stylesheet" href="public/css/bootstrap-datepicker.css" />
   </head>
   <body>
     <div class="content">
@@ -32,8 +33,8 @@
         <div data-include="files/botonera"></div>
         <!-- tablas -->
         <div id="pro"><div data-include="projects/index"></div></div>
-        <!-- <div id="tar" hidden><div data-include="tareas/index"></div></div>
-        <div id="cal" hidden><div data-include="calendario/index"></div></div>
+        <div id="tar" hidden><div data-include="tareas/index"></div></div>
+        <!--<div id="cal" hidden><div data-include="calendario/index"></div></div>
         <div id="com" hidden><div data-include="compras/index"></div></div>
         <div id="ppi" hidden><div data-include="ppis/index"></div></div>
         <div id="cos" hidden><div data-include="costo/index"></div></div>
@@ -46,7 +47,7 @@
   <script src="public/js2/bootstrap.min.js" crossorigin="anonymous"></script>
   <!-- select -->
   <script src="public/js2/bootstrap-select.min.js"></script>
-  <script src="public/js/bootstrap-datepicker.js"></script>
+  <script src="public/js2/bootstrap-datepicker.js"></script>
   <script>
     $(function () {
       var includes = $("[data-include]");
@@ -54,15 +55,6 @@
         var file = "view/" + $(this).data("include") + ".html";
         $(this).load(file);
       });
-    });
-    // tablas
-    $("#proyecto").click(function () {
-      $("#pro").prop("hidden", false);
-      $("#proyecto").addClass("activo");
-      $("#tarea, #calendario, #compras, #ppis, #costo, #documento").removeClass(
-        "activo"
-      );
-      $("#tar, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
     });
   </script>
   <!-- modales -->
