@@ -1,11 +1,11 @@
-body {
+.contenido {
   width: 100%;
   padding: auto;
   font-family: "Montserrat" !important;
   color: #343633 !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-size: 12px !important;
-  font-style: normal;
+  font-style: normal !important;
   line-height: 16px !important;
 }
 html {
@@ -96,7 +96,7 @@ html {
   /* Auto layout */
   color: #fff;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 1px 10px;
   gap: 10px;
   font-size: 12px;
@@ -537,15 +537,9 @@ tr .next {
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
   background-color: #c8ffc8;
 }
-.outer {
-  white-space: nowrap;
-  overflow: scroll;
-  overflow-y: hidden;
+.tarea-1 {
+  border-left: 3px solid #516184;
 }
-::-webkit-scrollbar {
-  display: none;
-}
-.outer div {
-  float: none;
-  display: inline-block;
+.tarea-2 {
+  border-left: 3px solid #1071e5;
 }
