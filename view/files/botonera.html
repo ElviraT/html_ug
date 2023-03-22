@@ -1,41 +1,71 @@
 <div class="col-12 mt-3">
   <button type="button" class="btn botonera activo" id="proyecto">
-    <i class="bx bx-folder icon-white"></i> Proyectos
-  </button>
+    <i class="bx bx-folder icon-white"></i> Proyectos</button
+  >&nbsp;
   <button type="button" class="btn botonera" id="tarea">
-    <i class="bx bx-calendar-check icon-white"></i> Tareas
-  </button>
+    <i class="bx bx-calendar-check icon-white"></i> Tareas</button
+  >&nbsp;
   <button type="button" class="btn botonera" id="calendario">
-    <i class="bx bx-calendar icon-white"></i> Calendario
-  </button>
+    <i class="bx bx-calendar icon-white"></i> Calendario</button
+  >&nbsp;
+  <button type="button" class="btn botonera" id="partida">
+    <i class="bx bx-grid icon-white"></i> Partidas</button
+  >&nbsp;
+  <button type="button" class="btn botonera" id="rfq">
+    <i class="bx bx-receipt icon-white"></i> RFQ</button
+  >&nbsp;
   <button type="button" class="btn botonera" id="compras">
-    <i class="bx bx-cart icon-white"></i> Compras
-  </button>
+    <i class="bx bx-cart icon-white"></i> Compras</button
+  >&nbsp;
   <button type="button" class="btn botonera" id="ppis">
-    <i class="bx bx-coin-stack icon-white"></i> PPIs
-  </button>
+    <i class="bx bx-list-check icon-white"></i>Control de calidad</button
+  >&nbsp;
   <button type="button" class="btn botonera" id="costo">
-    <i class="bx bx-coin icon-white"></i> Costos
-  </button>
+    <i class="bx bx-coin icon-white"></i> Costos</button
+  >&nbsp;
   <button type="button" class="btn botonera" id="documento">
-    <i class="bx bx-file icon-white"></i> Documentos
-  </button>
+    <i class="bx bx-file icon-white"></i> Documentos</button
+  >&nbsp;
 </div>
 <script>
   $("#proyecto").click(function () {
     $("#pro").prop("hidden", false);
     $("#proyecto").addClass("activo");
-    $("#tarea, #calendario, #compras, #ppis, #costo, #documento").removeClass(
-      "activo"
-    );
-    $("#tar, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
+    $(
+      "#tarea, #calendario, #compras, #ppis, #costo, #documento, #partida"
+    ).removeClass("activo");
+    $("#tar, #cal, #com, #ppi, #cos, #doc, #par").prop("hidden", true);
   });
   $("#tarea").click(function () {
     $("#tar").prop("hidden", false);
     $("#tarea").addClass("activo");
     $(
-      "#proyecto, #calendario, #compras, #ppis, #costo, #documento"
+      "#proyecto, #calendario, #compras, #ppis, #costo, #documento, #partida"
     ).removeClass("activo");
-    $("#pro, #cal, #com, #ppi, #cos, #doc").prop("hidden", true);
+    $("#pro, #cal, #com, #ppi, #cos, #doc, #par").prop("hidden", true);
+  });
+  $("#calendario").click(function () {
+    $("#cal").prop("hidden", false);
+    $("#calendario").addClass("activo");
+    $(
+      "#tarea, #proyecto, #compras, #ppis, #costo, #documento, #partida"
+    ).removeClass("activo");
+    $("#tar, #pro, #com, #ppi, #cos, #doc, #par").prop("hidden", true);
+  });
+  $("#partida").click(function () {
+    $("#par").prop("hidden", false);
+    $("#partida").addClass("activo");
+    $(
+      "#tarea, #calendario, #proyecto, #compras, #ppis, #costo, #documento"
+    ).removeClass("activo");
+    $("#tar, #pro, #com, #ppi, #cos, #doc, #cal").prop("hidden", true);
+  });
+  $("#compras").click(function () {
+    $("#com").prop("hidden", false);
+    $("#compras").addClass("activo");
+    $(
+      "#tarea, #proyecto, #calendario, #ppis, #costo, #documento, #partida"
+    ).removeClass("activo");
+    $("#tar, #pro, #cal, #ppi, #cos, #doc, #par").prop("hidden", true);
   });
 </script>
