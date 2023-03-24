@@ -424,7 +424,7 @@ td {
   padding: 5px 15px;
   gap: 8px;
 
-  width: 81px;
+  width: auto;
   height: 34px;
 
   /* project/primary */
@@ -947,5 +947,178 @@ tr .next {
 
   flex: none;
   order: 0;
+  flex-grow: 0;
+}
+.btn-generar {
+  /* Button */
+
+  box-sizing: border-box;
+  text-decoration: none !important;
+  /* Auto layout */
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 8px;
+
+  width: 110px;
+  height: 34px;
+
+  /* project/primary */
+
+  background: #516184;
+  /* project/primary */
+
+  border: 1px solid #516184;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.tag-primary {
+  /* Tag */
+
+  /* Auto layout */
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+
+  width: 83px;
+  height: 24px;
+
+  /* project/blue */
+
+  background: #1071e5;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.title-rfq {
+  /* RFQ No. 845 */
+
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  /* identical to box height, or 200% */
+
+  display: flex;
+  align-items: center !important;
+
+  /* project/dark-gray */
+
+  color: #707070 !important;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.btn-cancelar {
+  /* Button */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 8px;
+
+  width: 85px;
+  height: 34px;
+
+  background: #ffffff;
+  /* project/dark */
+
+  border: 1px solid #343633;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.text-title-rfq {
+  /* Generar RFQ */
+  width: 107px;
+  height: 16px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  /* black-text */
+
+  color: #373936;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.sub-title-rfq {
+  /* Revisa y modifica la información del RFQ a generar */
+  width: 382px;
+  height: 17px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  /* identical to box height, or 113% */
+
+  /* gray */
+
+  color: #707070;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.añadir {
+  /* Añadir */
+  text-decoration: none;
+  width: 46px;
+  height: 15px;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height, or 115% */
+
+  /* primary-color */
+
+  color: #526183 !important;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
   flex-grow: 0;
 }

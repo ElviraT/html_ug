@@ -32,40 +32,48 @@
     $("#pro").prop("hidden", false);
     $("#proyecto").addClass("activo");
     $(
-      "#tarea, #calendario, #compras, #ppis, #costo, #documento, #partida"
+      "#tarea, #calendario, #compras, #ppis, #costo, #documento, #partida, #rfq"
     ).removeClass("activo");
-    $("#tar, #cal, #com, #ppi, #cos, #doc, #par").prop("hidden", true);
+    $("#tar, #cal, #com, #ppi, #cos, #doc, #par, #rf").prop("hidden", true);
   });
   $("#tarea").click(function () {
     $("#tar").prop("hidden", false);
     $("#tarea").addClass("activo");
     $(
-      "#proyecto, #calendario, #compras, #ppis, #costo, #documento, #partida"
+      "#proyecto, #calendario, #compras, #ppis, #costo, #documento, #partida, #rfq"
     ).removeClass("activo");
-    $("#pro, #cal, #com, #ppi, #cos, #doc, #par").prop("hidden", true);
+    $("#pro, #cal, #com, #ppi, #cos, #doc, #par, #rf").prop("hidden", true);
   });
   $("#calendario").click(function () {
     $("#cal").prop("hidden", false);
     $("#calendario").addClass("activo");
     $(
-      "#tarea, #proyecto, #compras, #ppis, #costo, #documento, #partida"
+      "#tarea, #proyecto, #compras, #ppis, #costo, #documento, #partida, #rfq"
     ).removeClass("activo");
-    $("#tar, #pro, #com, #ppi, #cos, #doc, #par").prop("hidden", true);
+    $("#tar, #pro, #com, #ppi, #cos, #doc, #par, #rf").prop("hidden", true);
   });
   $("#partida").click(function () {
     $("#par").prop("hidden", false);
     $("#partida").addClass("activo");
     $(
-      "#tarea, #calendario, #proyecto, #compras, #ppis, #costo, #documento"
+      "#tarea, #calendario, #proyecto, #compras, #ppis, #costo, #documento, #rfq"
     ).removeClass("activo");
-    $("#tar, #pro, #com, #ppi, #cos, #doc, #cal").prop("hidden", true);
+    $("#tar, #pro, #com, #ppi, #cos, #doc, #cal, #rf").prop("hidden", true);
+  });
+  $("#rfq").click(function () {
+    $("#rf").prop("hidden", false);
+    $("#rfq").addClass("activo");
+    $(
+      "#tarea, #calendario, #proyecto, #compras, #ppis, #costo, #documento, #partida"
+    ).removeClass("activo");
+    $("#tar, #pro, #com, #ppi, #cos, #doc, #cal, #par").prop("hidden", true);
   });
   $("#compras").click(function () {
     $("#com").prop("hidden", false);
     $("#compras").addClass("activo");
     $(
-      "#tarea, #proyecto, #calendario, #ppis, #costo, #documento, #partida"
+      "#tarea, #proyecto, #calendario, #ppis, #costo, #documento, #partida, #rfq"
     ).removeClass("activo");
-    $("#tar, #pro, #cal, #ppi, #cos, #doc, #par").prop("hidden", true);
+    $("#tar, #pro, #cal, #ppi, #cos, #doc, #par, #rf").prop("hidden", true);
   });
 </script>

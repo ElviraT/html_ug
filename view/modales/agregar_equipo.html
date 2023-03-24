@@ -1,0 +1,100 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="agregar_equipoModal"
+  tabindex="-1"
+  aria-labelledby="agregar_equipoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="agregar_equipoModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Agregar equipo
+        </h1>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <label>Descripción</label>
+            <select
+              class="form-control selectpicker"
+              data-live-search="true"
+              title="Seleccione el elemento"
+            >
+              <option value="1">test</option>
+              <option value="2">test</option>
+              <option value="3">test</option>
+            </select>
+          </div>
+          <div class="col-12 mb-3">
+            <a href="#" class="añadir"><i class="bx bx-plus"></i> Añadir</a>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Pu</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa la cantidad"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Moneda</label>
+            <select
+              class="form-control selectpicker"
+              data-live-search="true"
+              title="Selecciona la moneda"
+            >
+              <option value="1">test</option>
+              <option value="2">test</option>
+              <option value="3">test</option>
+            </select>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Cantidad de elementos</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa la cantidad"
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <span>Documento de referencia (Cotización u orden de compra)</span
+            ><br />
+            <div class="form-check form-check-inline mt-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1"
+                >Enlace (URL)</label
+              >
+            </div>
+            <div class="form-check form-check-inline mt-2">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineRadio2"
+                >Subir documento</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
