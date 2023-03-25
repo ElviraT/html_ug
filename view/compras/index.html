@@ -1,24 +1,30 @@
 <!-- header -->
 <div class="col-md-6 col-lg-12 mt-4">
   <div class="row">
-    <div class="col-2">
-      <small>Presupuesto</small> <br />
-      <span class="badge bg-compras-primary"
-        ><i class="bx bx-money icon-white"></i>&nbsp;$ 4,250,000.00</span
-      >
+    <div class="col-8">
+      <div class="row">
+        <div class="col-2">
+          <small>Presupuesto</small> <br />
+          <span class="badge bg-compras-primary"
+            ><i class="bx bx-money icon-white"></i>&nbsp;$ 4,250,000.00</span
+          >
+        </div>
+        <div class="col-2">
+          <small>Gastado</small> <br />
+          <span class="badge bg-compras-warning"
+            ><i class="bx bx-wallet icon-white"></i>&nbsp;$ 4,250,000.00</span
+          >
+        </div>
+        <div class="col-8">
+          <small>Por pagar</small> <br />
+          <span class="badge bg-compras-danger"
+            ><i class="bx bx-credit-card icon-white"></i>&nbsp;$
+            4,250,000.00</span
+          >
+        </div>
+      </div>
     </div>
-    <div class="col-2">
-      <small>Gastado</small> <br />
-      <span class="badge bg-compras-warning"
-        ><i class="bx bx-wallet icon-white"></i>&nbsp;$ 4,250,000.00</span
-      >
-    </div>
-    <div class="col-4">
-      <small>Por pagar</small> <br />
-      <span class="badge bg-compras-danger"
-        ><i class="bx bx-credit-card icon-white"></i>&nbsp;$ 4,250,000.00</span
-      >
-    </div>
+
     <div class="col-3">
       <form>
         <div class="input-wrapper">
@@ -40,14 +46,14 @@
 <div class="col-12 mt-3">
   <div id="accordion">
     <div class="card">
-      <div class="card-header task-card" id="headingOne">
+      <div class="card-header task-card" id="comprasheadingOne">
         <h5 class="mb-0 d-inline">
           <button
             class="task-header"
             data-toggle="collapse"
-            data-target="#collapseOne"
+            data-target="#comprascollapseOne"
             aria-expanded="true"
-            aria-controls="collapseOne"
+            aria-controls="comprascollapseOne"
           >
             <i class="bx bx-chevron-down"></i
             ><span class="task-title"
@@ -57,46 +63,42 @@
         </h5>
       </div>
       <div
-        id="collapseOne"
+        id="comprascollapseOne"
         class="collapse show"
-        aria-labelledby="headingOne"
+        aria-labelledby="comprasheadingOne"
         data-parent="#accordion"
       >
         <div class="table-responsive">
-          <table width="100%">
+          <table>
             <thead>
               <tr>
-                <th width="20%">RFQ</th>
-                <th width="15%">Solicitud</th>
-                <th width="7%">Estado</th>
-                <th width="6%">Cotizaciones</th>
-                <th width="6%">Orden compra</th>
-                <th width="9%">Fecha de envío</th>
-                <th width="9%">Fecha de entrega</th>
+                <th colspan="3">RFQ</th>
+                <th>Solicitud</th>
+                <th>Estado</th>
+                <th>Cotizaciones</th>
+                <th>Orden compra</th>
+                <th>Fecha de envío</th>
+                <th>Fecha de entrega</th>
                 <th>Aprobados por Ingeniería</th>
                 <th>Equipos en almacén</th>
                 <th>Importe</th>
                 <th>Moneda</th>
-                <th width="9%">Fecha compra</th>
+                <th>Fecha compra</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <!-- rfq -->
                 <td>
-                  <div class="input-group">
-                    <a
-                      href="#"
-                      class="btn btn-light btn-sm text-end"
-                      data-bs-toggle="modal"
-                      data-bs-target="#example"
-                    >
-                      <i class="bx bxs-download"></i>
-                    </a>
-
-                    <label class="mt-2"> No. registro </label>&nbsp;&nbsp;
-                    <span class="badge bg-registro">351</span>
-                  </div>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">351</span></a
+                  >
                 </td>
                 <!-- solicitud -->
                 <td>
@@ -145,19 +147,15 @@
               <tr>
                 <!-- rfq -->
                 <td>
-                  <div class="input-group">
-                    <a
-                      href="#"
-                      class="btn btn-light btn-sm text-end"
-                      data-bs-toggle="modal"
-                      data-bs-target="#example"
-                    >
-                      <i class="bx bxs-download"></i>
-                    </a>
-
-                    <label class="mt-2"> No. registro </label>&nbsp;&nbsp;
-                    <span class="badge bg-registro">352</span>
-                  </div>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">352</span></a
+                  >
                 </td>
                 <!-- solicitud -->
                 <td>
@@ -206,19 +204,15 @@
               <tr>
                 <!-- rfq -->
                 <td>
-                  <div class="input-group">
-                    <a
-                      href="#"
-                      class="btn btn-light btn-sm text-end"
-                      data-bs-toggle="modal"
-                      data-bs-target="#example"
-                    >
-                      <i class="bx bxs-download"></i>
-                    </a>
-
-                    <label class="mt-2"> No. registro </label>&nbsp;&nbsp;
-                    <span class="badge bg-registro">353</span>
-                  </div>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">353</span></a
+                  >
                 </td>
                 <!-- solicitud -->
                 <td>
@@ -270,14 +264,14 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-header task-card" id="headingTwo">
+      <div class="card-header task-card" id="comprasheadingTwo">
         <h5 class="mb-0">
           <button
             class="task-header collapsed"
             data-toggle="collapse"
-            data-target="#collapseTwo"
+            data-target="#comprascollapseTwo"
             aria-expanded="false"
-            aria-controls="collapseTwo"
+            aria-controls="comprascollapseTwo"
           >
             <i class="bx bx-chevron-down"></i
             ><span class="task-title">
@@ -287,9 +281,9 @@
         </h5>
       </div>
       <div
-        id="collapseTwo"
+        id="comprascollapseTwo"
         class="collapse"
-        aria-labelledby="headingTwo"
+        aria-labelledby="comprasheadingTwo"
         data-parent="#accordion"
       >
         <div class="card-body">
@@ -306,14 +300,14 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-header task-card" id="headingThree">
+      <div class="card-header task-card" id="comprasheadingThree">
         <h5 class="mb-0">
           <button
             class="task-header collapsed"
             data-toggle="collapse"
-            data-target="#collapseThree"
+            data-target="#comprascollapseThree"
             aria-expanded="false"
-            aria-controls="collapseThree"
+            aria-controls="comprascollapseThree"
           >
             <i class="bx bx-chevron-down"></i
             ><span class="task-title">
@@ -323,9 +317,9 @@
         </h5>
       </div>
       <div
-        id="collapseThree"
+        id="comprascollapseThree"
         class="collapse"
-        aria-labelledby="headingThree"
+        aria-labelledby="comprasheadingThree"
         data-parent="#accordion"
       >
         <div class="card-body">
