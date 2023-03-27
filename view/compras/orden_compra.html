@@ -1,0 +1,264 @@
+<div class="col-12 mt-3">
+  <div class="justify-content-between">
+    <div class="row">
+      <div class="col-6">
+        <div class="col">
+          <div>
+            <strong class="detalle-rfq">Generar orden compra</strong>
+          </div>
+          <div class="row">
+            <span class="sub-title-detalle ml-3 mt-2">RFQ:</span>&nbsp;<span
+              class="tag-detalle mt-1"
+              >#&nbsp;351</span
+            >
+          </div>
+        </div>
+        <div class="col mt-2">
+          <button
+            class="btn-agregar"
+            data-toggle="modal"
+            data-target="#empresaModal"
+          >
+            <strong>Agregar empresa</strong>
+          </button>
+        </div>
+      </div>
+      <div class="col-6" align="right">
+        <button class="btn-orden">
+          <div class="row">
+            <div class="col-3 mt-2">
+              <i class="bx bx-barcode icon-white icon-button"></i>
+            </div>
+            <div class="col-9">
+              No. de orden <br />
+              <strong><h5>7852</h5></strong>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mt-3">
+    <div class="card p-1 border-card">
+      <div class="col-12">
+        <div class="justify-content-between">
+          <div class="row">
+            <div class="col-6">
+              <strong style="color: #373936; font-weight: 700; font-size: 14px"
+                >Kyland Technology .</strong
+              >
+              <span>KYT951103H34</span><br />
+              <span
+                >Andador Pensamiento #190 Fracc. Campestre las Flores Irapuato,
+                Guanajuato - Mexico, 36625</span
+              >
+            </div>
+            <div class="col-6" align="right">
+              <a href="#" data-toggle="modal" data-target="#empresaModal"
+                ><strong><i class="bx bx-pencil"></i></strong
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12"><strong>Entrega</strong></div>
+      <div class="col-12">
+        <div class="justify-content-between">
+          <div class="row">
+            <div class="col-6">
+              <span
+                ><i class="bx bx-map"></i> 6265 Brockport Spencerport Rd,
+                Brockport NY 14420</span
+              ><br />
+              <span>Forma de entrega: </span
+              ><span class="badge bg-info">Envio</span>
+            </div>
+            <div class="col-6" align="right">
+              <i class="bx bx-money"></i> <span>Anticipo: $120,588.00 USD</span
+              ><strong>. 12 de marzo,2023</strong><br />
+              <i class="bx bx-check-circle"></i
+              ><span>Liquidación: $520,588.00 USD</span
+              ><strong> . 12de agosto, 2023</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mt-1">
+    <div class="card p-4">
+      <div class="justify-content-between mt-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-md-12 col-lg-7 mt-2">
+              <button
+                type="button"
+                class="btn btn-success"
+                id="btn-enviar"
+                onclick="enviar('btn')"
+              >
+                <i class="bx bx-mail-send icon-white"></i> Enviar orden
+              </button>
+              <a
+                href="#"
+                onclick="enviar('link')"
+                id="link-enviar"
+                style="color: green"
+                hidden
+                ><strong
+                  ><i
+                    class="bx bx-mail-send mt-2"
+                    style="color: green !important"
+                  ></i>
+                  &nbsp;Orden enviada: 12 de feb 2023</strong
+                ></a
+              >
+            </div>
+            <div class="col-md-6 col-lg-3 mt-1" align="right">
+              <form>
+                <div class="input-wrapper">
+                  <input
+                    type="search"
+                    class="input form-control search"
+                    placeholder="Buscar"
+                  />
+                  <i class="bx bx-search input-icon"></i>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 col-lg-2" align="right">
+              <button
+                class="btn btn-agregar mt-1"
+                data-toggle="modal"
+                data-target="#addpartidaModal"
+              >
+                Agregar partida
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive mt-2">
+        <table width="100%">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Descripción</th>
+              <th>Cantidad</th>
+              <th>Número de partida</th>
+              <th>Tiempo de entrega</th>
+              <th>Tiempo de garantía</th>
+              <th>PU</th>
+              <th>Importe total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- edit -->
+              <td>
+                <a href="#" data-toggle="modal" data-target="#editRegistroModal"
+                  ><i class="bx bx-pencil"></i
+                ></a>
+              </td>
+              <!-- descripción -->
+              <td>Computadora Industrial, Hyperie8300</td>
+              <!-- cantidad -->
+              <td><span class="bg bg-primary">10</span></td>
+              <!-- número de partida -->
+              <td>Hyperie8300-01-01-04-HVHV-00</td>
+              <!-- tiempo de entrega -->
+              <td>90 días</td>
+              <!-- tiempo de garantia -->
+              <td>7 meses</td>
+              <!-- pu -->
+              <td>$ 1500.00</td>
+              <!-- importe total -->
+              <td>$ 15,000.00</td>
+            </tr>
+            <tr>
+              <!-- edit -->
+              <td>
+                <a href="#" data-toggle="modal" data-target="#editRegistroModal"
+                  ><i class="bx bx-pencil"></i
+                ></a>
+              </td>
+              <!-- descripción -->
+              <td>Computadora Industrial, Hyperie8300</td>
+              <!-- cantidad -->
+              <td><span class="bg bg-primary">10</span></td>
+              <!-- número de partida -->
+              <td>Hyperie8300-01-01-04-HVHV-00</td>
+              <!-- tiempo de entrega -->
+              <td>90 días</td>
+              <!-- tiempo de garantia -->
+              <td>24 meses</td>
+              <!-- pu -->
+              <td>$ 2,370.00</td>
+              <!-- importe total -->
+              <td>$ 23,700.00</td>
+            </tr>
+            <tr>
+              <!-- edit -->
+              <td>
+                <a href="#" data-toggle="modal" data-target="#editRegistroModal"
+                  ><i class="bx bx-pencil"></i
+                ></a>
+              </td>
+              <!-- descripción -->
+              <td>Computadora Industrial, Hyperie8300</td>
+              <!-- cantidad -->
+              <td><span class="bg bg-primary">10</span></td>
+              <!-- número de partida -->
+              <td>Hyperie8300-01-01-04-HVHV-00</td>
+              <!-- tiempo de entrega -->
+              <td>90 días</td>
+              <!-- tiempo de garantia -->
+              <td>36 meses</td>
+              <!-- pu -->
+              <td>$ 1500.00</td>
+              <!-- importe total -->
+              <td>$ 15,000.00</td>
+            </tr>
+            <tr>
+              <!-- edit -->
+              <td>
+                <a href="#" data-toggle="modal" data-target="#editRegistroModal"
+                  ><i class="bx bx-pencil"></i
+                ></a>
+              </td>
+              <!-- descripción -->
+              <td>Computadora Industrial, Hyperie8300</td>
+              <!-- cantidad -->
+              <td><span class="bg bg-primary">10</span></td>
+              <!-- número de partida -->
+              <td>Hyperie8300-01-01-04-HVHV-00</td>
+              <!-- tiempo de entrega -->
+              <td>90 días</td>
+              <!-- tiempo de garantia -->
+              <td>12 meses</td>
+              <!-- pu -->
+              <td>$ 1500.00</td>
+              <!-- importe total -->
+              <td>$ 15,000.00</td>
+            </tr>
+            <tr>
+              <td colspan="7" align="right"><strong>Subtotal</strong></td>
+              <td><strong>$68,700.00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function enviar(boton) {
+    if (boton == "btn") {
+      $("#btn-enviar").attr("hidden", true);
+      $("#link-enviar").attr("hidden", false);
+    } else {
+      $("#btn-enviar").attr("hidden", false);
+      $("#link-enviar").attr("hidden", true);
+    }
+  }
+</script>

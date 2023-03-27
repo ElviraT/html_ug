@@ -1,0 +1,180 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="empresaModal"
+  tabindex="-1"
+  aria-labelledby="empresaModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="empresaModalLabel">
+          <i class="bx bx-plus ico-add"></i>Agregar empresa
+        </h1>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label>Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nombre"
+              placeholder="Ingrese el nombre"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>RFC</label>
+            <input
+              type="text"
+              class="form-control"
+              name="rfc"
+              placeholder="Ingrese el RFC"
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <label>Dirección</label>
+            <textarea
+              name="direccion"
+              id="direccion"
+              rows="3"
+              class="form-control"
+              placeholder="Ingrese la dirección"
+            ></textarea>
+          </div>
+          <div class="col-12 mb-2">
+            <strong>Entrega</strong>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Forma de entrega</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa el correo"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label class="form-control-placeholder" id="end-p"
+              >Fecha de entrega</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                id="entrega"
+                class="form-control text-left mr-2"
+                placeholder="dd/mm/aaa"
+              />
+              <span class="bx bx-calendar form-control-icon" id="fa-2"></span>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <label>Dirección de entrega</label>
+            <textarea
+              name="direccion_entrega"
+              id="direccion_entrega"
+              rows="3"
+              class="form-control"
+              placeholder="Ingrese la dirección"
+            ></textarea>
+          </div>
+          <div class="col-12 mb-2">
+            <strong>Anticipo</strong>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Monto del anticipo</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese la cantidad"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Moneda del anticipo</label>
+            <select
+              class="form-control selectpicker"
+              data-live-search="true"
+              title="Selecciona la moneda"
+            >
+              <option value="1">USD</option>
+              <option value="2">USD</option>
+              <option value="3">USD</option>
+            </select>
+          </div>
+          <div class="col-6 mb-3">
+            <label class="form-control-placeholder" id="end-p"
+              >Fecha del anticipo</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                id="anticipo"
+                class="form-control text-left mr-2"
+                placeholder="dd/mm/aaa"
+              />
+              <span class="bx bx-calendar form-control-icon" id="fa-3"></span>
+            </div>
+          </div>
+          <div class="col-12 mb-2">
+            <strong>Liquidación</strong>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Monto de la liquidación</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese la cantidad"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Moneda de la liquidación</label>
+            <select
+              class="form-control selectpicker"
+              data-live-search="true"
+              title="Selecciona la moneda"
+            >
+              <option value="1">USD</option>
+              <option value="2">USD</option>
+              <option value="3">USD</option>
+            </select>
+          </div>
+          <div class="col-6 mb-3">
+            <label class="form-control-placeholder" id="end-p"
+              >Fecha de la liquidación</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                id="liquidacion"
+                class="form-control text-left mr-2"
+                placeholder="dd/mm/aaa"
+              />
+              <span class="bx bx-calendar form-control-icon" id="fa-3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+  $(document).ready(function () {
+    $("#entrega, #anticipo, #liquidacion").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+    });
+  });
+</script>

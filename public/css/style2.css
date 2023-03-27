@@ -43,7 +43,6 @@ html {
 .migas a {
   text-decoration: none;
   color: #423f3f !important;
-  pointer-events: none;
 }
 .regresar {
   position: absolute;
@@ -1221,4 +1220,55 @@ tr .next {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+.btn-orden {
+  /* Auto layout */
+  color: #fff;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 12px 20px 12px 15px !important;
+  gap: 5px !important;
+
+  height: 60px !important;
+
+  /* Highlight/blue */
+
+  background: #66a9f8 !important;
+  border-radius: 10px !important;
+  border: #66a9f8;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.icon-button {
+  width: 20px !important;
+  height: 16px !important;
+}
+.border-card {
+  /* Container */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  color: #707070;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7px 10px;
+  gap: 10px;
+
+  background: #ffffff;
+  /* project/primary */
+
+  border-left: 10px solid #516184;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
 }

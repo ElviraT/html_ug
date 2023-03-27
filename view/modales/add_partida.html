@@ -1,17 +1,17 @@
 <!-- Modal -->
 <div
   class="modal fade"
-  id="agregar_equipoModal"
+  id="addpartidaModal"
   tabindex="-1"
-  aria-labelledby="agregar_equipoModalLabel"
+  aria-labelledby="addpartidaModalLabel"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="agregar_equipoModalLabel">
+        <h1 class="modal-title fs-5" id="addpartidaModalLabel">
           <i class="bx bx-plus ico-add"></i>
-          Agregar equipo
+          Agregar Partida
         </h1>
       </div>
       <div class="modal-body p-4">
@@ -52,40 +52,36 @@
             </select>
           </div>
           <div class="col-6 mb-3">
-            <label>Cantidad de elementos</label>
+            <label>Cantidad</label>
             <input
               type="text"
               class="form-control"
               placeholder="Ingresa la cantidad"
             />
           </div>
-          <div class="col-12 mb-3">
-            <span>Documento de referencia (Cotización u orden de compra)</span
-            ><br />
-            <div class="form-check form-check-inline mt-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1"
-                >Enlace (URL)</label
-              >
-            </div>
-            <div class="form-check form-check-inline mt-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio2"
-                value="option2"
-              />
-              <label class="form-check-label" for="inlineRadio2"
-                >Subir documento</label
-              >
-            </div>
+          <div class="col-6 mb-3">
+            <label>Número de partida</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese el número"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Tiempo de entrega</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese la cantidad"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Tiempo de garantía (meses)</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese la cantidad en meses"
+            />
           </div>
         </div>
       </div>
@@ -98,10 +94,3 @@
     </div>
   </div>
 </div>
-<script>
-  $(document).ready(function () {
-    $(function () {
-      $(".selectpicker").selectpicker();
-    });
-  });
-</script>

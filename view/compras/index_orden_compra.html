@@ -19,6 +19,10 @@
     />
     <!-- iconos -->
     <link href="../../public/css/boxicons.min.css" rel="stylesheet" />
+    <!-- select -->
+    <link rel="stylesheet" href="../../public/css/bootstrap-select.min.css" />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../../public/css/bootstrap-datepicker.css" />
     <!-- Styles personalizado -->
     <link rel="stylesheet" type="text/css" href="../../public/css/style2.css" />
   </head>
@@ -30,7 +34,7 @@
         <div class="col-12">
           <div class="row mt-5">
             <div class="col-md-12 col-lg-6 mt-3">
-              <a href="/"
+              <a href="javascript: history.back()"
                 ><i class="bx bx-arrow-back"></i>
                 <span class="regresar">&nbsp;&nbsp;Regresar</span></a
               >
@@ -44,7 +48,7 @@
                   </li>
                   <li class="breadcrumb-item"><a href="#">Proyectos</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Detalle RFQ
+                    Resumen de gastos
                   </li>
                 </ol>
               </nav>
@@ -54,14 +58,18 @@
       </div>
     </div>
     <div class="container-fluid">
-      <div data-include="../../compras/detalle"></div>
+      <div data-include="../../compras/orden_compra"></div>
     </div>
   </body>
   <script src="../../public/js/jquery-3.6.3.js"></script>
+  <script src="../../public/js2/popper.min.js" crossorigin="anonymous"></script>
   <script
     src="../../public/js2/bootstrap.min.js"
     crossorigin="anonymous"
   ></script>
+  <!-- select -->
+  <script src="../../public/js2/bootstrap-select.min.js"></script>
+  <script src="../../public/js2/bootstrap-datepicker.js"></script>
   <script>
     $(function () {
       var includes = $("[data-include]");
@@ -71,4 +79,8 @@
       });
     });
   </script>
+  <!-- modales -->
+  <div data-include="../../modales/empresa"></div>
+  <div data-include="../../modales/add_partida"></div>
+  <div data-include="../../modales/editRegistro"></div>
 </html>

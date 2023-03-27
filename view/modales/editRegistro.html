@@ -1,0 +1,66 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="editRegistroModal"
+  tabindex="-1"
+  aria-labelledby="editRegistroModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editRegistroModalLabel">
+          <i class="bx bx-pencil ico-add"></i>
+          Editar registro
+        </h1>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <label>Descripción del proveedor</label>
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              rows="3"
+              class="form-control"
+              placeholder="Ingresa la descripción"
+            ></textarea>
+          </div>
+          <div class="col-6 mb-3">
+            <label>PU</label>
+            <input
+              type="text"
+              class="form-control"
+              name="pu"
+              placeholder="Ingresa la cantidad"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Importe</label>
+            <input
+              type="text"
+              class="form-control"
+              name="importe"
+              placeholder="Ingresa la cantidad"
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <label>Tiempo de garantía (meses)</label>
+            <input
+              type="text"
+              class="form-control"
+              name="tiempo_garantia"
+              placeholder="Ingresa la cantidad de meses"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
