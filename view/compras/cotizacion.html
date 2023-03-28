@@ -1,0 +1,174 @@
+<div class="col-12 mt-2">
+  <div class="card">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-10">Lista de cotizaciones</div>
+            <div class="col-2">
+              <i class="bx bxs-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div id="accordion" class="p-2">
+          <div class="card">
+            <div class="card-header" id="visorheadingOne">
+              <a href="#"><i class="bx bx-pencil"></i></a>
+              <button
+                class="btn collapsed"
+                data-toggle="collapse"
+                data-target="#visorcollapseOne"
+                aria-expanded="false"
+                aria-controls="visorcollapseOne"
+                onclick="ver_pdf('../../public/pdf/Factura.pdf')"
+              >
+                <div class="col-12" align="left">
+                  <strong>J&R Solutions</strong>
+                </div>
+                <div class="col-12">
+                  <i class="bx bx-calendar"></i>Aug 27,2019&nbsp;<i
+                    class="bx bx-money"
+                  ></i
+                  >$57,500.00
+                </div>
+              </button>
+            </div>
+
+            <div
+              id="visorcollapseOne"
+              class="collapse"
+              aria-labelledby="visorheadingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div class="row">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <i class="bx bx-building-house"></i>&nbsp;Proveedor
+                        </td>
+                        <td align="right">GE</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bx bx-money"></i>&nbsp;Importe</td>
+                        <td align="right">$15,000.00 <strong>USD</strong></td>
+                      </tr>
+                      <tr>
+                        <td><i class="bx bx-map"></i>&nbsp;Entrega</td>
+                        <td align="right">137 Market St Singapore 048943</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bx bx-arch"></i>&nbsp;Requiere aduana</td>
+                        <td align="right"><strong>Si</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bx-time"></i>&nbsp;Tiempo de garantía
+                        </td>
+                        <td align="right">30 días</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bx-calendar"></i>&nbsp;Fecha de entrega
+                        </td>
+                        <td align="right">Aug 27, 2019</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="visorheadingTwo">
+              <a href="#"><i class="bx bx-pencil"></i></a>
+              <button
+                class="btn"
+                data-toggle="collapse"
+                data-target="#visorcollapseTwo"
+                aria-expanded="true"
+                aria-controls="visorcollapseTwo"
+                onclick="ver_pdf('../../public/pdf/Intersalud.pdf')"
+              >
+                <div class="col-12" align="left">
+                  <strong>GE</strong>
+                </div>
+                <div class="col-12">
+                  <i class="bx bx-calendar"></i>Aug 27,2019&nbsp;<i
+                    class="bx bx-money"
+                  ></i
+                  >$57,500.00
+                </div>
+              </button>
+            </div>
+            <div
+              id="visorcollapseTwo"
+              class="collapse show"
+              aria-labelledby="visorheadingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div class="row">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <i class="bx bx-building-house"></i>&nbsp;Proveedor
+                        </td>
+                        <td align="right">GE</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bx bx-money"></i>&nbsp;Importe</td>
+                        <td align="right">$15,000.00 <strong>USD</strong></td>
+                      </tr>
+                      <tr>
+                        <td><i class="bx bx-map"></i>&nbsp;Entrega</td>
+                        <td align="right">137 Market St Singapore 048943</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bx bx-arch"></i>&nbsp;Requiere aduana</td>
+                        <td align="right"><strong>Si</strong></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bx-time"></i>&nbsp;Tiempo de garantía
+                        </td>
+                        <td align="right">30 días</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="bx bx-calendar"></i>&nbsp;Fecha de entrega
+                        </td>
+                        <td align="right">Aug 27, 2019</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="col-12" align="right">
+            <button class="btn btn-agregar">Agregar cotización</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-8 p-0">
+        <object
+          data="../../public/pdf/Intersalud.pdf"
+          type="application/pdf"
+          width="100%"
+          height="100%"
+          id="visor"
+        ></object>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function ver_pdf(url) {
+    $("#visor").attr("data", url);
+  }
+</script>
