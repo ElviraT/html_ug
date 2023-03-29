@@ -1,0 +1,348 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="proveedor"
+  tabindex="-1"
+  aria-labelledby="proveedorModalLabel"
+  aria-hidden="true"
+  style="overflow-y: scroll"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="proveedorModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Administrar proveedores
+        </h1>
+      </div>
+      <div class="modal-body p-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="content-proveedores col-4 p-2">
+              <strong class="mb-2">Proveedores</strong>
+              <span>Consulta los proveedores existentes</span>
+              <hr />
+              <div class="borde-green">
+                <div>
+                  <span class="proveedor">Razón comercial 1</span><br />
+                  <span class="sub-proveedor">Habilitado</span>
+                </div>
+              </div>
+              <div class="borde-green mt-2">
+                <div>
+                  <span class="proveedor">Razón comercial 2</span><br />
+                  <span class="sub-proveedor">Habilitado</span>
+                </div>
+              </div>
+              <div class="borde-red mt-2">
+                <div>
+                  <span class="proveedor">Razón comercial 3</span><br />
+                  <span class="sub-proveedor">Deshabilitado</span>
+                </div>
+              </div>
+              <div class="borde-green mt-2">
+                <div>
+                  <span class="proveedor">Razón comercial 4</span><br />
+                  <span class="sub-proveedor">Habilitado</span>
+                </div>
+              </div>
+              <div class="borde-green mt-2">
+                <div>
+                  <span class="proveedor">Razón comercial 5</span><br />
+                  <span class="sub-proveedor">Habilitado</span>
+                </div>
+              </div>
+              <div class="borde-red mt-2">
+                <div>
+                  <span class="proveedor">Razón comercial 6</span><br />
+                  <span class="sub-proveedor">deshabilitado</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="col-12 mb-3">
+                <label>RFC</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa el RFC sin espacios"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label>Razón social</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa la razón social completa de la empresa"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label>Razón comercial</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa el alias comercial corto"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label>Dirección fiscal</label>
+                <textarea
+                  name="direccion"
+                  id="direccion"
+                  rows="3"
+                  class="form-control"
+                  placeholder="Ingresa la dirección fiscal completa"
+                ></textarea>
+              </div>
+              <div class="col-12 mb-3">
+                <label> Habilitado </label>&nbsp;
+                <label class="switch mb-3">
+                  <input type="checkbox" class="success" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="col-12">
+                <div class="row justify-content-between">
+                  <strong class="mt-2">Cuenta bancaria nacional</strong>
+                  <button class="btn-cancelar">
+                    <i class="bx bx-plus"></i>Agregar
+                  </button>
+                </div>
+              </div>
+              <div class="card p-2 mt-3">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        src="../../public/image/santander.png"
+                        class="rounded-circle"
+                        width="40"
+                        height="40"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <strong>Santander .</strong
+                        ><span>Cuenta:&nbsp;5544888911230044</span><br />
+                        <span
+                          ><i class="bx bx-key"></i>&nbsp;CLABE:
+                          1005558877022228</span
+                        >&nbsp;<i class="bx bx-coin"></i>&nbsp;<span> USD</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-2 mt-3">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        src="../../public/image/bbva.png"
+                        class="rounded-circle"
+                        width="40"
+                        height="40"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <strong>BBVA .</strong
+                        ><span>Cuenta:&nbsp;5544888911230044</span><br />
+                        <span
+                          ><i class="bx bx-key"></i>&nbsp;CLABE:
+                          1005558877022228</span
+                        >&nbsp;<i class="bx bx-coin"></i>&nbsp;<span> MX</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-2 mt-3">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        src="../../public/image/santander.png"
+                        class="rounded-circle"
+                        width="40"
+                        height="40"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <strong>Santander .</strong
+                        ><span>Cuenta:&nbsp;5544888911230044</span><br />
+                        <span
+                          ><i class="bx bx-key"></i>&nbsp;CLABE:
+                          1005558877022228</span
+                        >&nbsp;<i class="bx bx-coin"></i>&nbsp;<span> USD</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="row justify-content-between">
+                  <strong class="mt-2">Cuenta bancaria internacional</strong>
+                  <button class="btn-cancelar">
+                    <i class="bx bx-plus"></i>Agregar
+                  </button>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="content-bancoI mt-3">
+                  <strong>Company name .</strong> <span>Bank name</span><br />
+                  <span
+                    >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
+                    2000743691</span
+                  ><br />
+                  <span
+                    ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood, Maine
+                    98380 <i class="bx bx-coin"></i>USD</span
+                  >
+                </div>
+                <div class="content-bancoI mt-3">
+                  <strong>Company name .</strong> <span>Bank name</span><br />
+                  <span
+                    >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
+                    2000743691</span
+                  ><br />
+                  <span
+                    ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood, Maine
+                    98380 <i class="bx bx-coin"></i>USD</span
+                  >
+                </div>
+                <div class="content-bancoI mt-3">
+                  <strong>Company name .</strong> <span>Bank name</span><br />
+                  <span
+                    >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
+                    2000743691</span
+                  ><br />
+                  <span
+                    ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood, Maine
+                    98380 <i class="bx bx-coin"></i>USD</span
+                  >
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="row justify-content-between">
+                  <strong class="mt-2">Contactos</strong>
+                  <button class="btn-cancelar">
+                    <i class="bx bx-plus"></i>Agregar
+                  </button>
+                </div>
+              </div>
+              <div class="card p-2 mt-3">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 mt-2">
+                      <img
+                        src="../../public/image/user.png"
+                        class="rounded-circle"
+                        width="35"
+                        height="35"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <strong>Jackson Graham .</strong
+                        ><span>Gerente administrativo</span><br />
+                        <span>jackson.graham@example.com</span><br />
+                        <span
+                          ><i class="bx bx-cake"></i> Enero 12 Ext.00
+                          <i class="bx bx-phone"></i>1557702228
+                          <i class="bx bxl-whatsapp icon-green"></i>
+                          <span class="icon-green"> 7776638812</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-2 mt-3">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 mt-2">
+                      <img
+                        src="../../public/image/user.png"
+                        class="rounded-circle"
+                        width="35"
+                        height="35"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <strong>Jackson Graham .</strong
+                        ><span>Gerente administrativo</span><br />
+                        <span>jackson.graham@example.com</span><br />
+                        <span
+                          ><i class="bx bx-cake"></i> Septiembre 9 Ext.22
+                          <i class="bx bx-phone"></i>1557702228
+                          <i class="bx bxl-whatsapp icon-green"></i>
+                          <span class="icon-green"> 7776638812</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-2 mt-3">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2 mt-2">
+                      <img
+                        src="../../public/image/user.png"
+                        class="rounded-circle"
+                        width="35"
+                        height="35"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-10">
+                      <div class="row">
+                        <strong>Alma Lawson .</strong
+                        ><span>Marketing Coordinator</span><br />
+                        <span>jackson.graham@example.com</span><br />
+                        <span
+                          ><i class="bx bx-cake"></i> Octubre 25 Ext.45
+                          <i class="bx bx-phone"></i>1557702228
+                          <i class="bx bxl-whatsapp icon-green"></i>
+                          <span class="icon-green"> 7776638812</span></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-target="#cotizacion"
+          data-toggle="modal"
+          data-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-target="#cotizacion"
+          data-toggle="modal"
+          data-dismiss="modal"
+        >
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

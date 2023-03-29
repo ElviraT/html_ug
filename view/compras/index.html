@@ -178,7 +178,9 @@
                 </td>
                 <!-- cotizaciones -->
                 <td>
-                  <span class="badge bg-primary">2</span>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-primary">2</span></a
+                  >
                 </td>
                 <!-- orden de compra -->
                 <td>
@@ -237,7 +239,9 @@
                 </td>
                 <!-- cotizaciones -->
                 <td>
-                  <span class="badge bg-danger-compra">0</span>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-danger-compra">0</span></a
+                  >
                 </td>
                 <!-- orden de compra -->
                 <td>
@@ -294,16 +298,210 @@
         aria-labelledby="comprasheadingTwo"
         data-parent="#accordion"
       >
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-          single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-          you probably haven't heard of them accusamus labore sustainable VHS.
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3">RFQ</th>
+                <th>Solicitud</th>
+                <th>Estado</th>
+                <th>Cotizaciones</th>
+                <th>Orden compra</th>
+                <th>Fecha de envío</th>
+                <th>Fecha de entrega</th>
+                <th>Aprobados por Ingeniería</th>
+                <th>Equipos en almacén</th>
+                <th>Importe</th>
+                <th>Moneda</th>
+                <th>Fecha compra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- rfq -->
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">351</span></a
+                  >
+                </td>
+                <!-- solicitud -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="25%"
+                  />&nbsp;&nbsp;1 Feb, 2020
+                </td>
+                <!-- estado -->
+                <td>
+                  <span class="badge tag-success"
+                    >Pagado&nbsp;<i class="bx bx-check-circle icon-white"></i
+                  ></span>
+                </td>
+                <!-- cotizaciones -->
+                <td>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-primary">5</span></a
+                  >
+                </td>
+                <!-- orden de compra -->
+                <td>
+                  <a href="view/compras/index_orden_compra.html"
+                    ><span class="badge bg-success-compra">1</span></a
+                  >
+                </td>
+                <!-- fechade envio -->
+                <td>25 Enero 2023</td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+                <!-- aprobado por ingeniería -->
+                <td>
+                  <span class="badge tag-success"
+                    >Aprobado&nbsp;<i class="bx bx-check-circle icon-white"></i
+                  ></span>
+                </td>
+                <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-success">10 de 10</span>
+                </td>
+                <!-- importe -->
+                <td>$&nbsp;3,500.00</td>
+                <!-- moneda -->
+                <td>USD</td>
+                <!-- fecha compra -->
+                <td>Jan 27, 2020</td>
+              </tr>
+              <tr>
+                <!-- rfq -->
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">352</span></a
+                  >
+                </td>
+                <!-- solicitud -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="25%"
+                  />&nbsp;&nbsp;1 Feb, 2020
+                </td>
+                <!-- estado -->
+                <td>
+                  <span class="badge tag-warning"
+                    >Adjudicado&nbsp;<i class="bx bx-file icon-white"></i
+                  ></span>
+                </td>
+                <!-- cotizaciones -->
+                <td>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-primary">2</span></a
+                  >
+                </td>
+                <!-- orden de compra -->
+                <td>
+                  <a href="view/compras/index_orden_compra.html"
+                    ><span class="badge bg-success-compra">1</span></a
+                  >
+                </td>
+                <!-- fechade envio -->
+                <td>-</td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+                <!-- aprobado por ingeniería -->
+                <td>
+                  <span class="badge tag-secondary"
+                    >Pendiente&nbsp;<i class="bx bx-time icon-white"></i
+                  ></span>
+                </td>
+                <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-warning">7 de 10</span>
+                </td>
+                <!-- importe -->
+                <td>$&nbsp;3,500.00</td>
+                <!-- moneda -->
+                <td>USD</td>
+                <!-- fecha compra -->
+                <td>Jan 27, 2020</td>
+              </tr>
+              <tr>
+                <!-- rfq -->
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">353</span></a
+                  >
+                </td>
+                <!-- solicitud -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="25%"
+                  />&nbsp;&nbsp;1 Feb, 2020
+                </td>
+                <!-- estado -->
+                <td>
+                  <span class="badge tag-secondary"
+                    >Pendiente&nbsp;<i class="bx bx-time icon-white"></i
+                  ></span>
+                </td>
+                <!-- cotizaciones -->
+                <td>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-danger-compra">0</span></a
+                  >
+                </td>
+                <!-- orden de compra -->
+                <td>
+                  <a href="view/compras/index_orden_compra.html"
+                    ><span class="badge bg-danger-compra">0</span></a
+                  >
+                </td>
+                <!-- fechade envio -->
+                <td>-</td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+                <!-- aprobado por ingeniería -->
+                <td>
+                  <span class="badge tag-danger"
+                    >Rechazado&nbsp;<i class="bx bx-x-circle icon-white"></i
+                  ></span>
+                </td>
+                <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-danger">0 de 10</span>
+                </td>
+                <!-- importe -->
+                <td>$&nbsp;3,500.00</td>
+                <!-- moneda -->
+                <td>USD</td>
+                <!-- fecha compra -->
+                <td>Jan 27, 2020</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -330,16 +528,210 @@
         aria-labelledby="comprasheadingThree"
         data-parent="#accordion"
       >
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-          single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-          you probably haven't heard of them accusamus labore sustainable VHS.
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3">RFQ</th>
+                <th>Solicitud</th>
+                <th>Estado</th>
+                <th>Cotizaciones</th>
+                <th>Orden compra</th>
+                <th>Fecha de envío</th>
+                <th>Fecha de entrega</th>
+                <th>Aprobados por Ingeniería</th>
+                <th>Equipos en almacén</th>
+                <th>Importe</th>
+                <th>Moneda</th>
+                <th>Fecha compra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- rfq -->
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">351</span></a
+                  >
+                </td>
+                <!-- solicitud -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="25%"
+                  />&nbsp;&nbsp;1 Feb, 2020
+                </td>
+                <!-- estado -->
+                <td>
+                  <span class="badge tag-success"
+                    >Pagado&nbsp;<i class="bx bx-check-circle icon-white"></i
+                  ></span>
+                </td>
+                <!-- cotizaciones -->
+                <td>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-primary">5</span></a
+                  >
+                </td>
+                <!-- orden de compra -->
+                <td>
+                  <a href="view/compras/index_orden_compra.html"
+                    ><span class="badge bg-success-compra">1</span></a
+                  >
+                </td>
+                <!-- fechade envio -->
+                <td>25 Enero 2023</td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+                <!-- aprobado por ingeniería -->
+                <td>
+                  <span class="badge tag-success"
+                    >Aprobado&nbsp;<i class="bx bx-check-circle icon-white"></i
+                  ></span>
+                </td>
+                <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-success">10 de 10</span>
+                </td>
+                <!-- importe -->
+                <td>$&nbsp;3,500.00</td>
+                <!-- moneda -->
+                <td>USD</td>
+                <!-- fecha compra -->
+                <td>Jan 27, 2020</td>
+              </tr>
+              <tr>
+                <!-- rfq -->
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">352</span></a
+                  >
+                </td>
+                <!-- solicitud -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="25%"
+                  />&nbsp;&nbsp;1 Feb, 2020
+                </td>
+                <!-- estado -->
+                <td>
+                  <span class="badge tag-warning"
+                    >Adjudicado&nbsp;<i class="bx bx-file icon-white"></i
+                  ></span>
+                </td>
+                <!-- cotizaciones -->
+                <td>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-primary">2</span></a
+                  >
+                </td>
+                <!-- orden de compra -->
+                <td>
+                  <a href="view/compras/index_orden_compra.html"
+                    ><span class="badge bg-success-compra">1</span></a
+                  >
+                </td>
+                <!-- fechade envio -->
+                <td>-</td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+                <!-- aprobado por ingeniería -->
+                <td>
+                  <span class="badge tag-secondary"
+                    >Pendiente&nbsp;<i class="bx bx-time icon-white"></i
+                  ></span>
+                </td>
+                <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-warning">7 de 10</span>
+                </td>
+                <!-- importe -->
+                <td>$&nbsp;3,500.00</td>
+                <!-- moneda -->
+                <td>USD</td>
+                <!-- fecha compra -->
+                <td>Jan 27, 2020</td>
+              </tr>
+              <tr>
+                <!-- rfq -->
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#example">
+                    <i class="bx bxs-download"></i>
+                  </a>
+                </td>
+                <td>No. registro</td>
+                <td>
+                  <a href="view/compras/head-compra.html"
+                    ><span class="badge bg-registro">353</span></a
+                  >
+                </td>
+                <!-- solicitud -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    class="rounded-circle"
+                    alt="..."
+                    width="25%"
+                  />&nbsp;&nbsp;1 Feb, 2020
+                </td>
+                <!-- estado -->
+                <td>
+                  <span class="badge tag-secondary"
+                    >Pendiente&nbsp;<i class="bx bx-time icon-white"></i
+                  ></span>
+                </td>
+                <!-- cotizaciones -->
+                <td>
+                  <a href="view/compras/index_cotizacion.html"
+                    ><span class="badge bg-danger-compra">0</span></a
+                  >
+                </td>
+                <!-- orden de compra -->
+                <td>
+                  <a href="view/compras/index_orden_compra.html"
+                    ><span class="badge bg-danger-compra">0</span></a
+                  >
+                </td>
+                <!-- fechade envio -->
+                <td>-</td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+                <!-- aprobado por ingeniería -->
+                <td>
+                  <span class="badge tag-danger"
+                    >Rechazado&nbsp;<i class="bx bx-x-circle icon-white"></i
+                  ></span>
+                </td>
+                <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-danger">0 de 10</span>
+                </td>
+                <!-- importe -->
+                <td>$&nbsp;3,500.00</td>
+                <!-- moneda -->
+                <td>USD</td>
+                <!-- fecha compra -->
+                <td>Jan 27, 2020</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

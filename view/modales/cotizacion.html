@@ -1,0 +1,136 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="cotizacion"
+  tabindex="-1"
+  aria-labelledby="cotizacionModalLabel"
+  aria-hidden="true"
+  style="overflow-y: scroll"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="cotizacionModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Agregar cotización
+        </h1>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-11 mb-3">
+            <label>Proveedor</label>
+            <select
+              class="form-control selectpicker"
+              data-live-search="true"
+              title="Selecciona el proveedor"
+            >
+              <option value="1">test</option>
+              <option value="2">test</option>
+              <option value="3">test</option>
+            </select>
+          </div>
+          <div class="col-1 mt-4">
+            <a href="#" onclick="abrir_modal()">
+              <i class="bx bx-plus-circle"></i
+            ></a>
+          </div>
+
+          <div class="col-6 mb-3">
+            <label>Importe</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa la cantidad"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Moneda</label>
+            <select
+              class="form-control selectpicker"
+              data-live-search="true"
+              title="Selecciona la moneda"
+            >
+              <option value="1">test</option>
+              <option value="2">test</option>
+              <option value="3">test</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <input type="checkbox" class="checkbox-class mt-2" />&nbsp;<label
+              >Requiere aduana</label
+            >
+          </div>
+          <div class="col-12 mb-3">
+            <label>Lugar de entrega</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa el lugar"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Tiempo de garantía</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese el lugar"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label class="form-control-placeholder" id="end-p"
+              >Fecha de entrega</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                id="liquidacion"
+                class="form-control text-left mr-2"
+                placeholder="dd/mm/aaa"
+              />
+              <span class="bx bx-calendar form-control-icon" id="fa-3"></span>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <input
+              id="file-cotizacion"
+              name="input-b1"
+              type="file"
+              class="file mt-3"
+              data-browse-on-zone-click="true"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $("#file-cotizacion").fileinput({
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    overwriteInitial: false,
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+  $(document).ready(function () {
+    $("#entrega").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+    });
+  });
+  function abrir_modal() {
+    $("#cotizacion").modal("hide");
+    $("#proveedor").modal("show");
+  }
+</script>
