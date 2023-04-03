@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de calidad</title>
+
+    <link
+      rel="stylesheet"
+      href="../../public/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link href="../../public/css/css2.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
+    <link href="../../public/css/boxicons.min.css" rel="stylesheet" />
+    <!-- select -->
+    <link rel="stylesheet" href="../../public/css/bootstrap-select.min.css" />
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../../public/css/bootstrap-datepicker.css" />
+    <!-- fullcalendar -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../public/css/fullcalendar.css"
+    />
+
+    <link rel="stylesheet" href="../../public/css/fileinput.min.css" />
+    <!-- Styles personalizado -->
+    <link rel="stylesheet" type="text/css" href="../../public/css/style2.css" />
+  </head>
+  <body class="contenido">
+    <div class="content">
+      <!-- Navbar -->
+      <div data-include="../../solo_menu"></div>
+      <!-- Navbar -->
+      <br />
+      <div class="container-fluid justify-content-between migas">
+        <div class="col-12">
+          <div class="row mt-5">
+            <div class="col-md-12 col-lg-6 mt-3">
+              <a href="/"
+                ><i class="bx bx-arrow-back"></i>
+                <span class="regresar">&nbsp;&nbsp;Regresar</span></a
+              >
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class=""><a href="#">Usted esta aquí:&nbsp;</a></li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Sistema de gestión</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Proyectos
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- migas de pan -->
+    <div data-include="../../cdc/field"></div>
+  </body>
+  <script src="../../public/js/jquery-3.6.3.js"></script>
+  <script src="../../public/js2/popper.min.js" crossorigin="anonymous"></script>
+  <script
+    src="../../public/js2/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- select -->
+  <script src="../../public/js2/bootstrap-select.min.js"></script>
+  <script src="../../public/js2/bootstrap-datepicker.js"></script>
+  <!-- calendario -->
+  <script type="text/javascript" src="../../public/js/moment.min.js"></script>
+  <script
+    type="text/javascript"
+    src="../../public/js/fullcalendar.min.js"
+  ></script>
+  <script type="text/javascript" src="../../public/js/locale/es.js"></script>
+
+  <script src="../../public/js/fileinput.min.js"></script>
+  <script>
+    $(function () {
+      var includes = $("[data-include]");
+      $.each(includes, function () {
+        var file = "view/" + $(this).data("include") + ".html";
+        $(this).load(file);
+      });
+    });
+  </script>
+  <!-- modales -->
+  <div data-include="../../modales/asistente"></div>
+  <div data-include="../../modales/noConformidad"></div>
+  <div data-include="../../modales/documento-ppi"></div>
+  <div data-include="../../modales/resultado"></div>
+  <div data-include="../../modales/eliminar"></div>
+  <div data-include="../../modales/seguimiento"></div>
+  <!-- fin modales -->
+</html>
