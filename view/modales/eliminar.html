@@ -1,35 +1,35 @@
 <div class="modal" tabindex="-1" role="dialog" id="eliminarModal">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal-content p-3">
       <div class="modal-body">
         <div class="row">
           <div class="col-12">
             <center>
               <button
-                class="btn icon-red btn-outline-danger rounded-circle"
+                class="icono-eliminar rounded-circle"
                 style="
                   font-size: 45px;
                   background-color: rgb(254, 138, 138, 0.3);
                 "
               >
-                <i class="fa fa-exclamation-triangle"></i></button
+                <i class="bx bxs-error icono-error"></i></button
               ><br /><br />
-              <h5><strong>Eliminar</strong></h5>
-              <span>¿Estás seguro de eliminar el registro?</span><br />
-              <span>Esta acción eliminará toda la Información relacionada</span>
+              <span class="title-eliminar">Eliminar</span>
+              <span class="texto-eliminar"
+                ><strong> ¿Estás seguro de eliminar el registro?</strong></span
+              ><br />
+              <span class="texto-eliminar"
+                >Esta acción eliminará toda la Información relacionada.</span
+              >
             </center>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-bs-dismiss="modal"
-        >
+      <div class="modal-footer centrar">
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
           Cancelar
         </button>
-        <button type="button" class="btn btn-danger">Confirmar</button>
+        <button type="button" class="btn-eliminar">Confirmar</button>
       </div>
     </div>
   </div>

@@ -87,6 +87,9 @@ a {
 .icon-blue {
   color: blue !important;
 }
+.icon-warning {
+  color: #fc9432 !important;
+}
 .ico-add {
   /* add */
   box-sizing: border-box;
@@ -176,7 +179,7 @@ a {
   height: 16px;
   /* Highlight/blue */
 
-  background: red;
+  background: #dc3545;
   border-radius: 20px;
 }
 .bg-danger-compra {
@@ -532,7 +535,7 @@ td {
   transform: translateY(-50%);
 }
 .icon-red {
-  color: red !important;
+  color: #dc3545 !important;
 }
 .icon-modal {
   font-size: 30px !important;
@@ -1698,77 +1701,71 @@ object {
 
   /* Auto layout */
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7px 10px;
-  gap: 10px;
-  height: 68px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 7px 10px !important;
+  gap: 10px !important;
 
-  background: #ffffff;
+  background: #ffffff !important;
   /* project/spring */
 
-  border-left: 10px solid #28a745;
-  border-radius: 4px;
+  border-left: 10px solid #28a745 !important;
+  border-radius: 4px !important;
 
   /* Inside auto layout */
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+  flex: none !important;
+  order: 0 !important;
+  align-self: stretch !important;
+  flex-grow: 0 !important;
 }
 .div-danger {
   box-sizing: border-box;
 
   /* Auto layout */
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7px 10px;
-  gap: 10px;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 7px 10px !important;
+  gap: 10px !important;
 
-  height: 68px;
-
-  background: #ffffff;
+  background: #ffffff !important;
   /* project/danger */
 
-  border-left: 10px solid #dc3545;
-  border-radius: 4px;
+  border-left: 10px solid #dc3545 !important;
+  border-radius: 4px !important;
 
   /* Inside auto layout */
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+  flex: none !important;
+  order: 0 !important;
+  align-self: stretch !important;
+  flex-grow: 0 !important;
 }
 .div-warning {
   box-sizing: border-box;
 
   /* Auto layout */
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7px 10px;
-  gap: 10px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 7px 10px !important;
+  gap: 10px !important;
 
-  height: 68px;
-
-  background: #ffffff;
+  background: #ffffff !important;
   /* project/warning */
 
-  border-left: 10px solid #fc9432;
-  border-radius: 4px;
+  border-left: 10px solid #fc9432 !important;
+  border-radius: 4px !important;
 
   /* Inside auto layout */
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+  flex: none !important;
+  order: 0 !important;
+  align-self: stretch !important;
+  flex-grow: 0 !important;
 }
 .imagen-ppi {
   width: 54px;
@@ -1863,7 +1860,6 @@ object {
   padding: 5px 15px;
   gap: 8px;
 
-  width: 82px;
   height: 34px;
 
   /* project/tomato */
@@ -1897,30 +1893,8 @@ object {
   flex-grow: 0;
 }
 .card {
-  /* form */
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px 21px;
-  gap: 25px;
-
-  /* white */
-
-  background: #ffffff;
-  /* stroke */
-
   border: 0.5px solid #7c859b;
   border-radius: 8px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 .sub {
   font-weight: 400;
@@ -1952,7 +1926,7 @@ object {
   padding: 5px 15px;
   gap: 8px;
 
-  width: 109px;
+  width: auto;
   height: 34px;
 
   background: #ffffff;
@@ -1970,4 +1944,142 @@ object {
 .div-fotografia {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+.icono-eliminar {
+  /* Ellipse 1 */
+
+  box-sizing: border-box;
+
+  width: 60px;
+  height: 60px;
+  left: 224px;
+  top: 0px;
+
+  background: rgba(255, 23, 68, 0.2);
+  border: 0.5px solid #ff1744;
+}
+.title-eliminar {
+  /* Eliminar */
+
+  width: 103px;
+  height: 24px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* black-text */
+
+  color: #373936;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.texto-eliminar {
+  width: 304px;
+  height: 24px;
+
+  /* Text/base/medium-500 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  /* black-text */
+
+  color: #373936;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.centrar {
+  justify-content: center;
+  align-items: center;
+}
+.icono-error {
+  left: 13.81%;
+  right: 13.82%;
+  top: 20%;
+  bottom: 16.67%;
+  font-size: 26px;
+
+  color: #ff1744 !important;
+}
+.expandir {
+  /* Expandir todo */
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+
+  /* project/primary */
+
+  color: #516184;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.title-costo {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  /* black-text */
+
+  color: #373936;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.i-acordion {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* project/dark-gray */
+
+  color: #707070;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.clasificacion {
+  padding: 5px !important;
+  color: white !important;
+  border-radius: 7px !important;
+}
+.clasificacion i {
+  color: white !important;
 }

@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="col-12 table-responsive">
-          <table id="tabla-asistente" class="table table-sm" width="100%">
+          <table class="table">
             <thead style="background-color: rgb(219, 242, 250)">
               <tr>
                 <th>Nombre</th>
@@ -112,7 +112,7 @@
                       data-target="#asistenteModal"
                       ><i class="bx bx-pencil" style="font-size: 18px"></i></a
                     >&nbsp;
-                    <a href="#"
+                    <a href="#" data-toggle="modal" data-target="#eliminarModal"
                       ><i
                         class="bx bx-trash icon-red"
                         style="font-size: 18px"
@@ -288,10 +288,11 @@
             </div>
           </form>
         </div>
-        <div class="col-6" align="right">
+        <div class="col-6 mt-3" align="right">
           <a
             class="btn-agregar-ppi"
-            data-bs-toggle="modal"
+            data-toggle="modal"
+            data-target="#noConformidadModal"
             href="#noConformidadModal"
             role="button"
           >
@@ -308,7 +309,7 @@
                     class="rounded-circle imagen-ppi"
                   />
                 </div>
-                <div class="col-md-6 col-lg-9 pl-0">
+                <div class="col-md-8 col-lg-9">
                   <div class="col-12">
                     <span class="title-card-ppi">Trámites sin estaño.</span
                     >&nbsp;<small>Resolvió Uzziel Garcia</small>
@@ -328,9 +329,9 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-2 col-lg-2 mt-2" align="right">
+                <div class="col-md-3 col-lg-2 mt-2" align="right">
                   <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4 col-lg-4">
                       <a
                         type="button"
                         id="btn-modal"
@@ -339,7 +340,7 @@
                         ><small>Origen</small><br /><i class="bx bx-file"></i
                       ></a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-lg-4">
                       <a
                         type="button"
                         id="btn-modal"
@@ -348,7 +349,7 @@
                         ><small>Evidencia</small><br /><i class="bx bx-file"></i
                       ></a>
                     </div>
-                    <div class="col-4 mt-3">
+                    <div class="col-md-4 col-lg-4 mt-3">
                       <a
                         type="button"
                         id="btn-modal"
@@ -371,7 +372,7 @@
                     class="rounded-circle imagen-ppi"
                   />
                 </div>
-                <div class="col-md-6 col-lg-9 pl-0">
+                <div class="col-md-8 col-lg-9">
                   <div class="col-12">
                     <span class="title-card-ppi">Trámites sin estaño.</span
                     >&nbsp;<small>Resolvió Uzziel Garcia</small>
@@ -387,7 +388,7 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-2 col-lg-2 mt-2" align="right">
+                <div class="col-md-3 col-lg-2 mt-2" align="right">
                   <div class="row">
                     <div class="col-6">
                       <a
@@ -398,7 +399,6 @@
                         ><small>Origen</small><br /><i class="bx bx-file"></i
                       ></a>
                     </div>
-
                     <div class="col-6 mt-3">
                       <a
                         type="button"
@@ -549,7 +549,7 @@
       </div>
     </div>
     <div class="col-12 table-responsive mt-3">
-      <table id="tabla-alcance" class="table">
+      <table class="table">
         <thead style="background-color: rgb(219, 242, 250)">
           <tr>
             <th>Elemento a inspeccionar</th>
@@ -673,14 +673,22 @@
         </div>
       </div>
     </div>
-    <div class="col-12 mt-2" align="right">
-      <button type="submit" class="btn btn-secondary">Guardar</button>
+    <div class="col-12" align="right">
+      <button type="submit" class="btn-agregar">Guardar</button>
     </div>
   </div>
   <!-- fin card 5 -->
-  <div class="col-12 mt-2" align="right">
-    <button type="button" class="btn btn-danger">Eliminar</button>
-    <button type="button" class="btn btn-secondary">Guardar</button>
+  <div class="col-lg-12 mt-2">
+    <div class="row">
+      <div class="col-md-8 col-lg-10"></div>
+      <div class="col-md-4 col-lg-2" align="right">
+        <div class="row">
+          <button type="button" class="btn-eliminar">Eliminar</button
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn-agregar">Guardar</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <script>
@@ -696,14 +704,6 @@
   $(document).ready(function () {
     $(function () {
       $(".selectpicker").selectpicker();
-    });
-  });
-  $(document).ready(function () {
-    $("#tabla-asistente, #tabla-alcance").DataTable({
-      dom: "tp",
-      language: {
-        url: "../../public/js/es-ES.json",
-      },
     });
   });
 

@@ -7,18 +7,12 @@
   tabindex="-1"
 >
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
+    <div class="modal-content p-4">
       <div class="modal-header">
         <h5 class="modal-title" id="seguimientoModalLabel">
+          <i class="bx bx-plus ico-add"></i>
           Agregar seguimiento
         </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-target="#noConformidadModal"
-          data-bs-toggle="modal"
-          aria-label="Close"
-        ></button>
       </div>
       <div class="modal-body">
         <div class="col-12 p-4">
@@ -29,10 +23,10 @@
                 <input
                   type="text"
                   id="fseguimiento"
-                  class="form-control mr-2"
+                  class="form-control"
                   placeholder="dd/mm/yyyy"
                 />
-                <span class="fa fa-calendar form-control-icon" id="fa-2"></span>
+                <span class="bx bx-calendar form-control-icon" id="fa-2"></span>
               </div>
             </div>
             <div class="col-6 mb-3">
@@ -79,17 +73,19 @@
       <div class="modal-footer">
         <button
           type="button"
-          class="btn btn-outline-dark"
-          data-bs-target="#noConformidadModal"
-          data-bs-toggle="modal"
+          class="btn-agregar-ppi"
+          data-target="#noConformidadModal"
+          data-toggle="modal"
+          data-dismiss="modal"
         >
           Cancelar
         </button>
         <button
           type="button"
-          class="btn btn-secondary"
-          data-bs-target="#noConformidadModal"
-          data-bs-toggle="modal"
+          class="btn-agregar"
+          data-target="#noConformidadModal"
+          data-toggle="modal"
+          data-dismiss="modal"
         >
           Guardar
         </button>

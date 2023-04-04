@@ -84,4 +84,12 @@
     ).removeClass("activo");
     $("#tar, #pro, #cal, #com, #cos, #doc, #par, #rf").prop("hidden", true);
   });
+  $("#costo").click(function () {
+    $("#cos").prop("hidden", false);
+    $("#costo").addClass("activo");
+    $(
+      "#tarea, #proyecto, #calendario, #compras, #cdcs, #documento, #partida, #rfq"
+    ).removeClass("activo");
+    $("#tar, #pro, #cal, #com, #cdc, #doc, #par, #rf").prop("hidden", true);
+  });
 </script>

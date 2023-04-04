@@ -7,22 +7,17 @@
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
+    <div class="modal-content p-4">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="noConformidadModalLabel">
+        <h3 class="modal-title fs-5" id="noConformidadModalLabel">
+          <i class="bx bx-plus ico-add"></i>
           Detalles de no conformidad
-        </h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        </h3>
       </div>
       <div class="modal-body p-4">
         <!-- card Identificación -->
         <div class="card p-3">
-          <div class="row">
+          <div class="row p-2">
             <strong>Identificación</strong>
             <div class="col-12 mt-3">
               <div class="row">
@@ -36,7 +31,7 @@
                         class="form-control text-left mr-2"
                       />
                       <span
-                        class="fa fa-calendar form-control-icon"
+                        class="bx bx-calendar form-control-icon"
                         id="fa-2"
                       ></span>
                     </div>
@@ -72,39 +67,39 @@
             <div class="col-12">
               <div class="row">
                 <div class="col-9">
-                  <strong
+                  <strong class="definition"
                     >Seguimiento y evidencia que solventa la NO
                     conformidad</strong
                   >
                 </div>
                 <div class="col-3">
                   <button
-                    class="btn btn-outline-dark"
-                    data-bs-target="#seguimientoModal"
-                    data-bs-toggle="modal"
+                    class="btn-agregar-ppi"
+                    data-target="#seguimientoModal"
+                    data-toggle="modal"
                   >
-                    <i class="fa fa-plus"></i> Agregar
+                    <i class="bx bx-plus"></i> Agregar
                   </button>
                 </div>
               </div>
             </div>
             <div class="col-12">
-              <div class="col-12 mt-3 div-success">
-                <div class="card mt-3 p-2">
+              <div class="card div-success mt-3">
+                <div class="col-12">
                   <div class="row">
-                    <div class="col-md-4 col-lg-1 mt-1" align="center">
+                    <div class="col-md-1 col-lg-1 mt-1" align="center">
                       <img
                         src="../../public/image/user.png"
-                        class="rounded-circle"
-                        width="80%"
+                        class="rounded-circle imagen-ppi"
                       />
                     </div>
-                    <div class="col-md-6 col-lg-10">
+                    <div class="col-md-9 col-lg-10">
                       <div class="col-12">
                         <strong>Responsable: Ricardo Rodriguez .</strong
                         >&nbsp;Avance
-                        <span class="badge bg-success">100%</span>&nbsp;<i
-                          class="fa fa-calendar"
+                        <span class="badge bg-success chip">100%</span>&nbsp;<i
+                          class="bx bx-calendar"
+                          style="font-size: 14px"
                         ></i
                         >&nbsp;July 14, 2015
                       </div>
@@ -113,28 +108,30 @@
                       </div>
                     </div>
                     <div class="col-md-2 col-lg-1 mt-2">
-                      <i class="fa fa-file-text-o"></i>
-                      <i class="fa fa-trash-o icon-red"></i>
+                      <div class="row">
+                        <i class="bx bx-file"></i>
+                        <i class="bx bx-trash icon-red"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 div-danger">
-                <div class="card mt-3 p-2">
+              <div class="card div-danger mt-3">
+                <div class="col-12">
                   <div class="row">
-                    <div class="col-md-4 col-lg-1 mt-1" align="center">
+                    <div class="col-md-1 col-lg-1 mt-1" align="center">
                       <img
                         src="../../public/image/user.png"
-                        class="rounded-circle"
-                        width="80%"
+                        class="rounded-circle imagen-ppi"
                       />
                     </div>
-                    <div class="col-md-6 col-lg-10">
+                    <div class="col-md-9 col-lg-10">
                       <div class="col-12">
                         <strong>Responsable: Ricardo Rodriguez .</strong
                         >&nbsp;Avance
-                        <span class="badge bg-danger">20%</span>&nbsp;<i
-                          class="fa fa-calendar"
+                        <span class="badge bg-danger chip">20%</span>&nbsp;<i
+                          class="bx bx-calendar"
+                          style="font-size: 14px"
                         ></i
                         >&nbsp;July 14, 2015
                       </div>
@@ -145,39 +142,44 @@
                       </div>
                     </div>
                     <div class="col-md-2 col-lg-1 mt-2">
-                      <i class="fa fa-file-text-o"></i>
-                      <i class="fa fa-trash-o icon-red"></i>
+                      <div class="row">
+                        <i class="bx bx-file"></i>
+                        <i class="bx bx-trash icon-red"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 div-warning">
-                <div class="card mt-3 p-2">
+
+              <div class="card div-warning mt-3">
+                <div class="col-12">
                   <div class="row">
-                    <div class="col-md-4 col-lg-1 mt-1" align="center">
+                    <div class="col-md-1 col-lg-1 mt-1" align="center">
                       <img
                         src="../../public/image/user.png"
-                        class="rounded-circle"
-                        width="80%"
+                        class="rounded-circle imagen-ppi"
                       />
                     </div>
-                    <div class="col-md-6 col-lg-10">
+                    <div class="col-md-9 col-lg-10">
                       <div class="col-12">
                         <strong>Responsable: Ricardo Rodriguez .</strong
                         >&nbsp;Avance
-                        <span class="badge bg-warning">50%</span>&nbsp;<i
-                          class="fa fa-calendar"
+                        <span class="badge bg-warning chip">50%</span>&nbsp;<i
+                          class="bx bx-calendar"
+                          style="font-size: 14px"
                         ></i
                         >&nbsp;July 14, 2015
                       </div>
-                      <div class="col-12">
+                      <div class="col-12 mt-2">
                         Loren ipsun dolor sit anet, consectetur adipisci elit,
                         sed eiusnod tenpor incidunt ut.
                       </div>
                     </div>
                     <div class="col-md-2 col-lg-1 mt-2">
-                      <i class="fa fa-file-text-o"></i>
-                      <i class="fa fa-trash-o icon-red"></i>
+                      <div class="row">
+                        <i class="bx bx-file"></i>
+                        <i class="bx bx-trash icon-red"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -185,7 +187,7 @@
             </div>
             <div class="col-12 mt-3">
               <div class="row">
-                <strong>Estatus</strong><br />
+                <span class="definition">Estatus</span><br />
                 <div class="col-12 mt-2">
                   <div class="form-check form-check-inline">
                     <input
@@ -220,14 +222,10 @@
         <!-- fin card 2 -->
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-bs-dismiss="modal"
-        >
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
           Cancelar
         </button>
-        <button type="button" class="btn btn-secondary">Guardar</button>
+        <button type="button" class="btn-agregar">Guardar</button>
       </div>
     </div>
   </div>

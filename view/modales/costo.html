@@ -7,24 +7,21 @@
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
+    <div class="modal-content p-4">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="costoModalLabel">Agregar gasto</h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <h3 class="modal-title fs-5" id="costoModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Agregar gasto
+        </h3>
       </div>
       <div class="modal-body p-4">
         <div class="row">
           <div class="col-12 mb-3">
             <label>Proyecto</label>
             <select
-              class="selectpicker"
+              class="selectpicker form-control"
               data-live-search="true"
-              placeholder="Selecciona"
+              title="Selecciona"
             >
               <option value="1">Taritaxi</option>
               <option value="2">Gestión de calidad</option>
@@ -43,9 +40,9 @@
               <div class="col-10">
                 <label>Clasificación</label>
                 <select
-                  class="selectpicker"
+                  class="selectpicker form-control"
                   data-live-search="true"
-                  placeholder="Selecciona"
+                  title="Selecciona"
                 >
                   <option
                     value="1"
@@ -73,11 +70,11 @@
               <div class="col-2 mt-4 text-star">
                 <a
                   href="#"
-                  class="btn btn-light btn-sm plus"
-                  data-bs-toggle="modal"
-                  data-bs-target="#clasificacionModal"
+                  class=""
+                  data-toggle="modal"
+                  data-target="#clasificacionModal"
                 >
-                  <i class="fa fa-plus"></i>
+                  <i class="bx bx-plus-circle"></i>
                 </a>
               </div>
             </div>
@@ -89,9 +86,9 @@
           <div class="col-6 mb-3">
             <label>Moneda</label>
             <select
-              class="selectpicker"
+              class="selectpicker form-control"
               data-live-search="true"
-              placeholder="Selecciona"
+              title="Selecciona"
             >
               <option value="1">$ USD</option>
               <option value="2">$ Pesos</option>
@@ -120,14 +117,10 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-bs-dismiss="modal"
-        >
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
           Cancelar
         </button>
-        <button type="button" class="btn btn-secondary">Guardar</button>
+        <button type="button" class="btn-agregar">Guardar</button>
       </div>
     </div>
   </div>
