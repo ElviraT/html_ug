@@ -7,34 +7,35 @@
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
+    <div class="modal-content p-4 modal-md">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">
+        <h3 class="modal-title fs-5" id="exampleModalLabel">
+          <i class="bx bx-plus ico-add"></i>
           Agregar documento
-        </h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        </h3>
       </div>
       <div class="modal-body p-4">
         <div class="row">
           <div class="col-12 mb-3">
             <label>Tipo de documento</label>
             <select
-              class="selectpicker"
+              class="selectpicker form-control"
               data-live-search="true"
-              placeholder="Seleccione el tipo de documento"
+              title="Seleccione el tipo de documento"
             >
               <option value="1">PDF</option>
               <option value="2">XLS</option>
               <option value="3">WORD</option>
             </select>
           </div>
-          <div class="col-12 mb-3">
-            <i class="fa fa-plus"></i>&nbsp;<label>Añadir</label>
+          <div class="col-12">
+            <a href="#" data-target="#add_tdoc" data-toggle="modal"
+              ><i class="bx bx-plus"></i>&nbsp;<label class="añadir mt-0"
+                >Añadir</label
+              ></a
+            >
+          </div>
+          <div class="col-12">
             <input
               id="file-1"
               name="input-b1"
@@ -46,11 +47,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-bs-dismiss="modal"
-        >
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
           Cancelar
         </button>
         <button type="button" class="btn btn-secondary">Guardar</button>
@@ -70,5 +67,8 @@
     maxFileSize: 1024,
     maxFilesNum: 10,
     showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
   });
 </script>

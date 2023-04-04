@@ -9,10 +9,10 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content p-4">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">
+        <h3 class="modal-title fs-5" id="exampleModalLabel">
           <i class="bx bx-plus ico-add"></i>
           Agregar proyecto
-        </h1>
+        </h3>
       </div>
       <div class="modal-body">
         <div class="row">
@@ -104,9 +104,9 @@
               data-live-search="true"
               title="Seleccione el ícono"
             >
-              <option value="1" data-icon="fa fa-car">Carro</option>
-              <option value="2" data-icon="fa fa-bell-o">Campana</option>
-              <option value="3" data-icon="fa fa-flag">Bandera</option>
+              <option value="1" data-icon="bx bx-car">Carro</option>
+              <option value="2" data-icon="bx bx-bell">Campana</option>
+              <option value="3" data-icon="bx bx-flag">Bandera</option>
             </select>
           </div>
           <div class="col-12 mb-3">
@@ -116,28 +116,22 @@
                 <label class="form-control-placeholder" id="start-p" for="start"
                   >Fecha inicio</label
                 >
-                <div class="input-group">
-                  <input
-                    type="text"
-                    id="start"
-                    class="form-control text-left"
-                  />
-                  <span
-                    class="bx bx-calendar form-control-icon"
-                    id="fa-1"
-                  ></span>
+                <div id="is-relative">
+                  <input type="text" class="form-control" />
+                  <span id="icon">
+                    <i class="bx bx-calendar"></i>
+                  </span>
                 </div>
               </div>
               <div class="col-6">
                 <label class="form-control-placeholder" id="end-p" for="end"
                   >Fecha fin</label
                 >
-                <div class="input-group">
-                  <input type="text" id="end" class="form-control text-left" />
-                  <span
-                    class="bx bx-calendar form-control-icon"
-                    id="fa-2"
-                  ></span>
+                <div id="is-relative">
+                  <input type="text" class="form-control" />
+                  <span id="icon">
+                    <i class="bx bx-calendar"></i>
+                  </span>
                 </div>
               </div>
             </div>
@@ -229,7 +223,7 @@
                 value="option1"
               />
               <label class="form-check-label" for="inlineRadio1">
-                <span class="badge bg-success"
+                <span class="badge tag-success"
                   >Entregado&nbsp;<i class="bx bx-check-circle icon-white"></i
                 ></span>
               </label>
@@ -243,7 +237,7 @@
                 value="option2"
               />
               <label class="form-check-label" for="inlineRadio2">
-                <span class="badge bg-warning"
+                <span class="badge tag-warning"
                   >En proceso&nbsp;<i class="bx bx-error icon-white"></i
                 ></span>
               </label>
@@ -257,7 +251,7 @@
                 value="option3"
               />
               <label class="form-check-label" for="inlineRadio3">
-                <span class="badge bg-danger"
+                <span class="badge tag-danger"
                   >Estancado&nbsp;<i class="bx bx-error icon-white"></i
                 ></span>
               </label>

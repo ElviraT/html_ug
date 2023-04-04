@@ -92,7 +92,7 @@ input[type="file"].file-loading {
 }
 .file-thumb-progress .progress,
 .file-thumb-progress .progress-bar {
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif;
   font-size: 0.7rem;
 }
 .krajee-default .file-thumb-progress .progress,
@@ -326,7 +326,7 @@ input[type="file"].file-loading {
 }
 .kv-upload-progress .progress-bar {
   height: 20px;
-  font-family: Verdana, Helvetica, sans-serif;
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif;
 }
 .file-zoom-dialog .file-other-icon {
   font-size: 50vmin;

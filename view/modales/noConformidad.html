@@ -24,16 +24,11 @@
                 <div class="col-md-12 col-lg-6">
                   <div class="col-12 mb-3 input-daterange">
                     <label>Fecha de Identificación</label>
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        id="fidend"
-                        class="form-control text-left mr-2"
-                      />
-                      <span
-                        class="bx bx-calendar form-control-icon"
-                        id="fa-2"
-                      ></span>
+                    <div id="is-relative">
+                      <input type="text" class="form-control" />
+                      <span id="icon">
+                        <i class="bx bx-calendar"></i>
+                      </span>
                     </div>
                   </div>
                   <div class="col-12 mb-3">
@@ -89,7 +84,7 @@
                   <div class="row">
                     <div class="col-md-1 col-lg-1 mt-1" align="center">
                       <img
-                        src="../../public/image/user.png"
+                        src="public/image/user.png"
                         class="rounded-circle imagen-ppi"
                       />
                     </div>
@@ -121,7 +116,7 @@
                   <div class="row">
                     <div class="col-md-1 col-lg-1 mt-1" align="center">
                       <img
-                        src="../../public/image/user.png"
+                        src="public/image/user.png"
                         class="rounded-circle imagen-ppi"
                       />
                     </div>
@@ -156,7 +151,7 @@
                   <div class="row">
                     <div class="col-md-1 col-lg-1 mt-1" align="center">
                       <img
-                        src="../../public/image/user.png"
+                        src="public/image/user.png"
                         class="rounded-circle imagen-ppi"
                       />
                     </div>
@@ -187,7 +182,9 @@
             </div>
             <div class="col-12 mt-3">
               <div class="row">
-                <span class="definition">Estatus</span><br />
+                <div class="col-12">
+                  <span class="definition">Estatus</span>
+                </div>
                 <div class="col-12 mt-2">
                   <div class="form-check form-check-inline">
                     <input

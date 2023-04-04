@@ -1,30 +1,39 @@
 <div class="col-12 mt-3">
-  <button type="button" class="btn botonera activo" id="proyecto">
-    <i class="bx bx-folder icon-white"></i> Proyectos</button
+  <button type="button" class="btn botonera activo mt-2" id="proyecto">
+    <i class="bx bx-folder icon-white"></i
+    ><span class="text-botonera"> Proyectos</span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="tarea">
-    <i class="bx bx-calendar-check icon-white"></i> Tareas</button
+  <button type="button" class="btn botonera mt-2" id="tarea">
+    <i class="bx bx-calendar-check icon-white"></i
+    ><span class="text-botonera"> Tareas </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="calendario">
-    <i class="bx bx-calendar icon-white"></i> Calendario</button
+  <button type="button" class="btn botonera mt-2" id="calendario">
+    <i class="bx bx-calendar icon-white"></i
+    ><span class="text-botonera"> Calendario </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="partida">
-    <i class="bx bx-grid icon-white"></i> Partidas</button
+  <button type="button" class="btn botonera mt-2" id="partida">
+    <i class="bx bx-grid icon-white"></i
+    ><span class="text-botonera"> Partidas </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="rfq">
-    <i class="bx bx-receipt icon-white"></i> RFQ</button
+  <button type="button" class="btn botonera mt-2" id="rfq">
+    <i class="bx bx-receipt icon-white"></i
+    ><span class="text-botonera"> RFQ </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="compras">
-    <i class="bx bx-cart icon-white"></i> Compras</button
+  <button type="button" class="btn botonera mt-2" id="compras">
+    <i class="bx bx-cart icon-white"></i
+    ><span class="text-botonera"> Compras </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="cdcs">
-    <i class="bx bx-list-check icon-white"></i>Control de calidad</button
+  <button type="button" class="btn botonera mt-2" id="cdcs">
+    <i class="bx bx-list-check icon-white"></i
+    ><span class="text-botonera"> Control de calidad </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="costo">
-    <i class="bx bx-coin icon-white"></i> Costos</button
+  <button type="button" class="btn botonera mt-2" id="costo">
+    <i class="bx bx-coin icon-white"></i
+    ><span class="text-botonera"> Costos </span></button
   >&nbsp;&nbsp;
-  <button type="button" class="btn botonera" id="documento">
-    <i class="bx bx-file icon-white"></i> Documentos</button
+  <button type="button" class="btn botonera mt-2" id="documento">
+    <i class="bx bx-file icon-white"></i
+    ><span class="text-botonera"> Documentos </span></button
   >&nbsp;&nbsp;
 </div>
 <script>
@@ -91,5 +100,13 @@
       "#tarea, #proyecto, #calendario, #compras, #cdcs, #documento, #partida, #rfq"
     ).removeClass("activo");
     $("#tar, #pro, #cal, #com, #cdc, #doc, #par, #rf").prop("hidden", true);
+  });
+  $("#documento").click(function () {
+    $("#doc").prop("hidden", false);
+    $("#documento").addClass("activo");
+    $(
+      "#tarea, #proyecto, #calendario, #compras, #cdcs, #costo, #partida, #rfq"
+    ).removeClass("activo");
+    $("#tar, #pro, #cal, #com, #cdc, #cos, #par, #rf").prop("hidden", true);
   });
 </script>

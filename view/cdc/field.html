@@ -30,13 +30,11 @@
         </div>
         <div class="col-md-12 col-lg-4 mb-3 input-daterange">
           <label>Fecha y hora del evento</label>
-          <div class="input-group">
-            <input
-              type="text"
-              id="fhevento"
-              class="form-control text-left mr-2"
-            />
-            <span class="bx bx-calendar form-control-icon" id="fa-2"></span>
+          <div id="is-relative">
+            <input type="text" class="form-control" id="fhevento" />
+            <span id="icon">
+              <i class="bx bx-calendar"></i>
+            </span>
           </div>
         </div>
         <div class="col-md-12 col-lg-4 mb-3">
@@ -178,7 +176,7 @@
   <!-- fin card 1 -->
   <!-- card Fotografias -->
   <div class="card p-3 mt-4">
-    <div class="col-12 p-3">
+    <div class="col-12">
       <div class="row">
         <div class="col-12">
           <span class="definition">Fotografías</span>
@@ -246,7 +244,7 @@
                 placeholder="Ingresa la descripción"
               />
             </div>
-            <div class="col-8 mt-3">
+            <div class="col-md-12 col-lg-8 mt-3">
               <input
                 id="file-1"
                 name="input-b1"
@@ -256,7 +254,7 @@
               />
             </div>
             <div
-              class="col-4"
+              class="col-md-12 col-lg-4"
               style="align-self: end; bottom: 2px"
               align="right"
             >
@@ -275,41 +273,52 @@
         <div class="col-12">
           <span class="definition">No conformidad</span>
         </div>
-
-        <div class="col-6 mt-3">
-          <form>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar" />
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                  <i class="bx bx-search"></i>
-                </button>
+        <div class="col-12">
+          <div class="justify-content-between">
+            <div class="row">
+              <div class="col-md-12 col-lg-4 mt-3">
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Buscar"
+                    />
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <i class="bx bx-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-12 col-lg-6"></div>
+              <div class="col-md-12 col-lg-2 mt-3" align="right">
+                <a
+                  class="btn-agregar-ppi"
+                  data-toggle="modal"
+                  data-target="#noConformidadModal"
+                  href="#noConformidadModal"
+                  role="button"
+                >
+                  <i class="bx bx-plus"></i> Agregar
+                </a>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-        <div class="col-6 mt-3" align="right">
-          <a
-            class="btn-agregar-ppi"
-            data-toggle="modal"
-            data-target="#noConformidadModal"
-            href="#noConformidadModal"
-            role="button"
-          >
-            <i class="bx bx-plus"></i> Agregar
-          </a>
-        </div>
+
         <div class="col-12 mt-3">
-          <div class="card div-success mt-3 p-2">
+          <div class="card div-success mt-3">
             <div class="col-12">
               <div class="row">
-                <div class="col-md-1 col-lg-1">
+                <div class="col-md-12 col-lg-1">
                   <img
                     src="../../public/image/user.png"
                     class="rounded-circle imagen-ppi"
                   />
                 </div>
-                <div class="col-md-8 col-lg-9">
+                <div class="col-md-12 col-lg-9">
                   <div class="col-12">
                     <span class="title-card-ppi">Trámites sin estaño.</span
                     >&nbsp;<small>Resolvió Uzziel Garcia</small>
@@ -329,41 +338,49 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-3 col-lg-2 mt-2" align="right">
+                <div class="col-md-12 col-lg-2 mt-2">
                   <div class="row">
-                    <div class="col-md-4 col-lg-4">
-                      <a
-                        type="button"
-                        id="btn-modal"
-                        data-bs-toggle="modal"
-                        data-bs-target="#noConformidadModal"
-                        ><small>Origen</small><br /><i class="bx bx-file"></i
-                      ></a>
+                    <div class="col-4">
+                      <div class="d-flex">
+                        <a
+                          type="button"
+                          id="btn-modal"
+                          data-bs-toggle="modal"
+                          data-bs-target="#noConformidadModal"
+                          ><small>Origen</small><br /><i class="bx bx-file"></i
+                        ></a>
+                      </div>
                     </div>
-                    <div class="col-md-4 col-lg-4">
-                      <a
-                        type="button"
-                        id="btn-modal"
-                        data-toggle="modal"
-                        data-target="#noConformidadModal"
-                        ><small>Evidencia</small><br /><i class="bx bx-file"></i
-                      ></a>
+                    <div class="col-4">
+                      <div class="d-flex">
+                        <a
+                          type="button"
+                          id="btn-modal"
+                          data-toggle="modal"
+                          data-target="#noConformidadModal"
+                          ><small>Evidencia</small><br /><i
+                            class="bx bx-file"
+                          ></i
+                        ></a>
+                      </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 mt-3">
-                      <a
-                        type="button"
-                        id="btn-modal"
-                        data-toggle="modal"
-                        data-target="#eliminar"
-                        ><i class="bx bx-trash icon-red"></i
-                      ></a>
+                    <div class="col-4 mt-3">
+                      <div class="d-flex">
+                        <a
+                          type="button"
+                          id="btn-modal"
+                          data-toggle="modal"
+                          data-target="#eliminar"
+                          ><i class="bx bx-trash icon-red"></i
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card div-warning mt-3 p-2">
+          <div class="card div-warning mt-3">
             <div class="col-12">
               <div class="row">
                 <div class="col-md-1 col-lg-1">
@@ -388,25 +405,29 @@
                     >
                   </div>
                 </div>
-                <div class="col-md-3 col-lg-2 mt-2" align="right">
+                <div class="col-md-12 col-lg-2 mt-2" align="right">
                   <div class="row">
-                    <div class="col-6">
-                      <a
-                        type="button"
-                        id="btn-modal"
-                        data-bs-toggle="modal"
-                        data-bs-target="#noConformidadModal"
-                        ><small>Origen</small><br /><i class="bx bx-file"></i
-                      ></a>
+                    <div class="col-4">
+                      <div class="d-flex">
+                        <a
+                          type="button"
+                          id="btn-modal"
+                          data-bs-toggle="modal"
+                          data-bs-target="#noConformidadModal"
+                          ><small>Origen</small><br /><i class="bx bx-file"></i
+                        ></a>
+                      </div>
                     </div>
-                    <div class="col-6 mt-3">
-                      <a
-                        type="button"
-                        id="btn-modal"
-                        data-toggle="modal"
-                        data-target="#eliminar"
-                        ><i class="bx bx-trash icon-red"></i
-                      ></a>
+                    <div class="col-4 mt-3">
+                      <div class="d-flex">
+                        <a
+                          type="button"
+                          id="btn-modal"
+                          data-toggle="modal"
+                          data-target="#eliminar"
+                          ><i class="bx bx-trash icon-red"></i
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -425,30 +446,41 @@
         <div class="col-12">
           <span class="definition">Documentos</span>
         </div>
-
-        <div class="col-6 mt-3">
-          <form>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar" />
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                  <i class="bx bx-search"></i>
-                </button>
+        <div class="col-12">
+          <div class="justify-content-between">
+            <div class="row">
+              <div class="col-md-12 col-lg-4 mt-3">
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Buscar"
+                    />
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <i class="bx bx-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-12 col-lg-6"></div>
+              <div class="col-md-12 col-lg-2 mt-3" align="right">
+                <a
+                  class="btn-agregar-ppi"
+                  data-toggle="modal"
+                  data-target="#documento-ppiModal"
+                  href="#documento-ppiModal"
+                  role="button"
+                >
+                  <i class="bx bx-plus"></i> Agregar
+                </a>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-        <div class="col-6" align="right">
-          <button
-            class="btn-agregar-ppi mt-2"
-            type="button"
-            id="btn-modal"
-            data-toggle="modal"
-            data-target="#documento-ppiModal"
-          >
-            <i class="bx bx-plus"></i> Agregar
-          </button>
-        </div>
+
         <div class="col-12">
           <div class="card col-12 mt-3 p-2">
             <div class="col-12">
@@ -528,14 +560,14 @@
       </div>
 
       <div class="row">
-        <div class="col-10 mt-3 p-3">
-          <strong class="sub">Alcance de la inspección</strong><br />
+        <div class="col-md-12 col-lg-10 mt-3 p-3">
+          <strong>Alcance de la inspección</strong><br />
           <span class="sub"
             >Agrega los elementos a inspección y la cantidad de puntos de
             inspección requeridos</span
           >
         </div>
-        <div class="col-2 mt-3" align="right">
+        <div class="col-md-12 col-lg-2 mt-3" align="right">
           <button
             type="button"
             id="btn-modal"
@@ -592,10 +624,10 @@
     </div>
     <div class="col-12 mt-2">
       <div class="row">
-        <div class="col-3">
+        <div class="col-md-12 col-lg-3">
           <strong>Resultados de la inspección</strong>
         </div>
-        <div class="col-9">
+        <div class="col-md-12 col-lg-9">
           <div class="form-check form-check-inline">
             <input
               class="form-check-input mt-1"
@@ -645,7 +677,7 @@
                     placeholder="Ingresa la descripción breve de la conclusión de la inspección"
                   ></textarea>
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-md-12 col-lg-6 mb-3">
                   <label>Nombre del inspector</label>
                   <input
                     type="text"
@@ -653,7 +685,7 @@
                     placeholder="Ingrese el nombre"
                   />
                 </div>
-                <div class="col-6 mb-3">
+                <div class="col-md-12 col-lg-6 mb-3">
                   <label>Fecha/hora de término</label>
                   <input type="text" class="form-control" />
                 </div>

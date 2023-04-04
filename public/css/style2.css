@@ -1,3 +1,4 @@
+body,
 .contenido {
   width: 100%;
   padding: auto;
@@ -16,8 +17,13 @@ html {
 *:after {
   box-sizing: inherit;
 }
-a {
+a,
+a:hover {
   text-decoration: none !important;
+  color: #343633;
+}
+.span-costo {
+  font-family: "Montserrat", sans-serif !important;
 }
 .navbar {
   width: 100%;
@@ -82,7 +88,10 @@ a {
   color: white !important;
 }
 .icon-green {
-  color: green !important;
+  color: #28a745 !important;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 .icon-blue {
   color: blue !important;
@@ -130,7 +139,7 @@ a {
   height: 16px;
   /* project/spring */
 
-  background: #28a745;
+  background: #28a745 !important;
   border-radius: 20px;
 }
 
@@ -160,7 +169,7 @@ a {
 
   /* project/warning */
 
-  background: #fc9432;
+  background: #fc9432 !important;
   border-radius: 20px;
 
   /* Inside auto layout */
@@ -179,7 +188,7 @@ a {
   height: 16px;
   /* Highlight/blue */
 
-  background: #dc3545;
+  background: #dc3545 !important;
   border-radius: 20px;
 }
 .bg-danger-compra {
@@ -274,6 +283,17 @@ a {
 
 .user-info {
   margin-right: -15px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
 }
 .align {
   text-align: right;
@@ -310,7 +330,6 @@ a {
   box-sizing: border-box;
 
   /* Auto layout */
-
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -331,6 +350,22 @@ a {
 
   flex: none;
   order: 0;
+  flex-grow: 0;
+}
+.text-botonera {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+  vertical-align: top;
+  /* project/white */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
   flex-grow: 0;
 }
 .tabla {
@@ -480,6 +515,35 @@ td {
   order: 0;
   flex-grow: 0;
 }
+.btn-tarea-completada {
+  box-sizing: border-box;
+  color: #fff;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 8px;
+
+  width: 217px;
+  height: 34px;
+
+  /* project/success */
+
+  background: #28a745;
+  /* project/success */
+
+  border: 1px solid #28a745;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 .btn-agregar {
   /* Button */
 
@@ -494,7 +558,6 @@ td {
   padding: 5px 15px;
   gap: 8px;
 
-  width: auto;
   height: 34px;
 
   /* project/primary */
@@ -1173,9 +1236,9 @@ tr .next {
 }
 .añadir {
   /* Añadir */
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  width: 46px;
-  height: 15px;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 13px;
@@ -1926,7 +1989,6 @@ object {
   padding: 5px 15px;
   gap: 8px;
 
-  width: auto;
   height: 34px;
 
   background: #ffffff;
@@ -2055,6 +2117,9 @@ object {
   order: 0;
   flex-grow: 0;
 }
+.btn {
+  font-family: "Montserrat", sans-serif !important;
+}
 .i-acordion {
   font-weight: 400;
   font-size: 12px;
@@ -2076,10 +2141,99 @@ object {
   flex-grow: 0;
 }
 .clasificacion {
-  padding: 5px !important;
   color: white !important;
-  border-radius: 7px !important;
+  /* display: flex; */
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+
+  height: 24px;
+
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .clasificacion i {
+  vertical-align: top;
+  text-align: center !important;
   color: white !important;
+  line-height: 14px;
+}
+.img-header {
+  width: 60px;
+  height: 60px;
+}
+.img-documento {
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+}
+.title-doc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  text-transform: capitalize;
+
+  /* black-text */
+
+  color: #373936;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.sub-title-doc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* project/dark-gray */
+
+  color: #707070;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.img-tarea {
+  width: 30px;
+  height: 30px;
+}
+/* Este elemento debe tener "position: relative" */
+div#is-relative {
+  position: relative;
+}
+
+/* El icono debe ser "position: absolute"
+ * Ademas le damos un "display: block" y lo posicionamos */
+#icon {
+  position: absolute;
+  display: block;
+  bottom: 0.5rem;
+  right: 1rem;
+
+  user-select: none;
+  cursor: pointer;
 }
