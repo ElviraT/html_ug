@@ -23,9 +23,9 @@ select.selectpicker {
 .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
 .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
-  color: #999;
+  color: #d0d5dd;
   background: #fff;
-  outline: thin dotted #333 !important;
+  border: 1px solid #d0d5dd !important;
 }
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-danger:active,
@@ -51,7 +51,7 @@ select.selectpicker {
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:active,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:focus,
 .bootstrap-select > .dropdown-toggle.bs-placeholder.btn-success:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(58, 56, 56, 0.5);
 }
 .bootstrap-select > select {
   position: absolute !important;
@@ -59,10 +59,10 @@ select.selectpicker {
   left: 50%;
   display: block !important;
   width: 0.5px !important;
-  height: 100% !important;
+  height: 34px !important;
   padding: 0 !important;
   opacity: 0 !important;
-  border: 1px solid #999 !important;
+  border: 1px solid #d0d5dd !important;
 }
 .bootstrap-select > select.mobile-device {
   top: 0;
@@ -192,6 +192,7 @@ select.selectpicker {
 }
 .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
   overflow: hidden;
+  color: #707070 !important;
 }
 .bootstrap-select .dropdown-toggle .caret {
   position: absolute;

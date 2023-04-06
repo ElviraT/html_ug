@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de calidad</title>
+
+    <link
+      rel="stylesheet"
+      href="../../public/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Fonts -->
+    <link href="../../public/css/css2.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
+    <link href="../../public/css/boxicons.min.css" rel="stylesheet" />
+    <!-- select -->
+    <link rel="stylesheet" href="../../public/css/bootstrap-select.min.css" />
+    <!-- Styles personalizado -->
+    <link rel="stylesheet" type="text/css" href="../../public/css/style2.css" />
+  </head>
+  <body class="contenido">
+    <div class="content">
+      <div data-include="../../encabezado/header_sinfiltro"></div>
+      <br />
+      <div class="container-fluid justify-content-between migas">
+        <div class="col-12">
+          <div class="row mt-5">
+            <div class="col-md-12 col-lg-6 mt-3">
+              <a href="/"
+                ><i class="bx bx-arrow-back"></i>
+                <span class="regresar">&nbsp;&nbsp;Regresar</span></a
+              >
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class=""><a href="#">Usted esta aquí:&nbsp;</a></li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Sistema de gestión</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Agregar productos o servicios
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div data-include="../../reportes/producto-servicio"></div>
+    </div>
+  </body>
+  <script src="../../public/js/jquery-3.6.3.js"></script>
+  <script src="../../public/js2/popper.min.js" crossorigin="anonymous"></script>
+  <script
+    src="../../public/js2/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- select -->
+  <script src="../../public/js2/bootstrap-select.min.js"></script>
+
+  <script>
+    $(function () {
+      var includes = $("[data-include]");
+      $.each(includes, function () {
+        var file = "view/" + $(this).data("include") + ".html";
+        $(this).load(file);
+      });
+    });
+  </script>
+</html>

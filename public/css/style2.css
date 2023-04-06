@@ -12,6 +12,36 @@ body,
 html {
   box-sizing: border-box;
 }
+/* Tamaño del scroll */
+.contenido::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+/* Estilos barra (thumb) de scroll */
+.contenido::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+  border-radius: 4px !important;
+}
+
+.contenido::-webkit-scrollbar-thumb:active {
+  background-color: #999999 !important;
+}
+
+.contenido::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3 !important;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Estilos track de scroll */
+.contenido::-webkit-scrollbar-track {
+  background: #e1e1e1 !important;
+  border-radius: 4px !important;
+}
+
+.contenido::-webkit-scrollbar-track:hover,
+.contenido::-webkit-scrollbar-track:active {
+  background: #d4d4d4 !important;
+}
 *,
 *:before,
 *:after {
@@ -81,9 +111,8 @@ a:hover {
 
 .iconos {
   color: #000000 !important;
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
-
 .icon-white {
   color: white !important;
 }
@@ -234,6 +263,32 @@ a:hover {
   /* project/success */
 
   background: #28a745;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.bg-secondary {
+  /* Tag */
+
+  /* Auto layout */
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+
+  width: 23px;
+  height: 24px;
+
+  /* project/blue */
+
+  background: #d0d5dd !important;
   border-radius: 4px;
 
   /* Inside auto layout */
@@ -439,11 +494,20 @@ td {
   flex-grow: 1;
 }
 .img-circle {
+  width: 30px;
+  height: 30px;
+
   border-radius: 20px;
 }
+.img-circle i {
+  font-size: 15px;
+  vertical-align: top;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .tag-success {
-  /* Tag */
-
   /* Auto layout */
   color: #fff;
   display: flex;
@@ -740,6 +804,9 @@ tr .next {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+.custom-blue {
+  accent-color: #3b82f6;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #28a745 !important;
@@ -1380,21 +1447,21 @@ tr .next {
 .border-card {
   /* Container */
 
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 
   /* Auto layout */
-  color: #707070;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 7px 10px;
-  gap: 10px;
+  color: #707070 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 7px 10px !important;
+  gap: 10px !important;
 
-  background: #ffffff;
+  background: #ffffff !important;
   /* project/primary */
 
-  border-left: 10px solid #516184;
-  border-radius: 4px;
+  border-left: 10px solid #516184 !important;
+  border-radius: 4px !important;
 
   /* Inside auto layout */
 
@@ -2236,4 +2303,64 @@ div#is-relative {
 
   user-select: none;
   cursor: pointer;
+}
+.pagination {
+  justify-content: right !important;
+  align-content: right !important;
+  align-items: right !important;
+  align-content: flex-end !important;
+  justify-content: flex-end !important;
+}
+.pagination a {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+
+  width: 48px;
+  height: 48px;
+
+  /* Light / Surfaces / Content */
+
+  background: #ffffff;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.pagination a.active {
+  /* Paginator-Count */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+
+  width: 48px;
+  height: 48px;
+
+  /* Light/Utility/Primary-Transparent */
+
+  background: #eff6ff;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  flex-grow: 0;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
 }

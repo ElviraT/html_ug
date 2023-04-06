@@ -1851,8 +1851,31 @@ pre code {
   display: block;
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; */
+}
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.table-responsive::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.table-responsive::-webkit-scrollbar-button:increment,
+.table-responsive::-webkit-scrollbar-button {
+  display: none;
+}
+.table-responsive::-webkit-scrollbar:horizontal {
+  height: 10px !important;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1 !important;
+  border-radius: 20px !important;
+  border: 2px solid #f1f2f3 !important;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  border-radius: 10px !important;
 }
 .table-responsive > .table-bordered {
   border: 0;
@@ -4757,7 +4780,7 @@ tbody.collapse.show {
   justify-content: center;
   color: #fff;
   text-align: center;
-  background-color: #007bff;
+  background-color: #3b82f6;
   transition: width 0.6s ease;
 }
 .progress-bar-striped {

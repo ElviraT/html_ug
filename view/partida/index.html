@@ -21,11 +21,11 @@
   </div>
 </div>
 <!-- tabla -->
-<div id="accordion">
-  <div class="card mt-3">
+<div id="accordion  mt-3">
+  <div class="card border-0">
     <div class="card-header" id="partidaheadingOne">
       <h5 class="mb-0">
-        <button
+        <div
           class="btn"
           data-toggle="collapse"
           data-target="#partidacollapseOne"
@@ -33,10 +33,14 @@
           aria-controls="partidacollapseOne"
         >
           <div class="row">
-            <span class="bg bg-primary">4</span>&nbsp; Bus de enlace:
-            <strong>NACH-GMRC-COB-0001</strong>
+            <span class="bg bg-primary">4</span>&nbsp;<span
+              class="span-costo"
+              style="font-size: 12px"
+            >
+              Bus de enlace: <strong>NACH-GMRC-COB-0001</strong></span
+            >
           </div>
-        </button>
+        </div>
         &nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#partidaModal"
           ><i class="bx bx-pencil"></i
         ></a>
@@ -51,17 +55,17 @@
     >
       <div class="card-body">
         <div class="table-responsive">
-          <table width="100%">
+          <table class="table">
             <thead>
               <tr>
-                <th width="16%">Order code</th>
-                <th width="5%">Marca</th>
-                <th width="7%">Serie</th>
-                <th width="12%">Inspección Calidad</th>
-                <th width="15%">Solicita RFQ</th>
-                <th width="15%">Orden de compra</th>
-                <th width="15%">Ingeniería</th>
-                <th width="15%">Reciben en almacén</th>
+                <th>Order code</th>
+                <th>Marca</th>
+                <th>Serie</th>
+                <th>Inspección Calidad</th>
+                <th>Solicita RFQ</th>
+                <th>Orden de compra</th>
+                <th>Ingeniería</th>
+                <th>Reciben en almacén</th>
               </tr>
             </thead>
             <tbody>
@@ -74,56 +78,39 @@
                 <td>11250696</td>
                 <!-- inspección calidad -->
                 <td align="center">
-                  <div
-                    class="myTest custom-control custom-checkbox text-center"
-                  >
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customCheck3"
-                      checked
-                    />
-                    <label
-                      class="custom-control-label mt-1"
-                      for="customCheck1"
-                    ></label>
-                  </div>
+                  <input type="checkbox" class="custom-blue" id="c4" checked />
                 </td>
                 <!-- solicita rfq -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Nov 16, 2016
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Nov 16, 2016</span>
                 </td>
                 <!-- orden compra -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Mar 22, 2013
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Mar 22, 2013</span>
                 </td>
                 <!-- ingeniería -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
               </tr>
               <tr>
@@ -135,53 +122,43 @@
                 <td>11250696</td>
                 <!-- inspección calidad -->
                 <td align="center">
-                  <div class="myTest custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customCheck3"
-                    />
-                    <label
-                      class="custom-control-label mt-1"
-                      for="customCheck1"
-                    ></label>
-                  </div>
+                  <input
+                    type="checkbox"
+                    class="custom-blue"
+                    id="customCheck3"
+                  />
                 </td>
                 <!-- solicita rfq -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Nov 16, 2016
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Nov 16, 2016</span>
                 </td>
                 <!-- orden compra -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Mar 22, 2013
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Mar 22, 2013</span>
                 </td>
                 <!-- ingeniería -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
               </tr>
               <tr>
@@ -193,53 +170,43 @@
                 <td>11250696</td>
                 <!-- inspección calidad -->
                 <td align="center">
-                  <div class="myTest custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customCheck3"
-                    />
-                    <label
-                      class="custom-control-label mt-1"
-                      for="customCheck1"
-                    ></label>
-                  </div>
+                  <input
+                    type="checkbox"
+                    class="custom-blue"
+                    id="customCheck4"
+                  />
                 </td>
                 <!-- solicita rfq -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Nov 16, 2016
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Nov 16, 2016</span>
                 </td>
                 <!-- orden compra -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Mar 22, 2013
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Mar 22, 2013</span>
                 </td>
                 <!-- ingeniería -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
               </tr>
               <tr>
@@ -251,54 +218,44 @@
                 <td>11250696</td>
                 <!-- inspección calidad -->
                 <td align="center">
-                  <div class="myTest custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customCheck3"
-                      checked
-                    />
-                    <label
-                      class="custom-control-label mt-1"
-                      for="customCheck1"
-                    ></label>
-                  </div>
+                  <input
+                    type="checkbox"
+                    class="custom-blue"
+                    id="customCheck5"
+                    checked
+                  />
                 </td>
                 <!-- solicita rfq -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Nov 16, 2016
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Nov 16, 2016</span>
                 </td>
                 <!-- orden compra -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Mar 22, 2013
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Mar 22, 2013</span>
                 </td>
                 <!-- ingeniería -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
               </tr>
               <tr>
@@ -310,54 +267,44 @@
                 <td>11250696</td>
                 <!-- inspección calidad -->
                 <td align="center">
-                  <div class="myTest custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customCheck3"
-                      checked
-                    />
-                    <label
-                      class="custom-control-label mt-1"
-                      for="customCheck1"
-                    ></label>
-                  </div>
+                  <input
+                    type="checkbox"
+                    class="custom-blue"
+                    id="customCheck6"
+                    checked
+                  />
                 </td>
                 <!-- solicita rfq -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Nov 16, 2016
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Nov 16, 2016</span>
                 </td>
                 <!-- orden compra -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Mar 22, 2013
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Mar 22, 2013</span>
                 </td>
                 <!-- ingeniería -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
                 <td>
                   <img
                     src="public/image/user.png"
                     alt="user"
-                    class="rounded-circle"
-                    width="20%"
-                  />&nbsp;&nbsp;Sep 01, 2000
+                    class="rounded-circle user-info"
+                  /><span class="ml-4">Sep 01, 2000</span>
                 </td>
               </tr>
             </tbody>
@@ -366,10 +313,10 @@
       </div>
     </div>
   </div>
-  <div class="card">
+  <div class="card border-0">
     <div class="card-header" id="partidaheadingTwo">
       <h5 class="mb-0">
-        <button
+        <div
           class="btn"
           data-toggle="collapse"
           data-target="#partidaTwo"
@@ -377,10 +324,14 @@
           aria-controls="partidaTwo"
         >
           <div class="row">
-            <span class="bg bg-primary">4</span>&nbsp; Bus de enlace:
-            <strong>NACH-GMRC-COB-0001</strong>
+            <span class="bg bg-primary">4</span>&nbsp;<span
+              class="span-costo"
+              style="font-size: 12px"
+            >
+              Bus de enlace: <strong>NACH-GMRC-COB-0001</strong></span
+            >
           </div>
-        </button>
+        </div>
         &nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#partidaModal"
           ><i class="bx bx-pencil"></i
         ></a>
