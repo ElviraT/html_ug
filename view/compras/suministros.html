@@ -1,0 +1,184 @@
+<div class="col-12 mt-3">
+  <div class="row">
+    <div class="col-md-6 col-lg-10">
+      <strong>Agregar nuevo suministro</strong><br />
+      <span>Información general del suministro</span>
+    </div> 
+    <div class="col-md-6 col-lg-2" align="right">
+      <div class="d-flex">
+          <button type="button" class="btn-agregar-ppi">Cancelar</button>&nbsp;&nbsp;
+          <button type="button" class="btn-agregar">Guardar</button>        
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="col-12 mt-3">
+  <div class="card">
+    <div class="col-12 p-2">
+      <strong>Datos del suministro</strong>
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-4 mb-3">
+          <label>Order code</label>
+          <input type="text" 
+          name="order" 
+          class="form-control" 
+          placeholder="Ingresa el order code" />
+        </div>
+        <div class="col-4 mb-3">
+          <label>Marca</label>
+          <select
+            class="form-control selectpicker"
+            data-live-search="true"
+            title="Selecciona la marca"
+          >
+            <option value="1">Test</option>
+            <option value="2">Test</option>
+            <option value="3">Test</option>
+          </select>
+          <a
+              href="#"
+              class="añadir"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
+        </div>
+        <div class="col-4 mb-3">
+          <label>Modelo</label>
+          <input type="text" 
+          name="modelo"
+          class="form-control"
+          placeholder="Ingresa el modelo" />
+        </div>  
+        <div class="col-4 mb-3">
+          <label>Entrega</label>
+          <select
+            class="form-control selectpicker"
+            data-live-search="true"
+            title="Selecciona la entrega"
+          >
+            <option value="1">Test</option>
+            <option value="2">Test</option>
+            <option value="3">Test</option>
+          </select>
+          <a
+              href="#"
+              class="añadir"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
+        </div>     
+        <div class="col-4 mb-3">
+          <label>Descripción</label>
+          <textarea class="form-control" rows="2" placeholder="Ingresa la descripción"></textarea>
+        </div>     
+        <div class="col-4 mb-3">
+          <label>Clasificador</label>
+          <select
+            class="form-control selectpicker"
+            data-live-search="true"
+            title="Selecciona el clasificador"
+          >
+            <option value="1">Test</option>
+            <option value="2">Test</option>
+            <option value="3">Test</option>
+          </select>
+          <a
+              href="#"
+              class="añadir"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
+        </div> 
+         <div class="col-4 mb-3">
+          <label>Subclasificador</label>
+          <select
+            class="form-control selectpicker"
+            data-live-search="true"
+            title="Selecciona el subclasificador"
+          >
+            <option value="1">Test</option>
+            <option value="2">Test</option>
+            <option value="3">Test</option>
+          </select>
+          <a
+              href="#"
+              class="añadir"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
+        </div>
+         <div class="col-4 mb-3">
+          <label>Último proveedor</label>
+          <select
+            class="form-control selectpicker"
+            data-live-search="true"
+            title="Selecciona el proveedor"
+          >
+            <option value="1">Test</option>
+            <option value="2">Test</option>
+            <option value="3">Test</option>
+          </select>
+          <a
+              href="#"
+              class="añadir"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
+        </div> 
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+              <label>Garantía (meses)</label>
+              <input type="text" name="garantia" class="form-control" placeholder="Ingresa la garantia">
+            </div>
+            <div class="col-6">
+              <label>T. entrega (semanas)</label>
+              <input type="text" name="tentrega" class="form-control" placeholder="Ingresa el tiempo">
+            </div>
+          </div>
+        </div> 
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+              <label>Precio ($3,853.12)</label>
+              <input type="text" name="precio" class="form-control" placeholder="Ingresa el precio">
+            </div>
+            <div class="col-6">
+              <label>Moneda</label>
+              <select
+                class="form-control selectpicker"
+                data-live-search="true"
+                title="Selecciona la moneda"
+              >
+                <option value="1">Test</option>
+                <option value="2">Test</option>
+                <option value="3">Test</option>
+              </select>
+          <a
+              href="#"
+              class="añadir"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
+            </div>
+          </div>
+        </div> 
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+              <label>Porcentaje de anticipo</label>
+              <input type="text" name="anticipo" class="form-control" placeholder="Ingresa el porcentaje">
+            </div>
+            <div class="col-6">
+              <label>Días de crédito</label>
+              <input type="text" name="credito" class="form-control" placeholder="Ingresa los días">
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+</script>

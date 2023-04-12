@@ -111,6 +111,11 @@
   </div>
 </div>
 <script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
   $("#file-cotizacion").fileinput({
     allowedFileExtensions: ["jpg", "jpeg", "png"],
     overwriteInitial: false,
