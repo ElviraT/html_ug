@@ -1,3 +1,15 @@
+<style type="text/css">
+  .kv-file-content {
+  width: 177px !important;
+  height: 177px !important;
+}
+.file-input{
+  width: 250px !important;
+}
+.file-thumbnail-footer{
+  display: none;
+}
+</style>
 <div class="col-12 mt-3">
   <div class="row">
     <div class="col-md-6 col-lg-10">
@@ -40,6 +52,8 @@
           <a
               href="#"
               class="añadir"
+              data-toggle="modal"
+              data-target="#add_marcas"
               ><i class="bx bx-plus"></i> Añadir</a
             >
         </div>
@@ -85,6 +99,8 @@
           <a
               href="#"
               class="añadir"
+              data-toggle="modal"
+              data-target="#add_clasificador"
               ><i class="bx bx-plus"></i> Añadir</a
             >
         </div> 
@@ -170,9 +186,68 @@
               <input type="text" name="credito" class="form-control" placeholder="Ingresa los días">
             </div>
           </div>
-        </div>   
+        </div>  
+        <div class="col-6 mb-3 mt-3">
+          <label>Fotografía (opcional)</label>
+          <input
+                id="file-suministro"
+                name="input-b1"
+                type="file"
+                accept="image/*"
+              />
+        </div> 
       </div>
     </div>
+  </div>
+  <div class="card mt-3 mb-3">
+    <div class="col-12 mt-3">
+      <div class="row">
+        <div class="col-6">
+          <strong>Documentos relacionados</strong><br>
+          <span>Detalles de los documentos relacionados</span>
+        </div>
+        <div class="col-6" align="right">
+          <button type="button" class="btn-agregar-ppi"><i class="bx bx-plus"></i><strong> Añadir documento</strong></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mt-3">
+      <table width="100%">
+        <tbody>
+          <tr height="80">
+            <td width="1%"><button class="icono-eliminar rounded-circle"><i class='bx bxs-file-pdf icono-error'></i></button></td>
+            <td width="97%">
+              <div class="col-12">
+                <strong>Bases Liciación.Pdf</strong><br>
+                <span><i class='bx bx-calendar-alt'></i> 16 Abr. 2021</span>
+              </div>
+            </td>
+            <td width="2%"><a href="#"><div class="circle-x"><i class='bx bx-plus' style="transform: rotate(45deg);margin-top: 6px;margin-left: 6px;"></i></div></a></td>
+          </tr>
+          <tr height="80">
+            <td width="1%"><button class="icono-eliminar rounded-circle"><i class='bx bxs-file-pdf icono-error'></i></button></td>
+            <td width="97%">
+              <div class="col-12">
+                <strong>Bases Liciación.Pdf</strong><br>
+                <span><i class='bx bx-calendar-alt'></i> 16 Abr. 2021</span>
+              </div>
+            </td>
+            <td width="2%"><a href="#"><div class="circle-x"><i class='bx bx-plus' style="transform: rotate(45deg);margin-top: 6px;margin-left: 6px;"></i></div></a></td>
+          </tr>
+          <tr height="80">
+            <td width="1%"><button class="icono-eliminar rounded-circle"><i class='bx bxs-file-pdf icono-error'></i></button></td>
+            <td width="97%">
+              <div class="col-12">
+                <strong>Bases Liciación.Pdf</strong><br>
+                <span><i class='bx bx-calendar-alt'></i> 16 Abr. 2021</span>
+              </div>
+            </td>
+            <td width="2%"><a href="#"><div class="circle-x"><i class='bx bx-plus' style="transform: rotate(45deg);margin-top: 6px;margin-left: 6px;"></i></div></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
   </div>
 </div>
 <script>
@@ -180,5 +255,28 @@
     $(function () {
       $(".selectpicker").selectpicker();
     });
+  });
+   $("#file-suministro").fileinput({
+    initialPreview:
+      "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/631px-FullMoon2010.jpg",
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    overwriteInitial: false,
+    initialPreviewAsData: true,
+    maxFileSize: 1024,
+    maxFilesNum: 1,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+    // maxImageWidth: 177,
+    // maxImageHeight: 177,
+    // resizePreference: 'width',
+    resizeImage: true,
+    initialPreviewConfig: [
+    {         
+        width: '120px', 
+    }
+    ], 
+    
   });
 </script>

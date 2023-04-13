@@ -2140,6 +2140,7 @@ object {
 .centrar {
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 .icono-error {
   left: 13.81%;
@@ -2363,4 +2364,16 @@ div#is-relative {
 }
 .pagination a:hover:not(.active) {
   background-color: #ddd;
+}
+.circle-x{
+  box-sizing: border-box;
+
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50px;
+ 
+  /* stroke */
+
+  border: 0.5px solid #7C859B;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
 }
