@@ -1,0 +1,117 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add_lugares"
+  tabindex="-1"
+  aria-labelledby="add_lugaresModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="add_lugaresModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Administrar Lugares de entrega
+        </h3>
+      </div>
+      <div class="modal-body p-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="content-proveedores col-5 p-2">
+              <strong class="entrega mb-2">Entregas</strong><br>
+              <span>Consulta las entregas existentes</span>
+              <hr />
+              <div class="border-card-sm">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-1 p-0 align-content-center mt-2">
+                      <span class="entrega-porcentaje">3%</span>
+                    </div>
+                    <div class="col-11">
+                      <strong class="entrega-title">ACDMX</strong><br />
+                      <span class="sub-entrega">aeropuerto CDMX</span>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="border-card-sm mt-2">
+               <div class="col-12">
+                  <div class="row">
+                    <div class="col-1 p-0 align-content-center mt-2">
+                      <span class="entrega-porcentaje">5%</span>
+                    </div>
+                    <div class="col-11">
+                      <strong class="entrega-title">EXW</strong><br />
+                      <span class="sub-entrega">Exworks</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-card-sm mt-2">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-1 p-0 align-content-center mt-2">
+                      <span class="entrega-porcentaje">0%</span>
+                    </div>
+                    <div class="col-11">
+                      <strong class="entrega-title">OFCDMX</strong><br />
+                      <span class="sub-entrega">Oficina CDMX</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+             <div class="col-12 mb-2">
+                <label>Clave</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa la clave"
+                />
+              </div>
+              <div class="col-12 mb-2">
+                <label>Descripción</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa la descripción corta"
+                />
+              </div>
+              <div class="col-12 mb-2">
+                <label> Requiere aduana </label>&nbsp;
+                <label class="switch mb-3">
+                  <input type="checkbox" class="success" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="col-12 mb-2">
+                <label>Porcentaje de trámites aduanales</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa el porcentaje"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary""
+        >
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

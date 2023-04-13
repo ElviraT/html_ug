@@ -1,0 +1,53 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="documento-relacionado"
+  tabindex="-1"
+  aria-labelledby="documento-relacionadoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="documento-relacionadoModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Documentos adjuntos relacionados
+        </h3>
+      </div>
+      <div class="modal-body p-4">
+        <span class="titulo-dr">Selecciona el archivo, recuerda que los formatos puede ser 
+        PDF, XLS, DOC</span>
+        <div class="row">
+          <div class="col-12 mt-2 mb-3">
+            <label>Adjuntar comprobante</label>
+            <input
+              id="comprobante"
+              name="input-b1"
+              type="file"
+              class="file"
+              data-browse-on-zone-click="true"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn-agregar">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $("#comprobante").fileinput({
+    allowedFileExtensions: ["pdf", "xls", "doc"],
+    overwriteInitial: false,
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>
