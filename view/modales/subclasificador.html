@@ -1,0 +1,90 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add_subclasificador"
+  tabindex="-1"
+  aria-labelledby="add_subclasificadorModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="add_subclasificadorModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Administrar Clasificadores
+        </h3>
+      </div>
+      <div class="modal-body p-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="content-proveedores col-5 p-2">
+              <strong class="mb-2">Subclasificadores</strong><br>
+              <span>Consulta las subclasificaciones existentes</span>
+              <hr />
+              <div class="borde-green">
+                <div>
+                  <span class="proveedor">Mensajeria</span><br />
+                  <span class="sub-proveedor">Habilitado</span>
+                </div>
+              </div>
+              <div class="borde-green mt-2">
+                <div>
+                  <span class="proveedor">Hardware</span><br />
+                  <span class="sub-proveedor">Habilitado</span>
+                </div>
+              </div>
+              <div class="borde-red mt-2">
+                <div>
+                  <span class="proveedor">Licencias</span><br />
+                  <span class="sub-proveedor">Deshabilitado</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="col-12 mb-3">
+                <label>Clasificador</label>
+                <select
+                  class="selectpicker form-control"
+                  data-live-search="true"
+                  title="Selecciona"
+                >
+                  <option value="1">Servicio</option>
+                </select>
+              </div>
+              <div class="col-12 mb-3">
+                <label>Descripción</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingresa la descripción corta"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label> Habilitado </label>&nbsp;
+                <label class="switch mb-3">
+                  <input type="checkbox" class="success" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          data-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary""
+        >
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
