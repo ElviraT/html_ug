@@ -1,16 +1,16 @@
 <!-- Modal -->
 <div
   class="modal fade"
-  id="empresaModal"
+  id="AproveedorModal"
   tabindex="-1"
-  aria-labelledby="empresaModalLabel"
+  aria-labelledby="AproveedorModalLabel"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-3">
       <div class="modal-header">
-        <h3 class="modal-title fs-5" id="empresaModalLabel">
-          <i class="bx bx-plus ico-add"></i>Agregar empresa
+        <h3 class="modal-title fs-5" id="AproveedorModalLabel">
+          <i class="bx bx-plus ico-add"></i>Asignar proveedor
         </h3>
       </div>
       <div class="modal-body p-4">
@@ -23,6 +23,13 @@
               name="nombre"
               placeholder="Ingrese el nombre"
             />
+            <a
+              href="#"
+              class="añadir"
+              data-toggle="modal"
+              data-target="#proveedor"
+              ><i class="bx bx-plus"></i> Añadir</a
+            >
           </div>
           <div class="col-6 mb-3">
             <label>RFC</label>
@@ -142,6 +149,13 @@
                 <i class="bx bx-calendar"></i>
               </span>
             </div>
+          </div>
+          <div class="col-12 mb-2">
+            <strong>Garantía</strong>
+          </div>
+          <div class="col-6">
+            <label>Tiempo de garantia (en meses)</label>
+            <input type="text" class="form-control" placeholder="Ingresa la cantidad en meses">
           </div>
         </div>
       </div>

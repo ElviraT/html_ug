@@ -1,0 +1,93 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="admin_contacto"
+  tabindex="-1"
+  aria-labelledby="admin_contactoLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="admin_contactoLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Administrar contactos
+        </h3>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label>Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa el nombre"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Puesto</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa el puesto"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ingresa el email"
+            />
+          </div>
+          <div class="col-6 mb-3 input-daterange">
+            <label>Fecha de cumpleaños</label>
+            <div id="is-relative">
+              <input type="text" class="form-control" placeholder="Seleccione la fecha" />
+              <span id="icon">
+                <i class="bx bx-calendar"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <label>Teléfono</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa el teléfono"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Extensíon</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingresa la extensíon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn-agregar">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+
+    $(".input-daterange").datepicker({
+      format: "dd-mm-yyyy",
+      autoclose: true,
+      calendarWeeks: true,
+      clearBtn: true,
+      disableTouchKeyboard: true,
+    });
+  });
+  });
+</script>

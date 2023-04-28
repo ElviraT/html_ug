@@ -21,8 +21,7 @@
     <link href="../../public/css/boxicons.min.css" rel="stylesheet" />
     <!-- select -->
     <link rel="stylesheet" href="../../public/css/bootstrap-select.min.css" />
-    <!-- datepicker -->
-    <link rel="stylesheet" href="../../public/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="../../public/css/fileinput.min.css" />
     <!-- Styles personalizado -->
     <link rel="stylesheet" type="text/css" href="../../public/css/style2.css" />
   </head>
@@ -58,7 +57,7 @@
       </div>
     </div>
     <div class="container-fluid">
-      <div data-include="../../compras/orden_compra"></div>
+      <div data-include="../../costo/detalle"></div>
     </div>
   </body>
   <script src="../../public/js/jquery-3.6.3.js"></script>
@@ -67,9 +66,10 @@
     src="../../public/js2/bootstrap.min.js"
     crossorigin="anonymous"
   ></script>
+  
   <!-- select -->
   <script src="../../public/js2/bootstrap-select.min.js"></script>
-  <script src="../../public/js2/bootstrap-datepicker.js"></script>
+  <script src="../../public/js/fileinput.min.js"></script>
   <script>
     $(function () {
       var includes = $("[data-include]");
@@ -78,13 +78,13 @@
         $(this).load(file);
       });
     });
+    $(document).ready(function () {
+      $(function () {
+        $(".selectpicker").selectpicker();
+      });
+    });
   </script>
   <!-- modales -->
-  <div data-include="../../modales/asigna_proveedor"></div>
-  <div data-include="../../modales/add_partida"></div>
-  <div data-include="../../modales/editRegistro"></div>
-  <div data-include="../../modales/proveedor"></div>
-  <div data-include="../../modales/adm_cuenta"></div>
-  <div data-include="../../modales/admin_contacto"></div>
-  <div data-include="../../modales/admin_cuenta_internacional"></div>
+  <div data-include="../../modales/costo"></div>
+  <div data-include="../../modales/clasificacion"></div>
 </html>

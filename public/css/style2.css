@@ -2543,3 +2543,114 @@ div#is-relative {
   order: 15;
   flex-grow: 0;
 }
+.text-blue-rfq {
+  /* Tag Text */
+  width: 127px;
+  height: 16px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  /* project/blue */
+
+  color: #1071e5;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.title-resumen-gasto {
+  /* Resumen de gastos */
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  /* black-text */
+
+  color: #373936;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.sub-resumen-gasto {
+  /* Proyecto: */
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  /* identical to box height, or 113% */
+
+  /* gray */
+
+  color: #707070;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.tag-resumen {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+
+  width: 155px;
+  height: 24px;
+  color: #fff;
+
+  /* Highlight/green */
+
+  background: #68c699;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.btn-presupuesto {
+  /* Data-item */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px 12px 15px;
+  gap: 5px;
+
+  width: 184px;
+  height: 52px;
+
+  /* Highlight/blue */
+
+  background: #66a9f8;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.div-ellipsis {
+  width: 250px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -5,6 +5,7 @@
   tabindex="-1"
   aria-labelledby="add_pagoModalLabel"
   aria-hidden="true"
+  style="overflow-y: scroll; max-height:75%;"
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-4">
@@ -85,6 +86,65 @@
           Cancelar
         </button>
         <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+      <div class="card p-2 border-0">
+        <div class="col-md-12">
+          <div class="row">
+            <h4>Lista de pagos realizados</h4>
+            <table class="table">
+              <thead>
+                <th></th>
+                <th>Importe pagado</th>
+                <th>Clasificación</th>
+                <th>Fecha</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#"><i class="bx bx-download"></i></a>
+                  </td>
+                  <td>$ 14,500.00</td>
+                  <td>
+                    <span
+                      class="clasificacion"
+                      style="background-color: magenta"
+                      >Finanzas&nbsp;<i class="bx bx-bar-chart-alt-2"></i
+                    ></span>
+                  </td>
+                  <td>Sep 19, 2010</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"><i class="bx bx-download"></i></a>
+                  </td>
+                  <td>$ 8,720.00</td>
+                  <td>
+                    <span
+                    class="clasificacion"
+                    style="background-color: rgb(163, 163, 245)"
+                    >Servicios&nbsp;<i class="bx bx-wrench"></i
+                  ></span>
+                  </td>
+                  <td>Jul 11, 2015</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#"><i class="bx bx-download"></i></a>
+                  </td>
+                  <td>$ 17,900.00</td>
+                  <td>
+                    <span
+                    class="clasificacion"
+                    style="background-color: rgb(145, 241, 225)"
+                    >Equipos&nbsp;&nbsp;<i class="bx bxs-chip"></i
+                  ></span>
+                  </td>
+                  <td>Mar 02, 2019</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,289 @@
+<div class="justify-content-between mt-3">
+  <div class="col-12 p-3">
+    <div class="row">
+      <div class="col-md-6 col-lg-10">
+        <span class="title-resumen-gasto">Resumen de gastos</span>
+        <div class="ml-3 mt-1">
+          <div class="row">
+            <span class="sub-resumen-gasto">Proyecto:</span>&nbsp;<span
+              class="tag-resumen"
+              ><i class="bx bx-calendar-check icon-white"></i> Gestión de
+              calidad</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-2">
+        <div class="row">
+          <span class="btn-presupuesto">
+            <div class="row">
+              <div class="col-3 mt-3">
+                <i class="bx bx-money icon-white"></i>
+              </div>
+              <div class="col-9 icon-white p-0">
+                Presupuesto <br />
+                <strong><h5>$150,000.00</h5></strong>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12">
+  <div class="card p-3">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-3">
+          <select
+            class="selectpicker form-control"
+            data-live-search="true"
+            title="Filtrar por clasificación"
+          >
+            <option
+              value="1"
+              style="background-color: rgb(145, 241, 225)"
+              data-icon="bx bx-crosshair"
+            >
+              Equipos
+            </option>
+            <option
+              value="2"
+              style="background-color: rgb(163, 163, 245)"
+              data-icon="bx bx-wrench"
+            >
+              Servicios
+            </option>
+            <option
+              value="3"
+              style="background-color: magenta"
+              data-icon="bx bx-bar-chart"
+            >
+              Finanzas
+            </option>
+          </select>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <select
+            class="form-control selectpicker"
+            data-live-search="true"
+            title="Filtrar por Owner"
+          >
+            <option value="1">Floyd Miles</option>
+            <option value="2">Floyd Miles</option>
+            <option value="3">Floyd Miles</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="justify-content-between mb-3">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-md-12 col-lg-8 mt-3">
+            <strong> Listado de gastos </strong>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-1" align="right">
+            <form>
+              <div class="input-wrapper">
+                <input
+                  type="search"
+                  class="input form-control search"
+                  placeholder="Buscar"
+                />
+                <i class="bx bx-search input-icon"></i>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 col-lg-1">
+            <button
+              class="btn btn-agregar mt-1"
+              data-toggle="modal"
+              data-target="#costoModal"
+            >
+              Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="tabla">
+        <thead>
+          <tr>
+            <th>Owner</th>
+            <th>Fecha</th>
+            <th>Clasificación</th>
+            <th>Importe</th>
+            <th>Moneda</th>
+            <th>Acumulado</th>
+            <th>Saldo</th>
+            <th>Reseña</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="../../public/image/user.png"
+                class="rounded-circle img-tarea"
+                alt="..."
+              />&nbsp;Albert Flores
+            </td>
+            <td>Jan 27, 2024</td>
+            <td>
+              <span class="clasificacion" style="background-color: magenta"
+                >Finanzas&nbsp;<i class="bx bx-bar-chart-alt-2"></i
+              ></span>
+            </td>
+            <td>$3,500.00</td>
+            <td>USD</td>
+            <td>$26,720.00</td>
+            <td><span class="tag-success">$132,100.00</span></td>
+            <td>
+              <div class="div-ellipsis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat vel impedit minus explicabo voluptate possimus,
+                reiciendis repellendus. Inventore id
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="../../public/image/user.png"
+                class="rounded-circle img-tarea"
+                alt="..."
+              />&nbsp;Albert Flores
+            </td>
+            <td>Jan 27, 2024</td>
+            <td>
+                <span
+                class="clasificacion"
+                style="background-color: rgb(163, 163, 245)"
+                >Servicios&nbsp;<i class="bx bx-wrench"></i
+              ></span>
+            </td>
+            <td>$13,500.00</td>
+            <td>USD</td>
+            <td>$145,600.00</td>
+            <td><span class="tag-warning">$118,100.00</span></td>
+            <td>
+              <div class="div-ellipsis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat vel impedit minus explicabo voluptate possimus,
+                reiciendis repellendus. Inventore id
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="../../public/image/user.png"
+                class="rounded-circle img-tarea"
+                alt="..."
+              />&nbsp;Albert Flores
+            </td>
+            <td>Jan 27, 2024</td>
+            <td>
+                <span
+                class="clasificacion"
+                style="background-color: rgb(145, 241, 225)"
+                >Equipos&nbsp;&nbsp;<i class="bx bxs-chip"></i
+              ></span>
+            </td>
+            <td>$23,500.00</td>
+            <td>USD</td>
+            <td>$26,720.00</td>
+            <td><span class="tag-warning">$132,100.00</span></td>
+            <td>
+              <div class="div-ellipsis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat vel impedit minus explicabo voluptate possimus,
+                reiciendis repellendus. Inventore id
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="../../public/image/user.png"
+                class="rounded-circle img-tarea"
+                alt="..."
+              />&nbsp;Albert Flores
+            </td>
+            <td>Jan 27, 2024</td>
+            <td>
+              <span class="clasificacion" style="background-color: purple"
+                >Intereses&nbsp;<i class="bx bx-star"></i
+              ></span>
+            </td>
+            <td>$33,500.00</td>
+            <td>USD</td>
+            <td>$26,720.00</td>
+            <td><span class="tag-secondary">$1,500.00</span></td>
+            <td>
+              <div class="div-ellipsis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat vel impedit minus explicabo voluptate possimus,
+                reiciendis repellendus. Inventore id
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="../../public/image/user.png"
+                class="rounded-circle img-tarea"
+                alt="..."
+              />&nbsp;Albert Flores
+            </td>
+            <td>Jan 27, 2024</td>
+            <td>
+              <span class="clasificacion" style="background-color: greenyellow"
+                >Viaticos&nbsp;<i class="bx bx-car"></i
+              ></span>
+            </td>
+            <td>$43,500.00</td>
+            <td>USD</td>
+            <td>$26,720.00</td>
+            <td><span class="tag-danger">-$42,000.00</span></td>
+            <td>
+              <div class="div-ellipsis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat vel impedit minus explicabo voluptate possimus,
+                reiciendis repellendus. Inventore id
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="../../public/image/user.png"
+                class="rounded-circle img-tarea"
+                alt="..."
+              />&nbsp;Albert Flores
+            </td>
+            <td>Jan 27, 2024</td>
+            <td>
+              <span class="clasificacion" style="background-color: magenta"
+                >Pruebas FAT&nbsp;<i class="bx bx-calendar-check"></i
+              ></span>
+            </td>
+            <td>$13,500.00</td>
+            <td>USD</td>
+            <td>$26,720.00</td>
+            <td><span class="tag-danger">-$56,500.00</span></td>
+            <td>
+              <div class="div-ellipsis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat vel impedit minus explicabo voluptate possimus,
+                reiciendis repellendus. Inventore id
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

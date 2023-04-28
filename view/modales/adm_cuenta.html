@@ -1,0 +1,59 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="adm_cuenta"
+  tabindex="-1"
+  aria-labelledby="adm_cuentaLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="adm_cuentaLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Administrar cuenta bancaria nacional
+        </h3>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label>Banco</label>
+            <input type="text" class="form-control" placeholder="Ingresa el banco ejemplo: BBVA">
+          </div>
+          <div class="col-6 mb-3 ">
+            <label>Cuenta</label>
+              <input type="text" class="form-control" placeholder="Ingresa el número de cuenta" />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Cable</label>
+            <input type="text" class="form-control" placeholder="Ingresa la clave de 18 dígitos" />
+          </div>
+          <div class="col-6 mb-3">
+            <label>Moneda</label>
+            <select
+              class="selectpicker form-control"
+              data-live-search="true"
+              title="Selecciona"
+            >
+              <option value="1">$ USD</option>
+              <option value="2">$ Pesos</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn-agregar">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(function () {
+      $(".selectpicker").selectpicker();
+    });
+  });
+</script>

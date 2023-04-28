@@ -1,0 +1,50 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add_doc_tareaModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="exampleModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Agregar documento
+        </h3>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <input
+              id="file-4"
+              name="input-b1"
+              type="file"
+              class="file mt-3"
+              data-browse-on-zone-click="true"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-agregar-ppi" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn-agregar">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $("#file-4").fileinput({
+    allowedFileExtensions: ["jpg", "jpeg", "png"],
+    overwriteInitial: false,
+    maxFileSize: 1024,
+    maxFilesNum: 10,
+    showUpload: false,
+    showCaption: false,
+    showRemove: false,
+    showBrowse: false,
+  });
+</script>

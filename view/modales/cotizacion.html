@@ -76,18 +76,13 @@
               placeholder="Ingrese el lugar"
             />
           </div>
-          <div class="col-6 mb-3">
-            <label class="form-control-placeholder" id="end-p"
-              >Fecha de entrega</label
-            >
-            <div class="input-group">
-              <input
-                type="text"
-                id="liquidacion"
-                class="form-control text-left mr-2"
-                placeholder="dd/mm/aaa"
-              />
-              <span class="bx bx-calendar form-control-icon" id="fa-3"></span>
+          <div class="col-6 mb-3 input-daterange">
+            <label>Fecha de entrega</label>
+            <div id="is-relative">
+              <input type="text" class="form-control" placeholder="dd-mm-yyyy" />
+              <span id="icon">
+                <i class="bx bx-calendar"></i>
+              </span>
             </div>
           </div>
           <div class="col-12 mb-3">
@@ -127,7 +122,7 @@
     showBrowse: false,
   });
   $(document).ready(function () {
-    $("#entrega").datepicker({
+    $(".input-daterange").datepicker({
       format: "dd-mm-yyyy",
       autoclose: true,
       calendarWeeks: true,
@@ -138,4 +133,29 @@
     $("#cotizacion").modal("hide");
     $("#proveedor").modal("show");
   }
+  $("#proveedor").on("show.bs.modal", function (e) {
+    $("#cotizacion").modal("hide");
+  });
+  $("#proveedor").on("hidden.bs.modal", function (e) {
+    $("#cotizacion").modal("show");
+  });
+
+  $("#adm_cuenta").on("show.bs.modal", function (e) {
+    $("#proveedor").modal("hide");
+  });
+  $("#adm_cuenta").on("hidden.bs.modal", function (e) {
+    $("#proveedor").modal("show");
+  });
+  $("#admin_cuenta_int").on("show.bs.modal", function (e) {
+    $("#proveedor").modal("hide");
+  });
+  $("#admin_cuenta_int").on("hidden.bs.modal", function (e) {
+    $("#proveedor").modal("show");
+  });
+  $("#admin_contacto").on("show.bs.modal", function (e) {
+    $("#proveedor").modal("hide");
+  });
+  $("#admin_contacto").on("hidden.bs.modal", function (e) {
+    $("#proveedor").modal("show");
+  });
 </script>
