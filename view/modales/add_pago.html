@@ -1,0 +1,111 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add_pagoModal"
+  tabindex="-1"
+  aria-labelledby="add_pagoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="add_pagoModalLabel">
+          <i class="bx bx-plus ico-add"></i>
+          Agregar pago
+        </h3>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label>Importe</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese el importe"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <div class="row">
+              <div class="col-10">
+                <label>Clasificación</label>
+                <select
+                  class="selectpicker form-control"
+                  data-live-search="true"
+                  title="Selecciona"
+                >
+                  <option
+                    value="1"
+                    style="background-color: rgb(145, 241, 225)"
+                    data-icon="bx bx-crosshair"
+                  >
+                    Equipos
+                  </option>
+                  <option
+                    value="2"
+                    style="background-color: rgb(163, 163, 245)"
+                    data-icon="bx bx-wrench"
+                  >
+                    Servicios
+                  </option>
+                  <option
+                    value="3"
+                    style="background-color: magenta"
+                    data-icon="bx bx-bar-chart"
+                  >
+                    Finanzas
+                  </option>
+                </select>
+              </div>
+              <div class="col-2 mt-4 text-star">
+                <a
+                  href="#"
+                  class=""
+                  data-toggle="modal"
+                  data-target="#clasificacionModal"
+                >
+                  <i class="bx bx-plus-circle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <label>Comprobante</label>
+            <input
+              id="pago-comprobante"
+              name="input-b2"
+              type="file"
+              class="file"
+              data-browse-on-zone-click="true"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $("#pago-comprobante").fileinput({
+      allowedFileExtensions: ["jpg", "jpeg", "png"],
+      maxFileSize: 1024,
+      maxFilesNum: 10,
+      showUpload: false,
+      showCaption: false,
+      showRemove: false,
+      showBrowse: false,
+    });
+
+    $("#clasificacionModal").on("show.bs.modal", function (e) {
+      $("#add_pagoModal").modal("hide");
+    });
+    $("#clasificacionModal").on("hidden.bs.modal", function (e) {
+      $("#add_pagoModal").modal("show");
+    });
+  });
+</script>

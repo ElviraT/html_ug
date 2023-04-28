@@ -78,12 +78,75 @@
                 <th>Cotizaciones</th>
                 <th>Orden compra</th>
                 <th>Fecha de envío</th>
-                <th>Fecha de entrega</th>
                 <th>Aprobados por Ingeniería</th>
+                <th>Fecha de entrega</th>
                 <th>Equipos en almacén</th>
+                <th>Aprobados por CC</th>
                 <th>Importe</th>
                 <th>Moneda</th>
-                <th>Fecha compra</th>
+                <th>Pago realizado</th>
+                <th>Pago pendiente</th>
+                <th>Fecha de pago</th>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 1, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 2, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 3, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 4, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 5, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 6, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 7, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 8, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 9, 2023
+                  </span>
+                </td>
+                <td>
+                  <span class="tag-header-table text-white">
+                    <i class="bx bx-calendar icon-white"></i>
+                    Feb 10, 2023
+                  </span>
+                </td>
               </tr>
             </thead>
             <tbody>
@@ -129,8 +192,6 @@
                 </td>
                 <!-- fechade envio -->
                 <td>25 Enero 2023</td>
-                <!-- fecha de entrega -->
-                <td>Jan 27, 2024</td>
                 <!-- aprobado por ingeniería -->
                 <td>
                   <a href="view/compras/head-aprobado.html">
@@ -140,7 +201,14 @@
                       ></i></span
                   ></a>
                 </td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
+
                 <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-success">10 de 10</span>
+                </td>
+                <!-- Aprobado por cc -->
                 <td>
                   <span class="badge tag-success">10 de 10</span>
                 </td>
@@ -148,8 +216,39 @@
                 <td>$&nbsp;3,500.00</td>
                 <!-- moneda -->
                 <td>USD</td>
+                <!-- pago realizado -->
+                <td>
+                  <div class="row">
+                    <div class="col-8">$ 55,475.00</div>
+                    <div class="col-4">
+                      <a href="#pago" data-toggle="modal" data-target="#add_pagoModal" class="mt-2">
+                        <i class="bx bx-plus-circle iconos"></i>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <!-- pago pendiente -->
+                <td><span class="icon-green">$0.00</span></td>
                 <!-- fecha compra -->
-                <td>Jan 27, 2020</td>
+                <td>Aug 27, 2020</td>
+                <td colspan="5" class="td-fech-blue">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-1 p-0 mt-2" aling="left">
+                        <img src="public/image/user.png" alt="user" class="rounded-circle td-img">
+                      </div>
+                      <div class="col-11 pl-0">
+                          <small class="text-white">USD</small>
+                          <small class="tag-success">Pendiente $0.00</small>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
                 <!-- rfq -->
@@ -193,8 +292,6 @@
                 </td>
                 <!-- fechade envio -->
                 <td>-</td>
-                <!-- fecha de entrega -->
-                <td>Jan 27, 2024</td>
                 <!-- aprobado por ingeniería -->
                 <td>
                   <a href="view/compras/head-aprobado.html">
@@ -204,7 +301,13 @@
                       ></i></span
                   ></a>
                 </td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
                 <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-warning">7 de 10</span>
+                </td>
+                <!-- aprobado por cc -->
                 <td>
                   <span class="badge tag-warning">7 de 10</span>
                 </td>
@@ -212,8 +315,38 @@
                 <td>$&nbsp;3,500.00</td>
                 <!-- moneda -->
                 <td>USD</td>
+                <!-- pago realizado -->
+                <td>
+                  <div class="row">
+                    <div class="col-8">$ 55,475.00</div>
+                    <div class="col-4">
+                      <a href="#" class="mt-2">
+                        <i class="bx bx-plus-circle iconos"></i>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <!-- pago pendiente -->
+                <td><span class="icon-warning">$22,315.00</span></td>
                 <!-- fecha compra -->
-                <td>Jan 27, 2020</td>
+                <td>Aug 27, 2020</td>
+                <td></td>
+                <td></td>
+                <td colspan="6" class="td-fech-purple">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-1 p-0 mt-2" aling="left">
+                        <img src="public/image/user.png" alt="user" class="rounded-circle td-img">
+                      </div>
+                      <div class="col-11 pl-0">
+                          <small class="text-white">USD</small>
+                          <small class="tag-warning">Pendiente $22,315.00</small>
+                      </div>
+                    </div>
+                  </div>
+                </td>                
+                <td></td>
+                <td></td>
               </tr>
               <tr>
                 <!-- rfq -->
@@ -257,8 +390,6 @@
                 </td>
                 <!-- fechade envio -->
                 <td>-</td>
-                <!-- fecha de entrega -->
-                <td>Jan 27, 2024</td>
                 <!-- aprobado por ingeniería -->
                 <td>
                   <a href="view/compras/head-aprobado.html">
@@ -268,7 +399,13 @@
                       ></i></span
                   ></a>
                 </td>
+                <!-- fecha de entrega -->
+                <td>Jan 27, 2024</td>
                 <!-- equipos en almacen -->
+                <td>
+                  <span class="badge tag-danger">0 de 10</span>
+                </td>
+                <!-- aprobado por cc -->
                 <td>
                   <span class="badge tag-danger">0 de 10</span>
                 </td>
@@ -276,8 +413,36 @@
                 <td>$&nbsp;3,500.00</td>
                 <!-- moneda -->
                 <td>USD</td>
+                <!-- pago realizado -->
+                <td>
+                  <div class="row">
+                    <div class="col-8">$ 55,475.00</div>
+                    <div class="col-4">
+                      <a href="#" class="mt-2">
+                        <i class="bx bx-plus-circle iconos"></i>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <!-- pago pendiente -->
+                <td><span class="icon-red">$35,475.00</span></td>
                 <!-- fecha compra -->
-                <td>Jan 27, 2020</td>
+                <td>Aug 27, 2020</td>
+                <td></td>
+                <td colspan="8" class="td-fech-blue">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-1 p-0 mt-2">
+                        <img src="public/image/user.png" alt="user" class="rounded-circle td-img">
+                      </div>
+                      <div class="col-11 pl-0">
+                          <small class="text-white">USD</small>
+                          <small class="tag-danger">Pendiente $35,475.00</small>
+                      </div>
+                    </div>
+                  </div>
+                </td>    
+                <td></td>
               </tr>
             </tbody>
           </table>
