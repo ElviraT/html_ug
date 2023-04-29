@@ -19,16 +19,16 @@ html {
 
 /* Estilos barra (thumb) de scroll */
 .contenido::-webkit-scrollbar-thumb {
-  background: #ccc !important;
+  background: #abcce7 !important;
   border-radius: 4px !important;
 }
 
 .contenido::-webkit-scrollbar-thumb:active {
-  background-color: #999999 !important;
+  background-color: #abcce7 !important;
 }
 
 .contenido::-webkit-scrollbar-thumb:hover {
-  background: #b3b3b3 !important;
+  background: #7494fc !important;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -2653,4 +2653,8 @@ div#is-relative {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.modal-content{
+  max-height: 500px;
+  overflow-y: scroll;
 }
