@@ -1,27 +1,28 @@
 <style type="text/css">
   .kv-file-content {
-  width: 177px !important;
-  height: 177px !important;
-}
-.file-input{
-  width: 250px !important;
-}
-.file-thumbnail-footer{
-  display: none;
-}
+    width: 177px !important;
+    height: 177px !important;
+  }
+  .file-input {
+    width: 250px !important;
+  }
+  .file-thumbnail-footer {
+    display: none;
+  }
 </style>
 <div class="col-12 mt-3">
   <div class="row">
     <div class="col-md-6 col-lg-10">
       <strong>Agregar nuevo suministro</strong><br />
       <span>Información general del suministro</span>
-    </div> 
+    </div>
     <div class="col-md-6 col-lg-2" align="right">
       <div class="d-flex">
-          <button type="button" class="btn-agregar-ppi">Cancelar</button>&nbsp;&nbsp;
-          <button type="button" class="btn-agregar">Guardar</button>        
+        <button type="button" class="btn-agregar-ppi">Cancelar</button
+        >&nbsp;&nbsp;
+        <button type="button" class="btn-agregar">Guardar</button>
       </div>
-    </div> 
+    </div>
   </div>
 </div>
 <div class="col-12 mt-3">
@@ -31,14 +32,16 @@
     </div>
     <div class="col-12">
       <div class="row">
-        <div class="col-4 mb-3">
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Order code</label>
-          <input type="text" 
-          name="order" 
-          class="form-control" 
-          placeholder="Ingresa el order code" />
+          <input
+            type="text"
+            name="order"
+            class="form-control"
+            placeholder="Ingresa el order code"
+          />
         </div>
-        <div class="col-4 mb-3">
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Marca</label>
           <select
             class="form-control selectpicker"
@@ -50,21 +53,23 @@
             <option value="3">Test</option>
           </select>
           <a
-              href="#"
-              class="añadir"
-              data-toggle="modal"
-              data-target="#add_marcas"
-              ><i class="bx bx-plus"></i> Añadir</a
-            >
+            href="#"
+            class="añadir"
+            data-toggle="modal"
+            data-target="#add_marcas"
+            ><i class="bx bx-plus"></i> Añadir</a
+          >
         </div>
-        <div class="col-4 mb-3">
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Modelo</label>
-          <input type="text" 
-          name="modelo"
-          class="form-control"
-          placeholder="Ingresa el modelo" />
-        </div>  
-        <div class="col-4 mb-3">
+          <input
+            type="text"
+            name="modelo"
+            class="form-control"
+            placeholder="Ingresa el modelo"
+          />
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Entrega</label>
           <select
             class="form-control selectpicker"
@@ -76,18 +81,22 @@
             <option value="3">Test</option>
           </select>
           <a
-              href="#"
-              class="añadir"
-              data-toggle="modal"
-              data-target="#add_lugares"
-              ><i class="bx bx-plus"></i> Añadir</a
-            >
-        </div>     
-        <div class="col-4 mb-3">
+            href="#"
+            class="añadir"
+            data-toggle="modal"
+            data-target="#add_lugares"
+            ><i class="bx bx-plus"></i> Añadir</a
+          >
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Descripción</label>
-          <textarea class="form-control" rows="2" placeholder="Ingresa la descripción"></textarea>
-        </div>     
-        <div class="col-4 mb-3">
+          <textarea
+            class="form-control"
+            rows="2"
+            placeholder="Ingresa la descripción"
+          ></textarea>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Clasificador</label>
           <select
             class="form-control selectpicker"
@@ -99,14 +108,14 @@
             <option value="3">Test</option>
           </select>
           <a
-              href="#"
-              class="añadir"
-              data-toggle="modal"
-              data-target="#add_clasificador"
-              ><i class="bx bx-plus"></i> Añadir</a
-            >
-        </div> 
-         <div class="col-4 mb-3">
+            href="#"
+            class="añadir"
+            data-toggle="modal"
+            data-target="#add_clasificador"
+            ><i class="bx bx-plus"></i> Añadir</a
+          >
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Subclasificador</label>
           <select
             class="form-control selectpicker"
@@ -118,14 +127,14 @@
             <option value="3">Test</option>
           </select>
           <a
-              href="#"
-              class="añadir"
-              data-toggle="modal"
-              data-target="#add_subclasificador"
-              ><i class="bx bx-plus"></i> Añadir</a
-            >
+            href="#"
+            class="añadir"
+            data-toggle="modal"
+            data-target="#add_subclasificador"
+            ><i class="bx bx-plus"></i> Añadir</a
+          >
         </div>
-         <div class="col-4 mb-3">
+        <div class="col-md-12 col-lg-4 mb-3">
           <label>Último proveedor</label>
           <select
             class="form-control selectpicker"
@@ -137,30 +146,45 @@
             <option value="3">Test</option>
           </select>
           <a
-              href="#"
-              class="añadir"
-              data-toggle="modal"
-              data-target="#proveedor"
-              ><i class="bx bx-plus"></i> Añadir</a
-            >
-        </div> 
-        <div class="col-4">
+            href="#"
+            class="añadir"
+            data-toggle="modal"
+            data-target="#proveedor"
+            ><i class="bx bx-plus"></i> Añadir</a
+          >
+        </div>
+        <div class="col-md-12 col-lg-4">
           <div class="row">
             <div class="col-6">
               <label>Garantía (meses)</label>
-              <input type="text" name="garantia" class="form-control" placeholder="Ingresa la garantia">
+              <input
+                type="text"
+                name="garantia"
+                class="form-control"
+                placeholder="Ingresa la garantia"
+              />
             </div>
             <div class="col-6">
               <label>T. entrega (semanas)</label>
-              <input type="text" name="tentrega" class="form-control" placeholder="Ingresa el tiempo">
+              <input
+                type="text"
+                name="tentrega"
+                class="form-control"
+                placeholder="Ingresa el tiempo"
+              />
             </div>
           </div>
-        </div> 
-        <div class="col-4">
+        </div>
+        <div class="col-md-12 col-lg-4">
           <div class="row">
             <div class="col-6">
               <label>Precio ($3,853.12)</label>
-              <input type="text" name="precio" class="form-control" placeholder="Ingresa el precio">
+              <input
+                type="text"
+                name="precio"
+                class="form-control"
+                placeholder="Ingresa el precio"
+              />
             </div>
             <div class="col-6">
               <label>Moneda</label>
@@ -173,89 +197,155 @@
                 <option value="2">Test</option>
                 <option value="3">Test</option>
               </select>
-          <a
-              href="#"
-              class="añadir"
-              data-toggle="modal"
-              data-target="#add_divisas"
-              ><i class="bx bx-plus"></i> Añadir</a
-            >
+              <a
+                href="#"
+                class="añadir"
+                data-toggle="modal"
+                data-target="#add_divisas"
+                ><i class="bx bx-plus"></i> Añadir</a
+              >
             </div>
           </div>
-        </div> 
-        <div class="col-4">
+        </div>
+        <div class="col-md-12 col-lg-4">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-12 col-lg-6">
               <label>Porcentaje de anticipo</label>
-              <input type="text" name="anticipo" class="form-control" placeholder="Ingresa el porcentaje">
+              <input
+                type="text"
+                name="anticipo"
+                class="form-control"
+                placeholder="Ingresa el porcentaje"
+              />
             </div>
-            <div class="col-6">
+            <div class="col-md-12 col-lg-6">
               <label>Días de crédito</label>
-              <input type="text" name="credito" class="form-control" placeholder="Ingresa los días">
+              <input
+                type="text"
+                name="credito"
+                class="form-control"
+                placeholder="Ingresa los días"
+              />
             </div>
           </div>
-        </div>  
-        <div class="col-6 mb-3 mt-3">
+        </div>
+        <div class="col-md-12 col-lg-6 mb-3 mt-3">
           <label>Fotografía (opcional)</label>
           <input
-                id="file-suministro"
-                name="input-b1"
-                type="file"
-                accept="image/*"
-              />
-        </div> 
+            id="file-suministro"
+            name="input-b1"
+            type="file"
+            accept="image/*"
+          />
+        </div>
       </div>
     </div>
   </div>
   <div class="card mt-3 mb-3">
     <div class="col-12 mt-3">
       <div class="row">
-        <div class="col-6">
-          <strong>Documentos relacionados</strong><br>
+        <div class="col-md-12 col-lg-6">
+          <strong>Documentos relacionados</strong><br />
           <span>Detalles de los documentos relacionados</span>
         </div>
-        <div class="col-6" align="right">
-          <button type="button" class="btn-agregar-ppi" data-toggle="modal" data-target="#documento-relacionado"><i class="bx bx-plus"></i><strong> Añadir documento</strong></button>
+        <div class="col-md-12 col-lg-6" align="right">
+          <button
+            type="button"
+            class="btn-agregar-ppi"
+            data-toggle="modal"
+            data-target="#documento-relacionado"
+          >
+            <i class="bx bx-plus"></i><strong> Añadir documento</strong>
+          </button>
         </div>
       </div>
     </div>
     <div class="col-12 mt-3">
-      <table width="100%">
-        <tbody>
-          <tr height="80">
-            <td width="1%"><button class="icono-eliminar rounded-circle"><i class='bx bxs-file-pdf icono-error'></i></button></td>
-            <td width="97%">
-              <div class="col-12">
-                <strong>Bases Liciación.Pdf</strong><br>
-                <span><i class='bx bx-calendar-alt'></i> 16 Abr. 2021</span>
-              </div>
-            </td>
-            <td width="2%"><a href="#"><div class="circle-x"><i class='bx bx-plus' style="transform: rotate(45deg);margin-top: 6px;margin-left: 6px;"></i></div></a></td>
-          </tr>
-          <tr height="80">
-            <td width="1%"><button class="icono-eliminar rounded-circle"><i class='bx bxs-file-pdf icono-error'></i></button></td>
-            <td width="97%">
-              <div class="col-12">
-                <strong>Bases Liciación.Pdf</strong><br>
-                <span><i class='bx bx-calendar-alt'></i> 16 Abr. 2021</span>
-              </div>
-            </td>
-            <td width="2%"><a href="#"><div class="circle-x"><i class='bx bx-plus' style="transform: rotate(45deg);margin-top: 6px;margin-left: 6px;"></i></div></a></td>
-          </tr>
-          <tr height="80">
-            <td width="1%"><button class="icono-eliminar rounded-circle"><i class='bx bxs-file-pdf icono-error'></i></button></td>
-            <td width="97%">
-              <div class="col-12">
-                <strong>Bases Liciación.Pdf</strong><br>
-                <span><i class='bx bx-calendar-alt'></i> 16 Abr. 2021</span>
-              </div>
-            </td>
-            <td width="2%"><a href="#"><div class="circle-x"><i class='bx bx-plus' style="transform: rotate(45deg);margin-top: 6px;margin-left: 6px;"></i></div></a></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table width="100%">
+          <tbody>
+            <tr height="80">
+              <td width="1%">
+                <button class="icono-eliminar rounded-circle">
+                  <i class="bx bxs-file-pdf icono-error"></i>
+                </button>
+              </td>
+              <td width="97%">
+                <div class="col-12">
+                  <strong>Bases Liciación.Pdf</strong><br />
+                  <span><i class="bx bx-calendar-alt"></i> 16 Abr. 2021</span>
+                </div>
+              </td>
+              <td width="2%">
+                <a href="#"
+                  ><div class="circle-x">
+                    <i
+                      class="bx bx-plus"
+                      style="
+                        transform: rotate(45deg);
+                        margin-top: 6px;
+                        margin-left: 6px;
+                      "
+                    ></i></div
+                ></a>
+              </td>
+            </tr>
+            <tr height="80">
+              <td width="1%">
+                <button class="icono-eliminar rounded-circle">
+                  <i class="bx bxs-file-pdf icono-error"></i>
+                </button>
+              </td>
+              <td width="97%">
+                <div class="col-12">
+                  <strong>Bases Liciación.Pdf</strong><br />
+                  <span><i class="bx bx-calendar-alt"></i> 16 Abr. 2021</span>
+                </div>
+              </td>
+              <td width="2%">
+                <a href="#"
+                  ><div class="circle-x">
+                    <i
+                      class="bx bx-plus"
+                      style="
+                        transform: rotate(45deg);
+                        margin-top: 6px;
+                        margin-left: 6px;
+                      "
+                    ></i></div
+                ></a>
+              </td>
+            </tr>
+            <tr height="80">
+              <td width="1%">
+                <button class="icono-eliminar rounded-circle">
+                  <i class="bx bxs-file-pdf icono-error"></i>
+                </button>
+              </td>
+              <td width="97%">
+                <div class="col-12">
+                  <strong>Bases Liciación.Pdf</strong><br />
+                  <span><i class="bx bx-calendar-alt"></i> 16 Abr. 2021</span>
+                </div>
+              </td>
+              <td width="2%">
+                <a href="#"
+                  ><div class="circle-x">
+                    <i
+                      class="bx bx-plus"
+                      style="
+                        transform: rotate(45deg);
+                        margin-top: 6px;
+                        margin-left: 6px;
+                      "
+                    ></i></div
+                ></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    
   </div>
 </div>
 <script>
@@ -264,7 +354,7 @@
       $(".selectpicker").selectpicker();
     });
   });
-   $("#file-suministro").fileinput({
+  $("#file-suministro").fileinput({
     initialPreview:
       "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/631px-FullMoon2010.jpg",
     allowedFileExtensions: ["jpg", "jpeg", "png"],
@@ -281,10 +371,9 @@
     // resizePreference: 'width',
     resizeImage: true,
     initialPreviewConfig: [
-    {         
-        width: '120px', 
-    }
-    ], 
-    
+      {
+        width: "120px",
+      },
+    ],
   });
 </script>

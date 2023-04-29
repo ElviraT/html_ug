@@ -5,7 +5,6 @@
   tabindex="-1"
   aria-labelledby="add_pagoModalLabel"
   aria-hidden="true"
-  style="overflow-y: scroll; max-height:75%;"
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-4">
@@ -17,7 +16,7 @@
       </div>
       <div class="modal-body p-4">
         <div class="row">
-          <div class="col-6 mb-3">
+          <div class="col-md-12 col-lg-6 mb-3">
             <label>Importe</label>
             <input
               type="text"
@@ -25,7 +24,7 @@
               placeholder="Ingrese el importe"
             />
           </div>
-          <div class="col-6 mb-3">
+          <div class="col-md-12 col-lg-6 mb-3">
             <div class="row">
               <div class="col-10">
                 <label>Clasificación</label>
@@ -120,10 +119,10 @@
                   <td>$ 8,720.00</td>
                   <td>
                     <span
-                    class="clasificacion"
-                    style="background-color: rgb(163, 163, 245)"
-                    >Servicios&nbsp;<i class="bx bx-wrench"></i
-                  ></span>
+                      class="clasificacion"
+                      style="background-color: rgb(163, 163, 245)"
+                      >Servicios&nbsp;<i class="bx bx-wrench"></i
+                    ></span>
                   </td>
                   <td>Jul 11, 2015</td>
                 </tr>
@@ -134,10 +133,10 @@
                   <td>$ 17,900.00</td>
                   <td>
                     <span
-                    class="clasificacion"
-                    style="background-color: rgb(145, 241, 225)"
-                    >Equipos&nbsp;&nbsp;<i class="bx bxs-chip"></i
-                  ></span>
+                      class="clasificacion"
+                      style="background-color: rgb(145, 241, 225)"
+                      >Equipos&nbsp;&nbsp;<i class="bx bxs-chip"></i
+                    ></span>
                   </td>
                   <td>Mar 02, 2019</td>
                 </tr>
@@ -159,13 +158,6 @@
       showCaption: false,
       showRemove: false,
       showBrowse: false,
-    });
-
-    $("#clasificacionModal").on("show.bs.modal", function (e) {
-      $("#add_pagoModal").modal("hide");
-    });
-    $("#clasificacionModal").on("hidden.bs.modal", function (e) {
-      $("#add_pagoModal").modal("show");
     });
   });
 </script>

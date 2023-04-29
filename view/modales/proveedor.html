@@ -18,7 +18,7 @@
       <div class="modal-body p-3">
         <div class="col-12">
           <div class="row">
-            <div class="content-proveedores col-4 p-2">
+            <div class="content-proveedores col-md-12 col-lg-4 p-2">
               <strong class="mb-2">Proveedores</strong>
               <span>Consulta los proveedores existentes</span>
               <hr />
@@ -59,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-md-12 col-lg-8">
               <div class="col-12 mb-3">
                 <label>RFC</label>
                 <input
@@ -104,7 +104,11 @@
               <div class="col-12">
                 <div class="row justify-content-between">
                   <strong class="mt-2">Cuenta bancaria nacional</strong>
-                  <button class="btn-cancelar" data-toggle="modal" data-target="#adm_cuenta">
+                  <button
+                    class="btn-cancelar"
+                    data-toggle="modal"
+                    data-target="#adm_cuenta"
+                  >
                     <i class="bx bx-plus"></i>Agregar
                   </button>
                 </div>
@@ -112,7 +116,7 @@
               <div class="card p-2 mt-3">
                 <div class="col-12">
                   <div class="row">
-                    <div class="col-2">
+                    <div class="col-md-12 col-lg-2">
                       <img
                         src="../../public/image/santander.png"
                         class="rounded-circle"
@@ -121,7 +125,7 @@
                         alt=""
                       />
                     </div>
-                    <div class="col-10">
+                    <div class="col-md-12 col-lg-10">
                       <div class="row">
                         <strong>Santander .</strong
                         ><span>Cuenta:&nbsp;5544888911230044</span><br />
@@ -137,7 +141,7 @@
               <div class="card p-2 mt-3">
                 <div class="col-12">
                   <div class="row">
-                    <div class="col-2">
+                    <div class="col-md-12 col-lg-2">
                       <img
                         src="../../public/image/bbva.png"
                         class="rounded-circle"
@@ -146,7 +150,7 @@
                         alt=""
                       />
                     </div>
-                    <div class="col-10">
+                    <div class="col-md-12 col-lg-10">
                       <div class="row">
                         <strong>BBVA .</strong
                         ><span>Cuenta:&nbsp;5544888911230044</span><br />
@@ -162,7 +166,7 @@
               <div class="card p-2 mt-3">
                 <div class="col-12">
                   <div class="row">
-                    <div class="col-2">
+                    <div class="col-md-12 col-lg-2">
                       <img
                         src="../../public/image/santander.png"
                         class="rounded-circle"
@@ -171,7 +175,7 @@
                         alt=""
                       />
                     </div>
-                    <div class="col-10">
+                    <div class="col-md-12 col-lg-10">
                       <div class="row">
                         <strong>Santander .</strong
                         ><span>Cuenta:&nbsp;5544888911230044</span><br />
@@ -187,50 +191,60 @@
               <div class="col-12 mt-3">
                 <div class="row justify-content-between">
                   <strong class="mt-2">Cuenta bancaria internacional</strong>
-                  <button class="btn-cancelar" data-toggle="modal" data-target="#adm_cuenta_int">
+                  <button
+                    class="btn-cancelar"
+                    data-toggle="modal"
+                    data-target="#adm_cuenta_int"
+                  >
                     <i class="bx bx-plus"></i>Agregar
                   </button>
                 </div>
               </div>
               <div class="col-12">
-                <div class="content-bancoI mt-3">
-                  <strong>Company name .</strong> <span>Bank name</span><br />
-                  <span
-                    >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
-                    2000743691</span
-                  ><br />
-                  <span
-                    ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood, Maine
-                    98380 <i class="bx bx-coin"></i>USD</span
-                  >
-                </div>
-                <div class="content-bancoI mt-3">
-                  <strong>Company name .</strong> <span>Bank name</span><br />
-                  <span
-                    >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
-                    2000743691</span
-                  ><br />
-                  <span
-                    ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood, Maine
-                    98380 <i class="bx bx-coin"></i>USD</span
-                  >
-                </div>
-                <div class="content-bancoI mt-3">
-                  <strong>Company name .</strong> <span>Bank name</span><br />
-                  <span
-                    >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
-                    2000743691</span
-                  ><br />
-                  <span
-                    ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood, Maine
-                    98380 <i class="bx bx-coin"></i>USD</span
-                  >
+                <div class="row">
+                  <div class="col-12 content-bancoI mt-3">
+                    <strong>Company name .</strong> <span>Bank name</span><br />
+                    <span
+                      >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
+                      2000743691</span
+                    ><br />
+                    <span
+                      ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood,
+                      Maine 98380 <i class="bx bx-coin"></i>USD</span
+                    >
+                  </div>
+                  <div class="col-12 content-bancoI mt-3">
+                    <strong>Company name .</strong> <span>Bank name</span><br />
+                    <span
+                      >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
+                      2000743691</span
+                    ><br />
+                    <span
+                      ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood,
+                      Maine 98380 <i class="bx bx-coin"></i>USD</span
+                    >
+                  </div>
+                  <div class="col-12 content-bancoI mt-3">
+                    <strong>Company name .</strong> <span>Bank name</span><br />
+                    <span
+                      >SWIFT: BBVA MX MO 172 . IBAN: MX 70 2038 3457 55
+                      2000743691</span
+                    ><br />
+                    <span
+                      ><i class="bx bx-map"></i> 8502 Preston Rd. Inglewood,
+                      Maine 98380 <i class="bx bx-coin"></i>USD</span
+                    >
+                  </div>
                 </div>
               </div>
               <div class="col-12 mt-3">
                 <div class="row justify-content-between">
                   <strong class="mt-2">Contactos</strong>
-                  <button class="btn-cancelar" data-toggle="modal" data-target="#admin_contacto">
+                  <button
+                    class="btn-cancelar"
+                    data-toggle="modal"
+                    data-target="#admin_contacto"
+                  >
                     <i class="bx bx-plus"></i>Agregar
                   </button>
                 </div>
@@ -238,7 +252,7 @@
               <div class="card p-2 mt-3">
                 <div class="col-12">
                   <div class="row">
-                    <div class="col-2 mt-2">
+                    <div class="col-md-12 col-lg-2 mt-2">
                       <img
                         src="../../public/image/user.png"
                         class="rounded-circle"
@@ -247,7 +261,7 @@
                         alt=""
                       />
                     </div>
-                    <div class="col-10">
+                    <div class="col-md-12 col-lg-10">
                       <div class="row">
                         <strong>Jackson Graham .</strong
                         ><span>Gerente administrativo</span><br />
@@ -266,7 +280,7 @@
               <div class="card p-2 mt-3">
                 <div class="col-12">
                   <div class="row">
-                    <div class="col-2 mt-2">
+                    <div class="col-md-12 col-lg-2 mt-2">
                       <img
                         src="../../public/image/user.png"
                         class="rounded-circle"
@@ -275,7 +289,7 @@
                         alt=""
                       />
                     </div>
-                    <div class="col-10">
+                    <div class="col-md-12 col-lg-10">
                       <div class="row">
                         <strong>Jackson Graham .</strong
                         ><span>Gerente administrativo</span><br />
@@ -294,7 +308,7 @@
               <div class="card p-2 mt-3">
                 <div class="col-12">
                   <div class="row">
-                    <div class="col-2 mt-2">
+                    <div class="col-md-12 col-lg-2 mt-2">
                       <img
                         src="../../public/image/user.png"
                         class="rounded-circle"
@@ -303,7 +317,7 @@
                         alt=""
                       />
                     </div>
-                    <div class="col-10">
+                    <div class="col-md-12 col-lg-10">
                       <div class="row">
                         <strong>Alma Lawson .</strong
                         ><span>Marketing Coordinator</span><br />
@@ -324,18 +338,10 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-outline-dark"
-          data-dismiss="modal"
-        >
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">
           Cancelar
         </button>
-        <button
-          type="button"
-          class="btn btn-secondary"
-          data-toggle="modal"
-        >
+        <button type="button" class="btn btn-secondary" data-toggle="modal">
           Guardar
         </button>
       </div>
