@@ -23,7 +23,7 @@
         <option value="3">Floyd Miles</option>
       </select>
     </div>
-    <div class="col-md-6 col-lg-4 mt-2" align="right">
+    <div class="col-md-6 col-lg-3 mt-2" align="right">
       <strong
         ><i
           class="bx bx-calendar-check"
@@ -49,14 +49,19 @@
         </div>
       </form>
     </div>
-    <div class="col-md-6 col-lg-1">
-      <button
-        class="btn btn-agregar mt-1"
-        data-toggle="modal"
-        data-target="#tareaModal"
-      >
-        Agregar
-      </button>
+    <div class="col-md-6 col-lg-2">
+      <div class="row">
+        <div class="mr-2">
+          <button
+            class="btn btn-agregar mt-1"
+            data-toggle="modal"
+            data-target="#tareaModal"
+          >
+            Agregar
+          </button>
+        </div>
+        <div><button class="btn-exportar mt-1">Exportar</button></div>
+      </div>
     </div>
   </div>
 </div>
@@ -66,18 +71,24 @@
     <div class="card border-0">
       <div class="card-header task-card" id="headingOne">
         <h5 class="mb-0 d-inline">
-          <button
+          <span
             class="task-header"
             data-toggle="collapse"
             data-target="#collapseOne"
             aria-expanded="true"
             aria-controls="collapseOne"
           >
-            <i class="bx bx-chevron-down"></i
-            ><span class="task-title"
-              >Tareas del proyecto:&nbsp;<strong>Taritaxi</strong></span
-            >
-          </button>
+            <div class="col-12">
+              <div class="row">
+                <div class="mt-1"><i class="bx bx-chevron-down"></i></div>
+                <div>
+                  <span class="task-title">
+                    Tareas del proyecto:&nbsp;<strong>Taritaxi</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </span>
         </h5>
       </div>
       <div
@@ -310,18 +321,26 @@
     <div class="card border-0">
       <div class="card-header task-card" id="headingTwo">
         <h5 class="mb-0">
-          <button
+          <span
             class="task-header collapsed"
             data-toggle="collapse"
             data-target="#collapseTwo"
             aria-expanded="false"
             aria-controls="collapseTwo"
           >
-            <i class="bx bx-chevron-down"></i
-            ><span class="task-title">
-              Tareas del proyecto:&nbsp;<strong>Plan de trabajo</strong></span
-            >
-          </button>
+            <div class="col-12">
+              <div class="row">
+                <div class="mt-1"><i class="bx bx-chevron-down"></i></div>
+                <div>
+                  <span class="task-title">
+                    Tareas del proyecto:&nbsp;<strong
+                      >Plan de trabajo</strong
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </span>
         </h5>
       </div>
       <div
@@ -346,18 +365,24 @@
     <div class="card border-0">
       <div class="card-header task-card" id="headingThree">
         <h5 class="mb-0">
-          <button
+          <span
             class="task-header collapsed"
             data-toggle="collapse"
             data-target="#collapseThree"
             aria-expanded="false"
             aria-controls="collapseThree"
           >
-            <i class="bx bx-chevron-down"></i
-            ><span class="task-title">
-              Tareas del proyecto:&nbsp;<strong>SGC</strong></span
-            >
-          </button>
+            <div class="col-12">
+              <div class="row">
+                <div class="mt-1"><i class="bx bx-chevron-down"></i></div>
+                <div>
+                  <span class="task-title">
+                    Tareas del proyecto:&nbsp;<strong>SGC</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </span>
         </h5>
       </div>
       <div

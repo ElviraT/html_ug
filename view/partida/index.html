@@ -23,7 +23,7 @@
 <!-- tabla -->
 <div id="accordion  mt-3">
   <div class="card border-0">
-    <div class="card-header" id="partidaheadingOne">
+    <div class="card-header header-accordion" id="partidaheadingOne">
       <h5 class="mb-0">
         <div
           class="btn"
@@ -32,14 +32,15 @@
           aria-expanded="true"
           aria-controls="partidacollapseOne"
         >
-          <div class="row">
-            <span class="bg bg-primary">4</span>&nbsp;<span
-              class="span-costo"
-              style="font-size: 12px"
-            >
-              Bus de enlace: <strong>NACH-GMRC-COB-0001</strong></span
-            >
-          </div>
+        <div class="row">
+          <div><span class="bg bg-primary">4</span></div>
+          <div>&nbsp;<span
+            class="span-costo"
+            style="font-size: 12px"
+          >
+            Bus de enlace: <strong>NACH-GMRC-COB-0001</strong></span
+          ></div>
+        </div>
         </div>
         &nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#partidaModal"
           ><i class="bx bx-pencil"></i
@@ -53,7 +54,7 @@
       aria-labelledby="partidaheadingOne"
       data-parent="#accordion"
     >
-      <div class="card-body">
+      <div class="card-body p-0">
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -66,6 +67,8 @@
                 <th>Orden de compra</th>
                 <th>Ingeniería</th>
                 <th>Reciben en almacén</th>
+                <th>Control de calidad</th>
+                <th>Entrega</th>
               </tr>
             </thead>
             <tbody>
@@ -112,6 +115,22 @@
                     class="rounded-circle user-info"
                   /><span class="ml-4 icon-red">Sep 01, 2000</span>
                 </td>
+                <!-- control de calidad -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-green">Sep 27, 2016</span>
+                </td>
+                <!-- entrega -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-green">May 16, 2005</span>
+                </td>
               </tr>
               <tr>
                 <!-- order code -->
@@ -153,6 +172,22 @@
                   /><span class="ml-4 icon-green">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-green">Apr 14, 2000</span>
+                </td>
+                <!-- control de calidad -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-green">Dec 18, 2000</span>
+                </td>
+                <!-- entrega -->
                 <td>
                   <img
                     src="public/image/user.png"
@@ -208,6 +243,22 @@
                     class="rounded-circle user-info"
                   /><span class="ml-4 icon-green">Sep 01, 2000</span>
                 </td>
+                <!-- control de calidad -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-red">Feb 28, 2000</span>
+                </td>
+                <!-- entrega -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-red">May 26, 2000</span>
+                </td>
               </tr>
               <tr>
                 <!-- order code -->
@@ -250,6 +301,22 @@
                   /><span class="ml-4 icon-red">Sep 01, 2000</span>
                 </td>
                 <!-- reciben en almacen -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-red">Sep 01, 2000</span>
+                </td>
+                <!-- control de calidad -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-red">Sep 01, 2000</span>
+                </td>
+                <!-- entrega -->
                 <td>
                   <img
                     src="public/image/user.png"
@@ -306,6 +373,22 @@
                     class="rounded-circle user-info"
                   /><span class="ml-4 icon-red">Sep 01, 2000</span>
                 </td>
+                <!-- control de calidad -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-red">Mar 02, 2000</span>
+                </td>
+                <!-- entrega -->
+                <td>
+                  <img
+                    src="public/image/user.png"
+                    alt="user"
+                    class="rounded-circle user-info"
+                  /><span class="ml-4 icon-red">Mar 25, 2000</span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -314,7 +397,7 @@
     </div>
   </div>
   <div class="card border-0">
-    <div class="card-header" id="partidaheadingTwo">
+    <div class="card-header header-accordion" id="partidaheadingTwo">
       <h5 class="mb-0">
         <div
           class="btn"
@@ -324,12 +407,13 @@
           aria-controls="partidaTwo"
         >
           <div class="row">
-            <span class="bg bg-primary">4</span>&nbsp;<span
+            <div><span class="bg bg-primary">4</span></div>
+            <div>&nbsp;<span
               class="span-costo"
               style="font-size: 12px"
             >
               Bus de enlace: <strong>NACH-GMRC-COB-0001</strong></span
-            >
+            ></div>
           </div>
         </div>
         &nbsp;&nbsp;<a href="#" data-toggle="modal" data-target="#partidaModal"
